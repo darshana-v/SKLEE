@@ -1,0 +1,11 @@
+/home/namrata/build/runtime/runtime_build_Debug+Asserts/POSIX/klee_init_env.bc: \
+  /home/namrata/klee/runtime/POSIX/klee_init_env.c \
+  /home/namrata/klee/include/klee/klee.h \
+  /home/namrata/klee/runtime/POSIX/fd.h \
+  /home/namrata/build/include/klee/Config/config.h
+
+/home/namrata/klee/include/klee/klee.h:
+
+/home/namrata/klee/runtime/POSIX/fd.h:
+
+/home/namrata/build/include/klee/Config/config.h:

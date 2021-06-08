@@ -1,0 +1,2 @@
+/usr/bin/ar Dqc ../../libLLVMFrontendOpenMP.a  CMakeFiles/LLVMFrontendOpenMP.dir/OMPConstants.cpp.o CMakeFiles/LLVMFrontendOpenMP.dir/OMPIRBuilder.cpp.o
+/usr/bin/ranlib -D ../../libLLVMFrontendOpenMP.a

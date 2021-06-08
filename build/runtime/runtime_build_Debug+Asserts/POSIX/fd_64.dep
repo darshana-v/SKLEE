@@ -1,0 +1,14 @@
+/home/namrata/build/runtime/runtime_build_Debug+Asserts/POSIX/fd_64.bc: \
+  /home/namrata/klee/runtime/POSIX/fd_64.c \
+  /home/namrata/klee/runtime/POSIX/fd.h \
+  /home/namrata/build/include/klee/Config/config.h \
+  /home/namrata/klee/include/klee/Config/Version.h \
+  /home/namrata/klee/include/klee/klee.h
+
+/home/namrata/klee/runtime/POSIX/fd.h:
+
+/home/namrata/build/include/klee/Config/config.h:
+
+/home/namrata/klee/include/klee/Config/Version.h:
+
+/home/namrata/klee/include/klee/klee.h:
