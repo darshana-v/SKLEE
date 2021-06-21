@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+\pagestyle{empty}
+\begin{document}
+\[ \forall X constraints(X) \to query(X) \]
+\pagebreak
+
+$X$
+\pagebreak
+
+$constraints(X)$
+\pagebreak
+
+$query(X)$
+\pagebreak
+
+\[ \lnot \exists X constraints(X) \land \lnot query(X) \]
+\pagebreak
+
+\[ \exists X constraints(X) \land \lnot query(X) \]
+\pagebreak
+
+\[ \forall X constraints(X) \to \lnot query(X) \]
+\pagebreak
+
+\[ \lnot \exists X constraints(X) \land query(X) \]
+\pagebreak
+
+\[ \exists X constraints(X) \land query(X) \]
+\pagebreak
+
+\[ \lnot \forall X constraints(X) \to \lnot query(X) \]
+\pagebreak
+
+\[ \lnot \forall X constraints(X) \to query(X) \]
+\pagebreak
+
+\end{document}
