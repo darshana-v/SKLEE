@@ -1,6 +1,0 @@
-var dir_9049c87a86f5cd3bab8a819f76546946 =
-[
-    [ "get_sign", "dir_034e54c958bd924821934ec6a3965b5a.html", "dir_034e54c958bd924821934ec6a3965b5a" ],
-    [ "regexp", "dir_96b8f0883aeb43a9c08aa842b3729518.html", "dir_96b8f0883aeb43a9c08aa842b3729518" ],
-    [ "sort", "dir_d76e0945dee755728786e7686f636628.html", "dir_d76e0945dee755728786e7686f636628" ]
-];
