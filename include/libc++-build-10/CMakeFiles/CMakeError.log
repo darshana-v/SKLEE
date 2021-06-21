@@ -1,0 +1,631 @@
+Determining if the include file malloc/malloc.h exists failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5c4de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5c4de.dir/build.make CMakeFiles/cmTC_5c4de.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5c4de.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_5c4de.dir/CheckIncludeFile.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_5c4de.dir/CheckIncludeFile.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_5c4de.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5c4de.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_5c4de.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5c4de/fast' failed
+make: *** [cmTC_5c4de/fast] Error 2
+
+
+Determining if the include file mach/mach.h exists failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d5cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d5cc.dir/build.make CMakeFiles/cmTC_7d5cc.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d5cc.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_7d5cc.dir/CheckIncludeFile.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'mach/mach.h' file not found
+#include <mach/mach.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_7d5cc.dir/CheckIncludeFile.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_7d5cc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7d5cc.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_7d5cc.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7d5cc/fast' failed
+make: *** [cmTC_7d5cc/fast] Error 2
+
+
+Determining if the include file histedit.h exists failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e64f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e64f8.dir/build.make CMakeFiles/cmTC_e64f8.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e64f8.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_e64f8.dir/CheckIncludeFile.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'histedit.h' file not found
+#include <histedit.h>
+         ^~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_e64f8.dir/CheckIncludeFile.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_e64f8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e64f8.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_e64f8.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e64f8/fast' failed
+make: *** [cmTC_e64f8/fast] Error 2
+
+
+Determining if the include file CrashReporterClient.h exists failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2f2e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2f2e3.dir/build.make CMakeFiles/cmTC_2f2e3.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2f2e3.dir/CheckIncludeFile.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_2f2e3.dir/CheckIncludeFile.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'CrashReporterClient.h' file not found
+#include <CrashReporterClient.h>
+         ^~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_2f2e3.dir/CheckIncludeFile.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckIncludeFile.c]
+CMakeFiles/cmTC_2f2e3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2f2e3.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2f2e3.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2f2e3/fast' failed
+make: *** [cmTC_2f2e3/fast] Error 2
+
+
+Determining if the function pfm_initialize exists in the pfm failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e8a51/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e8a51.dir/build.make CMakeFiles/cmTC_e8a51.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8a51.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=pfm_initialize   -o CMakeFiles/cmTC_e8a51.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_e8a51.dir/stqPFUqE: Failed to find link section for section 7
+objcopy: CMakeFiles/cmTC_e8a51.dir/stqPFUqE: Failed to find link section for section 7
+Linking C executable cmTC_e8a51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8a51.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -DCHECK_FUNCTION_EXISTS=pfm_initialize    CMakeFiles/cmTC_e8a51.dir/CheckFunctionExists.c.o  -o cmTC_e8a51 -lpfm -lm 
+/usr/bin/ld: cannot find -lpfm
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=pfm_initialize CMakeFiles/cmTC_e8a51.dir/CheckFunctionExists.c.o -o cmTC_e8a51 -lpfm -lm]
+CMakeFiles/cmTC_e8a51.dir/build.make:97: recipe for target 'cmTC_e8a51' failed
+make[1]: *** [cmTC_e8a51] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e8a51/fast' failed
+make: *** [cmTC_e8a51/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b67c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b67c3.dir/build.make CMakeFiles/cmTC_b67c3.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b67c3.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_b67c3.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+objcopy: CMakeFiles/cmTC_b67c3.dir/stfZkX2i: Failed to find link section for section 7
+objcopy: CMakeFiles/cmTC_b67c3.dir/stfZkX2i: Failed to find link section for section 7
+Linking C executable cmTC_b67c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b67c3.dir/link.txt --verbose=1
+/usr/local/bin/wllvm      CMakeFiles/cmTC_b67c3.dir/CheckSymbolExists.c.o  -o cmTC_b67c3 -lm 
+CMakeFiles/cmTC_b67c3.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [CMakeFiles/cmTC_b67c3.dir/CheckSymbolExists.c.o -o cmTC_b67c3 -lm]
+CMakeFiles/cmTC_b67c3.dir/build.make:97: recipe for target 'cmTC_b67c3' failed
+make[1]: *** [cmTC_b67c3] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b67c3/fast' failed
+make: *** [cmTC_b67c3/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ce8c6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ce8c6.dir/build.make CMakeFiles/cmTC_ce8c6.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce8c6.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ce8c6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_ce8c6.dir/stgqzszG: Failed to find link section for section 7
+objcopy: CMakeFiles/cmTC_ce8c6.dir/stgqzszG: Failed to find link section for section 7
+Linking C executable cmTC_ce8c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce8c6.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ce8c6.dir/CheckFunctionExists.c.o  -o cmTC_ce8c6 -lpthreads -lm 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_ce8c6.dir/CheckFunctionExists.c.o -o cmTC_ce8c6 -lpthreads -lm]
+CMakeFiles/cmTC_ce8c6.dir/build.make:97: recipe for target 'cmTC_ce8c6' failed
+make[1]: *** [cmTC_ce8c6] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ce8c6/fast' failed
+make: *** [cmTC_ce8c6/fast] Error 2
+
+
+Determining if the function setupterm exists in the terminfo failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5eb34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5eb34.dir/build.make CMakeFiles/cmTC_5eb34.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5eb34.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=setupterm   -o CMakeFiles/cmTC_5eb34.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_5eb34.dir/stxGMM7I: Failed to find link section for section 7
+objcopy: CMakeFiles/cmTC_5eb34.dir/stxGMM7I: Failed to find link section for section 7
+Linking C executable cmTC_5eb34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5eb34.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -DCHECK_FUNCTION_EXISTS=setupterm    CMakeFiles/cmTC_5eb34.dir/CheckFunctionExists.c.o  -o cmTC_5eb34 -lterminfo -lm 
+/usr/bin/ld: cannot find -lterminfo
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=setupterm CMakeFiles/cmTC_5eb34.dir/CheckFunctionExists.c.o -o cmTC_5eb34 -lterminfo -lm]
+CMakeFiles/cmTC_5eb34.dir/build.make:97: recipe for target 'cmTC_5eb34' failed
+make[1]: *** [cmTC_5eb34] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5eb34/fast' failed
+make: *** [cmTC_5eb34/fast] Error 2
+
+
+Determining if the function xar_open exists in the xar failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_344c7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_344c7.dir/build.make CMakeFiles/cmTC_344c7.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_344c7.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm   -DCHECK_FUNCTION_EXISTS=xar_open   -o CMakeFiles/cmTC_344c7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_344c7.dir/stBLU7xq: Failed to find link section for section 7
+objcopy: CMakeFiles/cmTC_344c7.dir/stBLU7xq: Failed to find link section for section 7
+Linking C executable cmTC_344c7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_344c7.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -DCHECK_FUNCTION_EXISTS=xar_open    CMakeFiles/cmTC_344c7.dir/CheckFunctionExists.c.o  -o cmTC_344c7 -lxar -lm 
+/usr/bin/ld: cannot find -lxar
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-DCHECK_FUNCTION_EXISTS=xar_open CMakeFiles/cmTC_344c7.dir/CheckFunctionExists.c.o -o cmTC_344c7 -lxar -lm]
+CMakeFiles/cmTC_344c7.dir/build.make:97: recipe for target 'cmTC_344c7' failed
+make[1]: *** [cmTC_344c7] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_344c7/fast' failed
+make: *** [cmTC_344c7/fast] Error 2
+
+
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f39c1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f39c1.dir/build.make CMakeFiles/cmTC_f39c1.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f39c1.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm    -o CMakeFiles/cmTC_f39c1.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'arc4random'; did you mean 'srandom'?
+  return ((int*)(&arc4random))[argc];
+                  ^~~~~~~~~~
+                  srandom
+/usr/include/stdlib.h:404:13: note: 'srandom' declared here
+extern void srandom (unsigned int __seed) __THROW;
+            ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-o CMakeFiles/cmTC_f39c1.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_f39c1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f39c1.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f39c1.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f39c1/fast' failed
+make: *** [cmTC_f39c1/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the mallctl exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3edac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3edac.dir/build.make CMakeFiles/cmTC_3edac.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3edac.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm   -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_3edac.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc_np.h' file not found
+#include <malloc_np.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_3edac.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_3edac.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3edac.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3edac.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3edac/fast' failed
+make: *** [cmTC_3edac/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc_np.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallctl
+  return ((int*)(&mallctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the malloc_zone_statistics exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cab5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cab5f.dir/build.make CMakeFiles/cmTC_cab5f.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cab5f.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm   -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_cab5f.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_cab5f.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_cab5f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cab5f.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cab5f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cab5f/fast' failed
+make: *** [cmTC_cab5f/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc/malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc_zone_statistics
+  return ((int*)(&malloc_zone_statistics))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strerror_s exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ff31a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ff31a.dir/build.make CMakeFiles/cmTC_ff31a.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff31a.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm   -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_ff31a.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'strerror_s'
+  return ((int*)(&strerror_s))[argc];
+                  ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_ff31a.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_ff31a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ff31a.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_ff31a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ff31a/fast' failed
+make: *** [cmTC_ff31a/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_s
+  return ((int*)(&strerror_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the dladdr exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_540c3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_540c3.dir/build.make CMakeFiles/cmTC_540c3.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_540c3.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm   -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_540c3.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier 'dladdr'
+  return ((int*)(&dladdr))[argc];
+                  ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-Werror=unguarded-availability-new -o CMakeFiles/cmTC_540c3.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_540c3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_540c3.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_540c3.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_540c3/fast' failed
+make: *** [cmTC_540c3/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dladdr
+  return ((int*)(&dladdr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1e799/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e799.dir/build.make CMakeFiles/cmTC_1e799.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1e799.dir/src.c.o
+/usr/local/bin/wllvm   -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC  -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_1e799.dir/src.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.c:7:37: error: no member named 'st_mtimespec' in 'struct stat'
+   (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+                ~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+ERROR:Failed to compile using given arguments: [-DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC -Werror=unguarded-availability-new -o CMakeFiles/cmTC_1e799.dir/src.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.c]
+CMakeFiles/cmTC_1e799.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1e799.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1e799.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1e799/fast' failed
+make: *** [cmTC_1e799/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+   return 0;
+}
+
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55d2e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55d2e.dir/build.make CMakeFiles/cmTC_55d2e.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_55d2e.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -DCXX_SUPPORTS_CLASS_MEMACCESS_FLAG  -Werror=unguarded-availability-new   -Wclass-memaccess -o CMakeFiles/cmTC_55d2e.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-Wclass-memaccess'; did you mean '-Wclass-varargs'? [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-Wclass-memaccess'; did you mean '-Wclass-varargs'? [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_55d2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55d2e.dir/link.txt --verbose=1
+/usr/local/bin/wllvm++   -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -DCXX_SUPPORTS_CLASS_MEMACCESS_FLAG  -Werror=unguarded-availability-new    CMakeFiles/cmTC_55d2e.dir/src.cxx.o  -o cmTC_55d2e -lm 
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Determining if the os_signpost_interval_begin exist failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7005/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7005.dir/build.make CMakeFiles/cmTC_d7005.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7005.dir/CheckSymbolExists.c.o
+/usr/local/bin/wllvm -D_GNU_SOURCE  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_d7005.dir/CheckSymbolExists.c.o   -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: 'os/signpost.h' file not found
+#include <os/signpost.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+ERROR:Failed to compile using given arguments: [-D_GNU_SOURCE -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -Werror=unguarded-availability-new -o CMakeFiles/cmTC_d7005.dir/CheckSymbolExists.c.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c]
+CMakeFiles/cmTC_d7005.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d7005.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d7005.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d7005/fast' failed
+make: *** [cmTC_d7005/fast] Error 2
+
+File /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <os/signpost.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef os_signpost_interval_begin
+  return ((int*)(&os_signpost_interval_begin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function __aeabi_uldivmod exists in the gcc failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89b1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89b1f.dir/build.make CMakeFiles/cmTC_89b1f.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89b1f.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm -D_GNU_SOURCE  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=__aeabi_uldivmod  -Werror=unguarded-availability-new   -o CMakeFiles/cmTC_89b1f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_89b1f.dir/stCaDdJt: Failed to find link section for section 8
+objcopy: CMakeFiles/cmTC_89b1f.dir/stCaDdJt: Failed to find link section for section 8
+Linking C executable cmTC_89b1f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89b1f.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=__aeabi_uldivmod  -Werror=unguarded-availability-new   -Wl,-allow-shlib-undefined  CMakeFiles/cmTC_89b1f.dir/CheckFunctionExists.c.o  -o cmTC_89b1f -lgcc -lm 
+CMakeFiles/cmTC_89b1f.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text.main+0x17): undefined reference to `__aeabi_uldivmod'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=__aeabi_uldivmod -Werror=unguarded-availability-new -Wl,-allow-shlib-undefined CMakeFiles/cmTC_89b1f.dir/CheckFunctionExists.c.o -o cmTC_89b1f -lgcc -lm]
+CMakeFiles/cmTC_89b1f.dir/build.make:97: recipe for target 'cmTC_89b1f' failed
+make[1]: *** [cmTC_89b1f] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_89b1f/fast' failed
+make: *** [cmTC_89b1f/fast] Error 2
+
+
+Determining if the function write exists in the System failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d46f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d46f7.dir/build.make CMakeFiles/cmTC_d46f7.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d46f7.dir/CheckFunctionExists.c.o
+/usr/local/bin/wllvm -D_GNU_SOURCE  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=write  -Werror=unguarded-availability-new -nodefaultlibs   -o CMakeFiles/cmTC_d46f7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+objcopy: CMakeFiles/cmTC_d46f7.dir/stO2O2i7: Failed to find link section for section 8
+objcopy: CMakeFiles/cmTC_d46f7.dir/stO2O2i7: Failed to find link section for section 8
+Linking C executable cmTC_d46f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d46f7.dir/link.txt --verbose=1
+/usr/local/bin/wllvm  -fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=write  -Werror=unguarded-availability-new -nodefaultlibs   -Wl,-allow-shlib-undefined  CMakeFiles/cmTC_d46f7.dir/CheckFunctionExists.c.o  -o cmTC_d46f7 -lSystem -lm -lc -lgcc_s 
+/usr/bin/ld: cannot find -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ERROR:Failed to compile using given arguments: [-fPIC -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=write -Werror=unguarded-availability-new -nodefaultlibs -Wl,-allow-shlib-undefined CMakeFiles/cmTC_d46f7.dir/CheckFunctionExists.c.o -o cmTC_d46f7 -lSystem -lm -lc -lgcc_s]
+CMakeFiles/cmTC_d46f7.dir/build.make:97: recipe for target 'cmTC_d46f7' failed
+make[1]: *** [cmTC_d46f7] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d46f7/fast' failed
+make: *** [cmTC_d46f7/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_WX_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7ecb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7ecb.dir/build.make CMakeFiles/cmTC_d7ecb.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d7ecb.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -WX- -o CMakeFiles/cmTC_d7ecb.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+warning: unknown warning option '-WX-' [-Wunknown-warning-option]
+1 warning generated.
+warning: unknown warning option '-WX-' [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_d7ecb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7ecb.dir/link.txt --verbose=1
+/usr/local/bin/wllvm++   -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_WX_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -Wl,-allow-shlib-undefined  CMakeFiles/cmTC_d7ecb.dir/src.cxx.o  -o cmTC_d7ecb -lm -lc -lgcc_s 
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXXABI_SUPPORTS_EHSC_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0caa2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0caa2.dir/build.make CMakeFiles/cmTC_0caa2.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0caa2.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -EHsc -o CMakeFiles/cmTC_0caa2.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "-EHsc"
+clang: error: unknown argument: '-EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXXABI_SUPPORTS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs -EHsc -o CMakeFiles/cmTC_0caa2.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_0caa2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_0caa2.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_0caa2.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0caa2/fast' failed
+make: *** [cmTC_0caa2/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_EHSC_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a381b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a381b.dir/build.make CMakeFiles/cmTC_a381b.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a381b.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_EHSC_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   -EHsc -o CMakeFiles/cmTC_a381b.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "-EHsc"
+clang: error: unknown argument: '-EHsc'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_EHSC_FLAG -Werror=unguarded-availability-new -nodefaultlibs -EHsc -o CMakeFiles/cmTC_a381b.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_a381b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a381b.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a381b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a381b/fast' failed
+make: *** [cmTC_a381b/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_ZL_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3039c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3039c.dir/build.make CMakeFiles/cmTC_3039c.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3039c.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_ZL_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /Zl -o CMakeFiles/cmTC_3039c.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/Zl"
+clang: error: no such file or directory: '/Zl'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_ZL_FLAG -Werror=unguarded-availability-new -nodefaultlibs /Zl -o CMakeFiles/cmTC_3039c.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_3039c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3039c.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3039c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3039c/fast' failed
+make: *** [cmTC_3039c/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test LIBCXX_SUPPORTS_NODEFAULTLIB_FLAG failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7a580/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7a580.dir/build.make CMakeFiles/cmTC_7a580.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7a580.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers  -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_NODEFAULTLIB_FLAG  -Werror=unguarded-availability-new -nodefaultlibs   /nodefaultlib -o CMakeFiles/cmTC_7a580.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "/nodefaultlib"
+clang: error: no such file or directory: '/nodefaultlib'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -DLIBCXX_SUPPORTS_NODEFAULTLIB_FLAG -Werror=unguarded-availability-new -nodefaultlibs /nodefaultlib -o CMakeFiles/cmTC_7a580.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_7a580.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7a580.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_7a580.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7a580/fast' failed
+make: *** [cmTC_7a580/fast] Error 2
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a69f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a69f.dir/build.make CMakeFiles/cmTC_2a69f.dir/build
+make[1]: Entering directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a69f.dir/src.cxx.o
+/usr/local/bin/wllvm++    -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654  -Werror=unguarded-availability-new -wd654   -wd654 -o CMakeFiles/cmTC_2a69f.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx
+WARNING:Did not recognize the compiler flag "-pedantic-errors"
+WARNING:Did not recognize the compiler flag "-wd654"
+WARNING:Did not recognize the compiler flag "-wd654"
+clang: error: unknown argument: '-wd654'
+clang: error: unknown argument: '-wd654'
+ERROR:Failed to compile using given arguments: [-fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wmissing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wcovered-switch-default -Wno-noexcept-type -Wnon-virtual-dtor -Wdelete-non-virtual-dtor -Wstring-conversion -ffunction-sections -fdata-sections -std=c++11 -Wall -Wextra -Wshadow -pedantic -pedantic-errors -Wshorten-64-to-32 -Wfloat-equal -fstrict-aliasing -fno-exceptions -Wstrict-aliasing -DHAVE_CXX_FLAG_WD654 -Werror=unguarded-availability-new -wd654 -wd654 -o CMakeFiles/cmTC_2a69f.dir/src.cxx.o -c /home/namrata/libc++-build-10/CMakeFiles/CMakeTmp/src.cxx]
+CMakeFiles/cmTC_2a69f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2a69f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2a69f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/namrata/libc++-build-10/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2a69f/fast' failed
+make: *** [cmTC_2a69f/fast] Error 2
+
+Source file was:
+int main() { return 0; }

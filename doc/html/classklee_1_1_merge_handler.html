@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classklee_1_1_merge_handler.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Represents one <code><a class="el" href="klee_8h.html#ad233b9c4fad8c2ca0018b8235b72e91a">klee_open_merge()</a></code> call.  
+<p>Represents one <code>klee_open_merge()</code> call.  
  <a href="classklee_1_1_merge_handler.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_merge_handler_8h_source.html">MergeHandler.h</a>&gt;</code></p>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('classklee_1_1_merge_handler.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1bebd99935f693fadf4c6c62c1967db6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a1bebd99935f693fadf4c6c62c1967db6">addClosedState</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> *es, llvm::Instruction *mp)</td></tr>
-<tr class="memdesc:a1bebd99935f693fadf4c6c62c1967db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a state runs into a '<a class="el" href="klee_8h.html#a5e1ef03f85a0f0977232012cbea4c63a">klee_close_merge()</a>' call.  <a href="classklee_1_1_merge_handler.html#a1bebd99935f693fadf4c6c62c1967db6">More...</a><br /></td></tr>
+<tr class="memdesc:a1bebd99935f693fadf4c6c62c1967db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a state runs into a 'klee_close_merge()' call.  <a href="classklee_1_1_merge_handler.html#a1bebd99935f693fadf4c6c62c1967db6">More...</a><br /></td></tr>
 <tr class="separator:a1bebd99935f693fadf4c6c62c1967db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0032ec790f17261519ab334f6dfd3e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#ab0032ec790f17261519ab334f6dfd3e4">getPrioritizeState</a> ()</td></tr>
 <tr class="memdesc:ab0032ec790f17261519ab334f6dfd3e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return state that should be prioritized to complete this merge.  <a href="classklee_1_1_merge_handler.html#ab0032ec790f17261519ab334f6dfd3e4">More...</a><br /></td></tr>
@@ -122,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff075f6225fa68ef88ec6206f46a975a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#aff075f6225fa68ef88ec6206f46a975a">removeOpenState</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> *es)</td></tr>
 <tr class="memdesc:aff075f6225fa68ef88ec6206f46a975a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove state from the 'openStates' vector.  <a href="classklee_1_1_merge_handler.html#aff075f6225fa68ef88ec6206f46a975a">More...</a><br /></td></tr>
 <tr class="separator:aff075f6225fa68ef88ec6206f46a975a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f74f9d5e71bf98a167ef3f31a820b7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a1f74f9d5e71bf98a167ef3f31a820b7e">hasMergedStates</a> ()</td></tr>
-<tr class="memdesc:a1f74f9d5e71bf98a167ef3f31a820b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True, if any states have run into '<a class="el" href="klee_8h.html#a5e1ef03f85a0f0977232012cbea4c63a">klee_close_merge()</a>' and have not been released yet.  <a href="classklee_1_1_merge_handler.html#a1f74f9d5e71bf98a167ef3f31a820b7e">More...</a><br /></td></tr>
+<tr class="memitem:a1f74f9d5e71bf98a167ef3f31a820b7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a1f74f9d5e71bf98a167ef3f31a820b7e">hasMergedStates</a> ()</td></tr>
+<tr class="memdesc:a1f74f9d5e71bf98a167ef3f31a820b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">True, if any states have run into 'klee_close_merge()' and have not been released yet.  <a href="classklee_1_1_merge_handler.html#a1f74f9d5e71bf98a167ef3f31a820b7e">More...</a><br /></td></tr>
 <tr class="separator:a1f74f9d5e71bf98a167ef3f31a820b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a154e5009e0bb6872db5e509f61baf29a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a154e5009e0bb6872db5e509f61baf29a">releaseStates</a> ()</td></tr>
 <tr class="memdesc:a154e5009e0bb6872db5e509f61baf29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately release the merged states that have run into a 'klee_merge_close()'.  <a href="classklee_1_1_merge_handler.html#a154e5009e0bb6872db5e509f61baf29a">More...</a><br /></td></tr>
@@ -137,12 +137,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a391392f9578cf82bd2ee46f8ae3c6d6f"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="classklee_1_1_reference_counter.html">ReferenceCounter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">_refCount</a></td></tr>
+<tr class="memitem:a391392f9578cf82bd2ee46f8ae3c6d6f"><td class="memItemLeft" align="right" valign="top">class ReferenceCounter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">_refCount</a></td></tr>
 <tr class="memdesc:a391392f9578cf82bd2ee46f8ae3c6d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required by <a class="el" href="classklee_1_1ref.html">klee::ref</a>-managed objects.  <a href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">More...</a><br /></td></tr>
 <tr class="separator:a391392f9578cf82bd2ee46f8ae3c6d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents one <code><a class="el" href="klee_8h.html#ad233b9c4fad8c2ca0018b8235b72e91a">klee_open_merge()</a></code> call. </p>
+<div class="textblock"><p>Represents one <code>klee_open_merge()</code> call. </p>
 <p>Handles merging of states that branched from it </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac324447f821e1016b08595c6c9679a29"></a>
@@ -217,7 +217,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when a state runs into a '<a class="el" href="klee_8h.html#a5e1ef03f85a0f0977232012cbea4c63a">klee_close_merge()</a>' call. </p>
+<p>Called when a state runs into a 'klee_close_merge()' call. </p>
 
 </div>
 </div>
@@ -284,7 +284,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> klee::MergeHandler::hasMergedStates </td>
+          <td class="memname">bool klee::MergeHandler::hasMergedStates </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -292,7 +292,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>True, if any states have run into '<a class="el" href="klee_8h.html#a5e1ef03f85a0f0977232012cbea4c63a">klee_close_merge()</a>' and have not been released yet. </p>
+<p>True, if any states have run into 'klee_close_merge()' and have not been released yet. </p>
 
 </div>
 </div>
@@ -343,7 +343,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">class <a class="el" href="classklee_1_1_reference_counter.html">ReferenceCounter</a> klee::MergeHandler::_refCount</td>
+          <td class="memname">class ReferenceCounter klee::MergeHandler::_refCount</td>
         </tr>
       </table>
 </div><div class="memdoc">

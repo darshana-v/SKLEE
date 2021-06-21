@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('lexer_8c.html',''); initResizable(); }
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="grammar_8h_source.html">grammar.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="include_2klee_2_core_2defs_8h_source.html">../../include/klee/Core/defs.h</a>&quot;</code><br />
+<code>#include &quot;../../include/klee/Core/defs.h&quot;</code><br />
 <code>#include &lt;unistd.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -158,7 +158,7 @@ Macros</h2></td></tr>
 <tr class="separator:aa2f1a918be586b44bf08126bde2d7cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0bcf8f8a5b613ea583347f8bc31cbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a8e0bcf8f8a5b613ea583347f8bc31cbf">YY_NULL</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a8e0bcf8f8a5b613ea583347f8bc31cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1185350b7a92cf8aa5324c68850c8a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#af1185350b7a92cf8aa5324c68850c8a6">YY_SC_TO_UI</a>(<a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>)&#160;&#160;&#160;((unsigned int) (unsigned char) <a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>)</td></tr>
+<tr class="memitem:af1185350b7a92cf8aa5324c68850c8a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#af1185350b7a92cf8aa5324c68850c8a6">YY_SC_TO_UI</a>(c)&#160;&#160;&#160;((unsigned int) (unsigned char) c)</td></tr>
 <tr class="separator:af1185350b7a92cf8aa5324c68850c8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab766bbbee08d04b67e3fe599d6900873"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#ab766bbbee08d04b67e3fe599d6900873">BEGIN</a>&#160;&#160;&#160;(yy_start) = 1 + 2 *</td></tr>
 <tr class="separator:ab766bbbee08d04b67e3fe599d6900873"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +190,7 @@ Macros</h2></td></tr>
 <tr class="separator:a12e5f3a76911433480bca7f4edba6119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65cb72d09db0abdc4b8e8c4d533ab14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#ae65cb72d09db0abdc4b8e8c4d533ab14">yyless</a>(n)</td></tr>
 <tr class="separator:ae65cb72d09db0abdc4b8e8c4d533ab14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a448a4e9041a09588332733c6846c770c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a448a4e9041a09588332733c6846c770c">unput</a>(<a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>)&#160;&#160;&#160;yyunput( <a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>, (<a class="el" href="lexer_8c.html#ae7ec5b3ac665174516e5626b37a960c1">yytext_ptr</a>)  )</td></tr>
+<tr class="memitem:a448a4e9041a09588332733c6846c770c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a448a4e9041a09588332733c6846c770c">unput</a>(c)&#160;&#160;&#160;yyunput( c, (<a class="el" href="lexer_8c.html#ae7ec5b3ac665174516e5626b37a960c1">yytext_ptr</a>)  )</td></tr>
 <tr class="separator:a448a4e9041a09588332733c6846c770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aaa9e1fa7f13d6954d045ef973a9c84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a8aaa9e1fa7f13d6954d045ef973a9c84">YY_STRUCT_YY_BUFFER_STATE</a></td></tr>
 <tr class="separator:a8aaa9e1fa7f13d6954d045ef973a9c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,9 +244,9 @@ Macros</h2></td></tr>
 <tr class="separator:a26938d921de835f6183c02e54cf08828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab1491ceccb1c95c14320b2903773a1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#aab1491ceccb1c95c14320b2903773a1c">YY_READ_BUF_SIZE</a>&#160;&#160;&#160;8192</td></tr>
 <tr class="separator:aab1491ceccb1c95c14320b2903773a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad1dc60a04a1d8cfc8b3ded13601e361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#aad1dc60a04a1d8cfc8b3ded13601e361">ECHO</a>&#160;&#160;&#160;<a class="el" href="pcregrep_8c.html#a599d113a9ee75e953111229c016e2feb">fwrite</a>( <a class="el" href="lexer_8c.html#afbb25031187fb969b43dc8d9adc918e5">yytext</a>, <a class="el" href="lexer_8c.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>, 1, <a class="el" href="lexer_8c.html#a296847b42b0baa62e2af36cb79f3c0eb">yyout</a> )</td></tr>
+<tr class="memitem:aad1dc60a04a1d8cfc8b3ded13601e361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#aad1dc60a04a1d8cfc8b3ded13601e361">ECHO</a>&#160;&#160;&#160;fwrite( <a class="el" href="lexer_8c.html#afbb25031187fb969b43dc8d9adc918e5">yytext</a>, <a class="el" href="lexer_8c.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>, 1, <a class="el" href="lexer_8c.html#a296847b42b0baa62e2af36cb79f3c0eb">yyout</a> )</td></tr>
 <tr class="separator:aad1dc60a04a1d8cfc8b3ded13601e361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacfdca45fa4beb8b06172525a53c424a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#aacfdca45fa4beb8b06172525a53c424a">YY_INPUT</a>(<a class="el" href="2008-03-04-free-of-global_8c.html#a23049c84d5828646e1ae7dc2fe9e0ff5">buf</a>,  result,  max_size)</td></tr>
+<tr class="memitem:aacfdca45fa4beb8b06172525a53c424a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#aacfdca45fa4beb8b06172525a53c424a">YY_INPUT</a>(buf,  result,  max_size)</td></tr>
 <tr class="separator:aacfdca45fa4beb8b06172525a53c424a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3286b18a2e91b4571b97df96a118e84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#ac3286b18a2e91b4571b97df96a118e84">yyterminate</a>()&#160;&#160;&#160;return <a class="el" href="lexer_8c.html#a8e0bcf8f8a5b613ea583347f8bc31cbf">YY_NULL</a></td></tr>
 <tr class="separator:ac3286b18a2e91b4571b97df96a118e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,13 +302,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a3098c48a74ef8fd852f7dd4b3331cbce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a3098c48a74ef8fd852f7dd4b3331cbce">yy_switch_to_buffer</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> new_buffer)</td></tr>
 <tr class="memdesc:a3098c48a74ef8fd852f7dd4b3331cbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch to a different input buffer.  <a href="lexer_8c.html#a3098c48a74ef8fd852f7dd4b3331cbce">More...</a><br /></td></tr>
 <tr class="separator:a3098c48a74ef8fd852f7dd4b3331cbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bc6f1a5f7812508f425b08283f13ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a5bc6f1a5f7812508f425b08283f13ae8">yy_create_buffer</a> (FILE *<a class="el" href="grammar2_copy_8c.html#a948951f33db03526acd07a17b64601c0">file</a>, int size)</td></tr>
+<tr class="memitem:a5bc6f1a5f7812508f425b08283f13ae8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a5bc6f1a5f7812508f425b08283f13ae8">yy_create_buffer</a> (FILE *<a class="el" href="grammar_8c.html#a948951f33db03526acd07a17b64601c0">file</a>, int size)</td></tr>
 <tr class="memdesc:a5bc6f1a5f7812508f425b08283f13ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and initialize an input buffer state.  <a href="lexer_8c.html#a5bc6f1a5f7812508f425b08283f13ae8">More...</a><br /></td></tr>
 <tr class="separator:a5bc6f1a5f7812508f425b08283f13ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ac796aa6c45d433a4b89bf45e6e9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#ae6ac796aa6c45d433a4b89bf45e6e9dc">yy_delete_buffer</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> <a class="el" href="2020-04-27-stp-array-names_8c.html#a21ad0bd836b90d08f4cf640b4c298e7c">b</a>)</td></tr>
+<tr class="memitem:ae6ac796aa6c45d433a4b89bf45e6e9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#ae6ac796aa6c45d433a4b89bf45e6e9dc">yy_delete_buffer</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> b)</td></tr>
 <tr class="memdesc:ae6ac796aa6c45d433a4b89bf45e6e9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the buffer.  <a href="lexer_8c.html#ae6ac796aa6c45d433a4b89bf45e6e9dc">More...</a><br /></td></tr>
 <tr class="separator:ae6ac796aa6c45d433a4b89bf45e6e9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f59cc88e85e5455c62e4ef7ce095ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a2f59cc88e85e5455c62e4ef7ce095ea8">yy_flush_buffer</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> <a class="el" href="2020-04-27-stp-array-names_8c.html#a21ad0bd836b90d08f4cf640b4c298e7c">b</a>)</td></tr>
+<tr class="memitem:a2f59cc88e85e5455c62e4ef7ce095ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a2f59cc88e85e5455c62e4ef7ce095ea8">yy_flush_buffer</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> b)</td></tr>
 <tr class="memdesc:a2f59cc88e85e5455c62e4ef7ce095ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discard all buffered characters.  <a href="lexer_8c.html#a2f59cc88e85e5455c62e4ef7ce095ea8">More...</a><br /></td></tr>
 <tr class="separator:a2f59cc88e85e5455c62e4ef7ce095ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf8969e5234aef8b46cce9a67a62724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lexer_8c.html#a4bf8969e5234aef8b46cce9a67a62724">yypush_buffer_state</a> (<a class="el" href="lexer_8c.html#a4e5bd2d129903df83f3d13effaf8f3e4">YY_BUFFER_STATE</a> new_buffer)</td></tr>
@@ -432,7 +432,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ECHO&#160;&#160;&#160;<a class="el" href="pcregrep_8c.html#a599d113a9ee75e953111229c016e2feb">fwrite</a>( <a class="el" href="lexer_8c.html#afbb25031187fb969b43dc8d9adc918e5">yytext</a>, <a class="el" href="lexer_8c.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>, 1, <a class="el" href="lexer_8c.html#a296847b42b0baa62e2af36cb79f3c0eb">yyout</a> )</td>
+          <td class="memname">#define ECHO&#160;&#160;&#160;fwrite( <a class="el" href="lexer_8c.html#afbb25031187fb969b43dc8d9adc918e5">yytext</a>, <a class="el" href="lexer_8c.html#a1516a44b66d8b9a552569a8cd010214f">yyleng</a>, 1, <a class="el" href="lexer_8c.html#a296847b42b0baa62e2af36cb79f3c0eb">yyout</a> )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -694,8 +694,8 @@ Variables</h2></td></tr>
           <td class="memname">#define unput</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;yyunput( <a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>, (<a class="el" href="lexer_8c.html#ae7ec5b3ac665174516e5626b37a960c1">yytext_ptr</a>)  )</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;yyunput( c, (<a class="el" href="lexer_8c.html#ae7ec5b3ac665174516e5626b37a960c1">yytext_ptr</a>)  )</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1033,7 +1033,7 @@ Variables</h2></td></tr>
           <td class="memname">#define YY_INPUT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="2008-03-04-free-of-global_8c.html#a23049c84d5828646e1ae7dc2fe9e0ff5">buf</a>, </td>
+          <td class="paramname">buf, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1056,21 +1056,21 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> ( <a class="code" href="lexer_8c.html#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a>-&gt;yy_is_interactive ) \</div>
 <div class="line">        { \</div>
-<div class="line">        int <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a> = <span class="charliteral">&#39;*&#39;</span>; \</div>
+<div class="line">        int c = <span class="charliteral">&#39;*&#39;</span>; \</div>
 <div class="line">        yy_size_t n; \</div>
 <div class="line">        for ( n = 0; n &lt; max_size &amp;&amp; \</div>
-<div class="line">                 (<a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a> = getc( <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a> )) != EOF &amp;&amp; <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a> != <span class="charliteral">&#39;\n&#39;</span>; ++n ) \</div>
-<div class="line">            <a class="code" href="2008-03-04-free-of-global_8c.html#a23049c84d5828646e1ae7dc2fe9e0ff5">buf</a>[n] = (<span class="keywordtype">char</span>) <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a>; \</div>
-<div class="line">        if ( <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a> == <span class="charliteral">&#39;\n&#39;</span> ) \</div>
-<div class="line">            buf[n++] = (char) <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a>; \</div>
-<div class="line">        if ( <a class="code" href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a> == EOF &amp;&amp; ferror( <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a> ) ) \</div>
+<div class="line">                 (c = getc( <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a> )) != EOF &amp;&amp; c != <span class="charliteral">&#39;\n&#39;</span>; ++n ) \</div>
+<div class="line">            buf[n] = (<span class="keywordtype">char</span>) c; \</div>
+<div class="line">        if ( c == <span class="charliteral">&#39;\n&#39;</span> ) \</div>
+<div class="line">            buf[n++] = (char) c; \</div>
+<div class="line">        if ( c == EOF &amp;&amp; ferror( <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a> ) ) \</div>
 <div class="line">            YY_FATAL_ERROR( <span class="stringliteral">&quot;input in flex scanner failed&quot;</span> ); \</div>
 <div class="line">        result = n; \</div>
 <div class="line">        } \</div>
 <div class="line">    else \</div>
 <div class="line">        { \</div>
 <div class="line">        errno=0; \</div>
-<div class="line">        while ( (result = fread(<a class="code" href="2008-03-04-free-of-global_8c.html#a23049c84d5828646e1ae7dc2fe9e0ff5">buf</a>, 1, max_size, <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a>))==0 &amp;&amp; ferror(<a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a>)) \</div>
+<div class="line">        while ( (result = fread(buf, 1, max_size, <a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a>))==0 &amp;&amp; ferror(<a class="code" href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a>)) \</div>
 <div class="line">            { \</div>
 <div class="line">            if( errno != EINTR) \</div>
 <div class="line">                { \</div>
@@ -1082,8 +1082,6 @@ Variables</h2></td></tr>
 <div class="line">            } \</div>
 <div class="line">        }\</div>
 <div class="line">\</div>
-<div class="ttc" id="a2008-03-04-free-of-global_8c_html_a23049c84d5828646e1ae7dc2fe9e0ff5"><div class="ttname"><a href="2008-03-04-free-of-global_8c.html#a23049c84d5828646e1ae7dc2fe9e0ff5">buf</a></div><div class="ttdeci">int buf[4]</div><div class="ttdef"><b>Definition:</b> 2008-03-04-free-of-global.c:6</div></div>
-<div class="ttc" id="a_alias_8c_html_a28bab7e4df013e95770ee4fdbb3879cb"><div class="ttname"><a href="_alias_8c.html#a28bab7e4df013e95770ee4fdbb3879cb">c</a></div><div class="ttdeci">int * c</div><div class="ttdef"><b>Definition:</b> Alias.c:21</div></div>
 <div class="ttc" id="alexer_8c_html_a817a6a24af62508b5a35f4bed5f56a2e"><div class="ttname"><a href="lexer_8c.html#a817a6a24af62508b5a35f4bed5f56a2e">YY_CURRENT_BUFFER_LVALUE</a></div><div class="ttdeci">#define YY_CURRENT_BUFFER_LVALUE</div><div class="ttdef"><b>Definition:</b> lexer.c:284</div></div>
 <div class="ttc" id="alexer_8c_html_a87a127afa8f6c307fbfba10390675406"><div class="ttname"><a href="lexer_8c.html#a87a127afa8f6c307fbfba10390675406">yyin</a></div><div class="ttdeci">FILE * yyin</div><div class="ttdef"><b>Definition:</b> lexer.c:354</div></div>
 </div><!-- fragment -->
@@ -1268,8 +1266,8 @@ Variables</h2></td></tr>
           <td class="memname">#define YY_SC_TO_UI</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((unsigned int) (unsigned char) <a class="el" href="2019-09-06-make-const-symbolic_8c.html#aa0de7d50969b1568594a6735d702f4da">c</a>)</td>
+          <td class="paramname">c</td><td>)</td>
+          <td>&#160;&#160;&#160;((unsigned int) (unsigned char) c)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1923,7 +1921,7 @@ Variables</h2></td></tr>
 <p>Allocate and initialize an input buffer state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td><a class="el" href="struct_a.html">A</a> readable stream. </td></tr>
+    <tr><td class="paramname">file</td><td>A readable stream. </td></tr>
     <tr><td class="paramname">size</td><td>The character buffer size in bytes. When in doubt, use <code>YY_BUF_SIZE</code>.</td></tr>
   </table>
   </dd>
@@ -2416,7 +2414,7 @@ Variables</h2></td></tr>
 <p>Immediately switch to a different input stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">input_file</td><td><a class="el" href="struct_a.html">A</a> readable stream.</td></tr>
+    <tr><td class="paramname">input_file</td><td>A readable stream.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2479,7 +2477,7 @@ Variables</h2></td></tr>
 <p>Set the input stream. </p>
 <p>This does not discard the current input buffer. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in_str</td><td><a class="el" href="struct_a.html">A</a> readable stream.</td></tr>
+    <tr><td class="paramname">in_str</td><td>A readable stream.</td></tr>
   </table>
   </dd>
 </dl>

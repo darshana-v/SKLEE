@@ -1,2 +1,0 @@
-/usr/bin/ar Dqc ../../../libLLVMARMUtils.a  CMakeFiles/LLVMARMUtils.dir/ARMBaseInfo.cpp.o
-/usr/bin/ranlib -D ../../../libLLVMARMUtils.a

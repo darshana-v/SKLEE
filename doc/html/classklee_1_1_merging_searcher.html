@@ -131,7 +131,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae71f3c11adbb2f62b485c16784531eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e5ab1ab3ef4ceed3756fd30d52ead2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merging_searcher.html#ac9e5ab1ab3ef4ceed3756fd30d52ead2">update</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> *current, const std::vector&lt; <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> * &gt; &amp;addedStates, const std::vector&lt; <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> * &gt; &amp;removedStates)</td></tr>
 <tr class="separator:ac9e5ab1ab3ef4ceed3756fd30d52ead2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec65e06015affbc316855ed8631f1fe3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merging_searcher.html#aec65e06015affbc316855ed8631f1fe3">empty</a> ()</td></tr>
+<tr class="memitem:aec65e06015affbc316855ed8631f1fe3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merging_searcher.html#aec65e06015affbc316855ed8631f1fe3">empty</a> ()</td></tr>
 <tr class="separator:aec65e06015affbc316855ed8631f1fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ccc1fe450b007a887b7f3e9f3da3843"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_merging_searcher.html#a7ccc1fe450b007a887b7f3e9f3da3843">printName</a> (llvm::raw_ostream &amp;os)</td></tr>
 <tr class="separator:a7ccc1fe450b007a887b7f3e9f3da3843"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +257,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> klee::MergingSearcher::empty </td>
+          <td class="memname">bool klee::MergingSearcher::empty </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -455,7 +455,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Keeps track of all currently ongoing merges. </p>
-<p>An ongoing merge is a set of states (stored in a <a class="el" href="classklee_1_1_merge_handler.html" title="Represents one klee_open_merge() call.">MergeHandler</a> object) which branched from a single state which ran into a <a class="el" href="klee_8h.html#ad233b9c4fad8c2ca0018b8235b72e91a">klee_open_merge()</a>, and not all states in the set have reached the corresponding <a class="el" href="klee_8h.html#a5e1ef03f85a0f0977232012cbea4c63a">klee_close_merge()</a> yet. </p>
+<p>An ongoing merge is a set of states (stored in a <a class="el" href="classklee_1_1_merge_handler.html" title="Represents one klee_open_merge() call.">MergeHandler</a> object) which branched from a single state which ran into a klee_open_merge(), and not all states in the set have reached the corresponding klee_close_merge() yet. </p>
 
 </div>
 </div>

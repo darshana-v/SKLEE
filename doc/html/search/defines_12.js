@@ -1,24 +1,5 @@
 var searchData=
 [
-  ['seconds_7936',['seconds',['../functions_8h.html#a2b73533e20044db29705dbccbd100714',1,'functions.h']]],
-  ['seconds_7937',['SECONDS',['../grammar2_copy_8c.html#a48fcf4f2eeef6769d588168d4ac2ab0e',1,'SECONDS():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a48fcf4f2eeef6769d588168d4ac2ab0e',1,'SECONDS():&#160;grammar2Copy.h']]],
-  ['semicolon_7938',['SEMICOLON',['../grammar2_copy_8c.html#ae6402f35ea263d89cb367e0ab2b0f278',1,'SEMICOLON():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#ae6402f35ea263d89cb367e0ab2b0f278',1,'SEMICOLON():&#160;grammar2Copy.h']]],
-  ['send_7939',['SEND',['../grammar2_copy_8c.html#abc9603445bf79a3793831ee1d0ea8890',1,'SEND():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#abc9603445bf79a3793831ee1d0ea8890',1,'SEND():&#160;grammar2Copy.h']]],
-  ['setok_7940',['SetOK',['../_parser_8cpp.html#ad32023e44da7958d7d019b52f5410db5',1,'Parser.cpp']]],
-  ['size_7941',['SIZE',['../_regexp_8c.html#a70ed59adcb4159ac551058053e649640',1,'Regexp.c']]],
-  ['small_5fbuffer_5fsize_7942',['SMALL_BUFFER_SIZE',['../gen-random-bout_8cpp.html#ad4530cbd0118c85ead4cbd7396c0da33',1,'gen-random-bout.cpp']]],
-  ['solidity_7943',['SOLIDITY',['../grammar2_copy_8c.html#aa2ac60bc2f388af870291b5a3b8142af',1,'SOLIDITY():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#aa2ac60bc2f388af870291b5a3b8142af',1,'SOLIDITY():&#160;grammar2Copy.h']]],
-  ['space_7944',['SPACE',['../grammar2_copy_8c.html#a5ff6e798033f03e74730e99f01936f84',1,'SPACE():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a5ff6e798033f03e74730e99f01936f84',1,'SPACE():&#160;grammar2Copy.h']]],
-  ['star_7945',['STAR',['../grammar2_copy_8c.html#a94c3dc9846edbbb70f678768633a4796',1,'STAR():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a94c3dc9846edbbb70f678768633a4796',1,'STAR():&#160;grammar2Copy.h']]],
-  ['stat64_7946',['stat64',['../_free_b_s_d_8h.html#ae2a0663b16e13d385bbaa168471f127c',1,'FreeBSD.h']]],
-  ['storage_7947',['STORAGE',['../grammar2_copy_8c.html#acdf449577cec02e8758c8d46ef1befdd',1,'STORAGE():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#acdf449577cec02e8758c8d46ef1befdd',1,'STORAGE():&#160;grammar2Copy.h']]],
-  ['str_7948',['str',['../_futimesat_8c.html#ad8ab729381f270b100f3d05b6c6676fc',1,'Futimesat.c']]],
-  ['string_7949',['STRING',['../grammar2_copy_8c.html#a0f4d394a3ab4e09bff60f714c66dc5ee',1,'STRING():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a0f4d394a3ab4e09bff60f714c66dc5ee',1,'STRING():&#160;grammar2Copy.h']]],
-  ['string_5fliteral_7950',['STRING_LITERAL',['../grammar2_copy_8c.html#a34b3ee4431b9beb2c47bbaa5c05f5174',1,'STRING_LITERAL():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a34b3ee4431b9beb2c47bbaa5c05f5174',1,'STRING_LITERAL():&#160;grammar2Copy.h']]],
-  ['stringify_7951',['STRINGIFY',['../replay__invalid__object__names_8c.html#a43e1cad902b6477bec893cb6430bd6c8',1,'replay_invalid_object_names.c']]],
-  ['struct_7952',['STRUCT',['../grammar2_copy_8c.html#a88b4cb090646c7bb2f20b3dc9cdc9640',1,'STRUCT():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a88b4cb090646c7bb2f20b3dc9cdc9640',1,'STRUCT():&#160;grammar2Copy.h']]],
-  ['switch_7953',['SWITCH',['../grammar2_copy_8c.html#ac279a93dfd1f02dac2359cfaa1422b93',1,'SWITCH():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#ac279a93dfd1f02dac2359cfaa1422b93',1,'SWITCH():&#160;grammar2Copy.h']]],
-  ['symbolic_5fsize_7954',['SYMBOLIC_SIZE',['../_searchers_8c.html#a6d90cc63cc1b9ae4a1eeb35485d72377',1,'Searchers.c']]],
-  ['szabo_7955',['SZABO',['../grammar2_copy_8c.html#a2ebc920414cb9eb04ecdebcf7a8b5c15',1,'SZABO():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a2ebc920414cb9eb04ecdebcf7a8b5c15',1,'SZABO():&#160;grammar2Copy.h']]],
-  ['szabo_7956',['szabo',['../functions_8h.html#a8066117f4a1f3358142623bb9e85bfde',1,'functions.h']]]
+  ['weeks_7834',['weeks',['../functions_8h.html#aef0aa6acbb30c0e12bd2d6349f35a6ab',1,'functions.h']]],
+  ['wei_7835',['wei',['../functions_8h.html#ab474209c1446cde0e182a081e20ea5da',1,'functions.h']]]
 ];

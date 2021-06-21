@@ -1,2 +1,0 @@
-/usr/bin/ar Dqc ../../../libLLVMMSP430AsmParser.a  CMakeFiles/LLVMMSP430AsmParser.dir/MSP430AsmParser.cpp.o
-/usr/bin/ranlib -D ../../../libLLVMMSP430AsmParser.a

@@ -246,8 +246,8 @@ var NAVTREEINDEX15 =
 "globals_b.html":[5,1,0,2],
 "globals_c.html":[5,1,0,3],
 "globals_d.html":[5,1,0,4],
-"globals_defs.html":[5,1,6],
 "globals_defs.html":[5,1,6,0],
+"globals_defs.html":[5,1,6],
 "globals_defs_a.html":[5,1,6,1],
 "globals_defs_b.html":[5,1,6,2]
 };

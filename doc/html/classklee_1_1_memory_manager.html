@@ -106,20 +106,20 @@ $(document).ready(function(){initNavTree('classklee_1_1_memory_manager.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc9ef5cb3338ed2befa81c64973a1b59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#afc9ef5cb3338ed2befa81c64973a1b59">MemoryManager</a> (<a class="el" href="classklee_1_1_array_cache.html">ArrayCache</a> *arrayCache)</td></tr>
+<tr class="memitem:afc9ef5cb3338ed2befa81c64973a1b59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#afc9ef5cb3338ed2befa81c64973a1b59">MemoryManager</a> (ArrayCache *arrayCache)</td></tr>
 <tr class="separator:afc9ef5cb3338ed2befa81c64973a1b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4570910ccfc14b2da679bee58ee8f48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#ad4570910ccfc14b2da679bee58ee8f48">~MemoryManager</a> ()</td></tr>
 <tr class="separator:ad4570910ccfc14b2da679bee58ee8f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad51d8136acc414130a7bc0476e231d5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#ad51d8136acc414130a7bc0476e231d5a">allocate</a> (<a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> size, <a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> isLocal, <a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> isGlobal, const llvm::Value *allocSite, size_t alignment)</td></tr>
+<tr class="memitem:ad51d8136acc414130a7bc0476e231d5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#ad51d8136acc414130a7bc0476e231d5a">allocate</a> (uint64_t size, bool isLocal, bool isGlobal, const llvm::Value *allocSite, size_t alignment)</td></tr>
 <tr class="memdesc:ad51d8136acc414130a7bc0476e231d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns memory object which contains a handle to real virtual process memory.  <a href="classklee_1_1_memory_manager.html#ad51d8136acc414130a7bc0476e231d5a">More...</a><br /></td></tr>
 <tr class="separator:ad51d8136acc414130a7bc0476e231d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b65a8a787211481056c37536320c27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a0b65a8a787211481056c37536320c27f">allocateFixed</a> (<a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> <a class="el" href="structaddress.html">address</a>, <a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> size, const llvm::Value *allocSite)</td></tr>
+<tr class="memitem:a0b65a8a787211481056c37536320c27f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a0b65a8a787211481056c37536320c27f">allocateFixed</a> (uint64_t address, uint64_t size, const llvm::Value *allocSite)</td></tr>
 <tr class="separator:a0b65a8a787211481056c37536320c27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6963d83d766f82347f7463273d8f03e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a6963d83d766f82347f7463273d8f03e2">deallocate</a> (const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo)</td></tr>
 <tr class="separator:a6963d83d766f82347f7463273d8f03e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4878ff0754ef269f1c68c55575ac21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a8a4878ff0754ef269f1c68c55575ac21">markFreed</a> (<a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo)</td></tr>
 <tr class="separator:a8a4878ff0754ef269f1c68c55575ac21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad9d58188e2d3678566a11d0b84b2ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_array_cache.html">ArrayCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a5ad9d58188e2d3678566a11d0b84b2ea">getArrayCache</a> () const</td></tr>
+<tr class="memitem:a5ad9d58188e2d3678566a11d0b84b2ea"><td class="memItemLeft" align="right" valign="top">ArrayCache *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a5ad9d58188e2d3678566a11d0b84b2ea">getArrayCache</a> () const</td></tr>
 <tr class="separator:a5ad9d58188e2d3678566a11d0b84b2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa199d55ceccf7d652d4fc65193d921"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_memory_manager.html#a3fa199d55ceccf7d652d4fc65193d921">getUsedDeterministicSize</a> ()</td></tr>
 <tr class="separator:a3fa199d55ceccf7d652d4fc65193d921"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,7 +134,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">MemoryManager::MemoryManager </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classklee_1_1_array_cache.html">ArrayCache</a> *&#160;</td>
+          <td class="paramtype">ArrayCache *&#160;</td>
           <td class="paramname"><em>arrayCache</em></td><td>)</td>
           <td></td>
         </tr>
@@ -170,19 +170,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> * MemoryManager::allocate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>isLocal</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>isGlobal</em>, </td>
         </tr>
         <tr>
@@ -218,13 +218,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> * MemoryManager::allocateFixed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>address</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a>&#160;</td>
+          <td class="paramtype">uint64_t&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_array_cache.html">ArrayCache</a>* klee::MemoryManager::getArrayCache </td>
+          <td class="memname">ArrayCache* klee::MemoryManager::getArrayCache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

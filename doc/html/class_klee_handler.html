@@ -106,11 +106,8 @@ $(document).ready(function(){initNavTree('class_klee_handler.html',''); initResi
 Inheritance diagram for KleeHandler:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_klee_handler.png" usemap="#KleeHandler_map" alt=""/>
-  <map id="KleeHandler_map" name="KleeHandler_map">
-<area href="classklee_1_1_interpreter_handler.html" alt="klee::InterpreterHandler" shape="rect" coords="0,0,145,24"/>
-  </map>
-</div></div>
+  <img src="class_klee_handler.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -127,29 +124,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a95e14fb1b69615715029946c040dd65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212c9e5303dcaa9ae944fd393bb9bc15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a212c9e5303dcaa9ae944fd393bb9bc15">incPathsExplored</a> ()</td></tr>
 <tr class="separator:a212c9e5303dcaa9ae944fd393bb9bc15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeaf81f3ca2d9d68213c33d7498673f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aaeaf81f3ca2d9d68213c33d7498673f9">setInterpreter</a> (<a class="el" href="classklee_1_1_interpreter.html">Interpreter</a> *i)</td></tr>
+<tr class="memitem:aaeaf81f3ca2d9d68213c33d7498673f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aaeaf81f3ca2d9d68213c33d7498673f9">setInterpreter</a> (Interpreter *i)</td></tr>
 <tr class="separator:aaeaf81f3ca2d9d68213c33d7498673f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6dbdca03f021ee81139dc65d65b35eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aa6dbdca03f021ee81139dc65d65b35eb">processTestCase</a> (const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, const char *errorMessage, const char *errorSuffix)</td></tr>
+<tr class="memitem:aa6dbdca03f021ee81139dc65d65b35eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aa6dbdca03f021ee81139dc65d65b35eb">processTestCase</a> (const ExecutionState &amp;state, const char *errorMessage, const char *errorSuffix)</td></tr>
 <tr class="separator:aa6dbdca03f021ee81139dc65d65b35eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a4b6e30a65e4b1880d581c6ec269b1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#ae8a4b6e30a65e4b1880d581c6ec269b1">getOutputFilename</a> (const std::string &amp;<a class="el" href="grammar2_copy_8c.html#ae80f820219e45772366a2a68de6a54c4">filename</a>)</td></tr>
+<tr class="memitem:ae8a4b6e30a65e4b1880d581c6ec269b1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#ae8a4b6e30a65e4b1880d581c6ec269b1">getOutputFilename</a> (const std::string &amp;<a class="el" href="grammar_8c.html#ae80f820219e45772366a2a68de6a54c4">filename</a>)</td></tr>
 <tr class="separator:ae8a4b6e30a65e4b1880d581c6ec269b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa905eefac70efbae1b86b9c71297f8b5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; llvm::raw_fd_ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aa905eefac70efbae1b86b9c71297f8b5">openOutputFile</a> (const std::string &amp;<a class="el" href="grammar2_copy_8c.html#ae80f820219e45772366a2a68de6a54c4">filename</a>)</td></tr>
+<tr class="memitem:aa905eefac70efbae1b86b9c71297f8b5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; llvm::raw_fd_ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#aa905eefac70efbae1b86b9c71297f8b5">openOutputFile</a> (const std::string &amp;<a class="el" href="grammar_8c.html#ae80f820219e45772366a2a68de6a54c4">filename</a>)</td></tr>
 <tr class="separator:aa905eefac70efbae1b86b9c71297f8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a896a728a35dc4cea32d4e1fda53968f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a896a728a35dc4cea32d4e1fda53968f4">getTestFilename</a> (const std::string &amp;<a class="el" href="klee_8h.html#a7d2d396c7ecaae4a97bc426398a1492f">suffix</a>, unsigned id)</td></tr>
+<tr class="memitem:a896a728a35dc4cea32d4e1fda53968f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a896a728a35dc4cea32d4e1fda53968f4">getTestFilename</a> (const std::string &amp;suffix, unsigned id)</td></tr>
 <tr class="separator:a896a728a35dc4cea32d4e1fda53968f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cbe34bb153159102e76e577bec30ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a04cbe34bb153159102e76e577bec30ae">getTestFilename</a> (const std::string &amp;<a class="el" href="klee_8h.html#a7d2d396c7ecaae4a97bc426398a1492f">suffix</a>, unsigned id, const char *error)</td></tr>
+<tr class="memitem:a04cbe34bb153159102e76e577bec30ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a04cbe34bb153159102e76e577bec30ae">getTestFilename</a> (const std::string &amp;suffix, unsigned id, const char *error)</td></tr>
 <tr class="separator:a04cbe34bb153159102e76e577bec30ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a948d3e495efc51c0124791cfbeec0bcf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; llvm::raw_fd_ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a948d3e495efc51c0124791cfbeec0bcf">openTestFile</a> (const std::string &amp;<a class="el" href="klee_8h.html#a7d2d396c7ecaae4a97bc426398a1492f">suffix</a>, unsigned id)</td></tr>
+<tr class="memitem:a948d3e495efc51c0124791cfbeec0bcf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; llvm::raw_fd_ostream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a948d3e495efc51c0124791cfbeec0bcf">openTestFile</a> (const std::string &amp;suffix, unsigned id)</td></tr>
 <tr class="separator:a948d3e495efc51c0124791cfbeec0bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classklee_1_1_interpreter_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classklee_1_1_interpreter_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classklee_1_1_interpreter_handler.html">klee::InterpreterHandler</a></td></tr>
-<tr class="memitem:a93b05fe1f7f8ef081296103119dfc2b0 inherit pub_methods_classklee_1_1_interpreter_handler"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_interpreter_handler.html#a93b05fe1f7f8ef081296103119dfc2b0">InterpreterHandler</a> ()</td></tr>
-<tr class="separator:a93b05fe1f7f8ef081296103119dfc2b0 inherit pub_methods_classklee_1_1_interpreter_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019d595827aeef5e849b98f08e60ca62 inherit pub_methods_classklee_1_1_interpreter_handler"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_interpreter_handler.html#a019d595827aeef5e849b98f08e60ca62">~InterpreterHandler</a> ()</td></tr>
-<tr class="separator:a019d595827aeef5e849b98f08e60ca62 inherit pub_methods_classklee_1_1_interpreter_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3ba82ec1894405afdec40d6aa41185a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#ae3ba82ec1894405afdec40d6aa41185a">loadPathFile</a> (std::string name, std::vector&lt; <a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> &gt; &amp;buffer)</td></tr>
+<tr class="memitem:ae3ba82ec1894405afdec40d6aa41185a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#ae3ba82ec1894405afdec40d6aa41185a">loadPathFile</a> (std::string name, std::vector&lt; bool &gt; &amp;buffer)</td></tr>
 <tr class="separator:ae3ba82ec1894405afdec40d6aa41185a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62baab91b4ade2249300325f0fa47e31"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_klee_handler.html#a62baab91b4ade2249300325f0fa47e31">getKTestFilesInDir</a> (std::string directoryPath, std::vector&lt; std::string &gt; &amp;results)</td></tr>
 <tr class="separator:a62baab91b4ade2249300325f0fa47e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,12 +213,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="classklee_1_1_interpreter_handler.html#a38252be091600e2d5d66dad41e37c760">klee::InterpreterHandler</a>.</p>
 
 </div>
 </div>
@@ -323,9 +313,6 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::string KleeHandler::getOutputFilename </td>
@@ -335,14 +322,7 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="classklee_1_1_interpreter_handler.html#a110bd49f1e44885b4a12f8bb186b07ff">klee::InterpreterHandler</a>.</p>
 
 </div>
 </div>
@@ -452,12 +432,10 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="classklee_1_1_interpreter_handler.html#a3c09bd4907c9c277996bc5a22a9114a6">klee::InterpreterHandler</a>.</p>
 
 </div>
 </div>
@@ -479,7 +457,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>buffer</em>&#160;</td>
         </tr>
         <tr>
@@ -502,9 +480,6 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::unique_ptr&lt; llvm::raw_fd_ostream &gt; KleeHandler::openOutputFile </td>
@@ -514,14 +489,7 @@ Static Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="classklee_1_1_interpreter_handler.html#ac6fff1a989b7b9b9a924be8253a7e145">klee::InterpreterHandler</a>.</p>
 
 </div>
 </div>
@@ -558,14 +526,11 @@ Static Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void KleeHandler::processTestCase </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;&#160;</td>
+          <td class="paramtype">const ExecutionState &amp;&#160;</td>
           <td class="paramname"><em>state</em>, </td>
         </tr>
         <tr>
@@ -586,14 +551,7 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Implements <a class="el" href="classklee_1_1_interpreter_handler.html#a8330c41adda8d6553b3b3e985532fde7">klee::InterpreterHandler</a>.</p>
 
 </div>
 </div>
@@ -606,7 +564,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void KleeHandler::setInterpreter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classklee_1_1_interpreter.html">Interpreter</a> *&#160;</td>
+          <td class="paramtype">Interpreter *&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -616,7 +574,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>klee/tools/klee/<a class="el" href="klee_2main_8cpp.html">main.cpp</a></li>
+<li>klee/tools/klee/<a class="el" href="main_8cpp.html">main.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

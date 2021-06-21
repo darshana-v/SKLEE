@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['immutabletree_3c_20k_2c_20v_2c_20kov_2c_20cmp_20_3e_7313',['ImmutableTree&lt; K, V, KOV, CMP &gt;',['../classklee_1_1_immutable_tree_1_1iterator.html#a710c4775ab64d5a330bb11b7c2e617b2',1,'klee::ImmutableTree::iterator']]]
+  ['mergehandler_1006',['MergeHandler',['../classklee_1_1_executor.html#a5b02bb06296901376798b8f3f5c63782',1,'klee::Executor::MergeHandler()'],['../classklee_1_1_merging_searcher.html#a5b02bb06296901376798b8f3f5c63782',1,'klee::MergingSearcher::MergeHandler()']]]
 ];

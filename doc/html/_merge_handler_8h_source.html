@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_merge_handler_8h_source.html',''); in
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifndef KLEE_MERGEHANDLER_H</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define KLEE_MERGEHANDLER_H</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ref_8h.html">klee/ADT/Ref.h</a>&quot;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;klee/ADT/Ref.h&quot;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#include &quot;llvm/Support/CommandLine.h&quot;</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('_merge_handler_8h_source.html',''); in
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="classklee_1_1_executor.html">Executor</a> *executor;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> openInstruction;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  uint64_t openInstruction;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">double</span> closedMean;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('_merge_handler_8h_source.html',''); in
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// klee_close_merge</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">  147</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classklee_1_1_merge_handler.html#a59578126aed1b334ff6686e68e4f9924">getMean</a>();</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_reference_counter.html">ReferenceCounter</a> <a class="code" href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">_refCount</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">class </span>ReferenceCounter <a class="code" href="classklee_1_1_merge_handler.html#a391392f9578cf82bd2ee46f8ae3c6d6f">_refCount</a>;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <a class="code" href="classklee_1_1_merge_handler.html#ac324447f821e1016b08595c6c9679a29">MergeHandler</a>(<a class="code" href="classklee_1_1_executor.html">Executor</a> *_executor, <a class="code" href="classklee_1_1_execution_state.html">ExecutionState</a> *es);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="classklee_1_1_merge_handler.html#a9a37b8a7ee8049bcf032eae950798a90">~MergeHandler</a>();</div>
@@ -175,7 +175,6 @@ $(document).ready(function(){initNavTree('_merge_handler_8h_source.html',''); in
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* KLEE_MERGEHANDLER_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_ref_8h_html"><div class="ttname"><a href="_ref_8h.html">Ref.h</a></div><div class="ttdoc">Implements smart-pointer ref&lt;&gt; used by KLEE.</div></div>
 <div class="ttc" id="aclassklee_1_1_execution_state_html"><div class="ttname"><a href="classklee_1_1_execution_state.html">klee::ExecutionState</a></div><div class="ttdoc">ExecutionState representing a path under exploration.</div><div class="ttdef"><b>Definition:</b> ExecutionState.h:66</div></div>
 <div class="ttc" id="aclassklee_1_1_executor_html"><div class="ttname"><a href="classklee_1_1_executor.html">klee::Executor</a></div><div class="ttdef"><b>Definition:</b> Executor.h:105</div></div>
 <div class="ttc" id="aclassklee_1_1_merge_handler_html"><div class="ttname"><a href="classklee_1_1_merge_handler.html">klee::MergeHandler</a></div><div class="ttdoc">Represents one klee_open_merge() call.</div><div class="ttdef"><b>Definition:</b> MergeHandler.h:96</div></div>
@@ -189,13 +188,11 @@ $(document).ready(function(){initNavTree('_merge_handler_8h_source.html',''); in
 <div class="ttc" id="aclassklee_1_1_merge_handler_html_ab0032ec790f17261519ab334f6dfd3e4"><div class="ttname"><a href="classklee_1_1_merge_handler.html#ab0032ec790f17261519ab334f6dfd3e4">klee::MergeHandler::getPrioritizeState</a></div><div class="ttdeci">ExecutionState * getPrioritizeState()</div><div class="ttdoc">Return state that should be prioritized to complete this merge.</div><div class="ttdef"><b>Definition:</b> MergeHandler.cpp:56</div></div>
 <div class="ttc" id="aclassklee_1_1_merge_handler_html_ac324447f821e1016b08595c6c9679a29"><div class="ttname"><a href="classklee_1_1_merge_handler.html#ac324447f821e1016b08595c6c9679a29">klee::MergeHandler::MergeHandler</a></div><div class="ttdeci">MergeHandler(Executor *_executor, ExecutionState *es)</div><div class="ttdef"><b>Definition:</b> MergeHandler.cpp:136</div></div>
 <div class="ttc" id="aclassklee_1_1_merge_handler_html_aff075f6225fa68ef88ec6206f46a975a"><div class="ttname"><a href="classklee_1_1_merge_handler.html#aff075f6225fa68ef88ec6206f46a975a">klee::MergeHandler::removeOpenState</a></div><div class="ttdeci">void removeOpenState(ExecutionState *es)</div><div class="ttdoc">Remove state from the 'openStates' vector.</div><div class="ttdef"><b>Definition:</b> MergeHandler.cpp:74</div></div>
-<div class="ttc" id="aclassklee_1_1_reference_counter_html"><div class="ttname"><a href="classklee_1_1_reference_counter.html">klee::ReferenceCounter</a></div><div class="ttdoc">Reference counter to be used as part of a ref-managed struct or class.</div><div class="ttdef"><b>Definition:</b> Ref.h:52</div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
 <div class="ttc" id="anamespaceklee_html_a459af63ae00d250b8341c343a82f67f7"><div class="ttname"><a href="namespaceklee.html#a459af63ae00d250b8341c343a82f67f7">klee::DebugLogIncompleteMerge</a></div><div class="ttdeci">llvm::cl::opt&lt; bool &gt; DebugLogIncompleteMerge</div></div>
 <div class="ttc" id="anamespaceklee_html_a59ed4878f1f45e8babf90aba7a813474"><div class="ttname"><a href="namespaceklee.html#a59ed4878f1f45e8babf90aba7a813474">klee::UseMerge</a></div><div class="ttdeci">llvm::cl::opt&lt; bool &gt; UseMerge</div></div>
 <div class="ttc" id="anamespaceklee_html_a681a411cfb19deb338557ae7ac3b2c69"><div class="ttname"><a href="namespaceklee.html#a681a411cfb19deb338557ae7ac3b2c69">klee::DebugLogMerge</a></div><div class="ttdeci">llvm::cl::opt&lt; bool &gt; DebugLogMerge</div></div>
-<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> Ref.h:42</div></div>
-<div class="ttc" id="autils_8h_html_aaa5d1cd013383c889537491c3cfd9aad"><div class="ttname"><a href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></div><div class="ttdeci">unsigned long long uint64_t</div><div class="ttdef"><b>Definition:</b> utils.h:4</div></div>
+<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> CallPathManager.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

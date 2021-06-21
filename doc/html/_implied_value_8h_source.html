@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_implied_value_8h_source.html',''); in
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef KLEE_IMPLIEDVALUE_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define KLEE_IMPLIEDVALUE_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_expr_8h.html">klee/Expr/Expr.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;klee/Expr/Expr.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_implied_value_8h_source.html',''); in
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceklee.html">klee</a> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">class </span>ConstantExpr;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">class </span><a class="code" href="struct_expr.html">Expr</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">class </span>Expr;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">class </span>ReadExpr;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">class </span>Solver;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -132,21 +132,18 @@ $(document).ready(function(){initNavTree('_implied_value_8h_source.html',''); in
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespaceklee_1_1_implied_value.html">   32</a></span>&#160;  <span class="keyword">namespace </span>ImpliedValue {        </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceklee_1_1_implied_value.html#a9607dd85fa9c8a06e0d0a698689d1e79">getImpliedValues</a>(<a class="code" href="classklee_1_1ref.html">ref&lt;Expr&gt;</a> e, <a class="code" href="classklee_1_1ref.html">ref&lt;ConstantExpr&gt;</a> cvalue, </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                          <a class="code" href="namespaceklee.html#aca6d71e275f4dd4655a1c12f8474b1ff">ImpliedValueList</a> &amp;result);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceklee_1_1_implied_value.html#afde37d528e536ab6942ab580888878a2">checkForImpliedValues</a>(<a class="code" href="classklee_1_1_solver.html">Solver</a> *S, <a class="code" href="classklee_1_1ref.html">ref&lt;Expr&gt;</a> e, </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceklee_1_1_implied_value.html#afde37d528e536ab6942ab580888878a2">checkForImpliedValues</a>(Solver *S, <a class="code" href="classklee_1_1ref.html">ref&lt;Expr&gt;</a> e, </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                               <a class="code" href="classklee_1_1ref.html">ref&lt;ConstantExpr&gt;</a> cvalue);    </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KLEE_IMPLIEDVALUE_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_expr_8h_html"><div class="ttname"><a href="_expr_8h.html">Expr.h</a></div></div>
-<div class="ttc" id="aclassklee_1_1_solver_html"><div class="ttname"><a href="classklee_1_1_solver.html">klee::Solver</a></div><div class="ttdef"><b>Definition:</b> Solver.h:52</div></div>
-<div class="ttc" id="aclassklee_1_1ref_html"><div class="ttname"><a href="classklee_1_1ref.html">klee::ref</a></div><div class="ttdef"><b>Definition:</b> Ref.h:88</div></div>
+<div class="ttc" id="aclassklee_1_1ref_html"><div class="ttname"><a href="classklee_1_1ref.html">klee::ref</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:25</div></div>
 <div class="ttc" id="anamespaceklee_1_1_implied_value_html_a9607dd85fa9c8a06e0d0a698689d1e79"><div class="ttname"><a href="namespaceklee_1_1_implied_value.html#a9607dd85fa9c8a06e0d0a698689d1e79">klee::ImpliedValue::getImpliedValues</a></div><div class="ttdeci">void getImpliedValues(ref&lt; Expr &gt; e, ref&lt; ConstantExpr &gt; cvalue, ImpliedValueList &amp;result)</div><div class="ttdef"><b>Definition:</b> ImpliedValue.cpp:27</div></div>
 <div class="ttc" id="anamespaceklee_1_1_implied_value_html_afde37d528e536ab6942ab580888878a2"><div class="ttname"><a href="namespaceklee_1_1_implied_value.html#afde37d528e536ab6942ab580888878a2">klee::ImpliedValue::checkForImpliedValues</a></div><div class="ttdeci">void checkForImpliedValues(Solver *S, ref&lt; Expr &gt; e, ref&lt; ConstantExpr &gt; cvalue)</div><div class="ttdef"><b>Definition:</b> ImpliedValue.cpp:188</div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
 <div class="ttc" id="anamespaceklee_html_aca6d71e275f4dd4655a1c12f8474b1ff"><div class="ttname"><a href="namespaceklee.html#aca6d71e275f4dd4655a1c12f8474b1ff">klee::ImpliedValueList</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; ref&lt; ReadExpr &gt;, ref&lt; ConstantExpr &gt; &gt; &gt; ImpliedValueList</div><div class="ttdef"><b>Definition:</b> ImpliedValue.h:27</div></div>
-<div class="ttc" id="astruct_expr_html"><div class="ttname"><a href="struct_expr.html">Expr</a></div><div class="ttdef"><b>Definition:</b> RefTest.cpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,2 +1,0 @@
-/usr/bin/ar Dqc ../../../libLLVMBPFAsmParser.a  CMakeFiles/LLVMBPFAsmParser.dir/BPFAsmParser.cpp.o
-/usr/bin/ranlib -D ../../../libLLVMBPFAsmParser.a

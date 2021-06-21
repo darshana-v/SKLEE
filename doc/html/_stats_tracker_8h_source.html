@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('_stats_tracker_8h_source.html',''); in
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define KLEE_STATSTRACKER_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_call_path_manager_8h.html">CallPathManager.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_time_8h.html">klee/System/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;klee/System/Time.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('_stats_tracker_8h_source.html',''); in
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    ::sqlite3_stmt *transactionBeginStmt = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ::sqlite3_stmt *transactionEndStmt = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ::sqlite3_stmt *insertStmt = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="utils_8h.html#a435d1572bf3f880d55459d9805097f62">std::uint32_t</a> statsCommitEvery;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="utils_8h.html#a435d1572bf3f880d55459d9805097f62">std::uint32_t</a> statsWriteCount = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structklee_1_1time_1_1_point.html">time::Point</a> startWallTime;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::uint32_t statsCommitEvery;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::uint32_t statsWriteCount = 0;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    time::Point startWallTime;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">unsigned</span> numBranches;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">unsigned</span> fullBranches, partialBranches;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('_stats_tracker_8h_source.html',''); in
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classklee_1_1_stats_tracker.html#aae7c2b84543c35e8bd84c38427eb9153">useIStats</a>();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> updateStateStatistics(<a class="code" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> addend);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> updateStateStatistics(uint64_t addend);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> writeStatsHeader();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> writeStatsLine();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> writeIStats();</div>
@@ -194,19 +194,18 @@ $(document).ready(function(){initNavTree('_stats_tracker_8h_source.html',''); in
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// about to be stepped</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classklee_1_1_stats_tracker.html#a80cc6ee8897ee40eabcc99a1c0e97d98">stepInstruction</a>(<a class="code" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;es);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="structklee_1_1time_1_1_span.html">time::Span</a> <a class="code" href="classklee_1_1_stats_tracker.html#ac78f8d95388371541dc1f004c08f0dc8">elapsed</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    time::Span <a class="code" href="classklee_1_1_stats_tracker.html#ac78f8d95388371541dc1f004c08f0dc8">elapsed</a>();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classklee_1_1_stats_tracker.html#aaad59711e75a9b200707bb24590bfb11">computeReachableUncovered</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  };</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> <a class="code" href="namespaceklee.html#a1629404e07ac61d2eb7c0d6e68b2fd17">computeMinDistToUncovered</a>(<span class="keyword">const</span> <a class="code" href="structklee_1_1_k_instruction.html">KInstruction</a> *ki,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                     <a class="code" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> minDistAtRA);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  uint64_t <a class="code" href="namespaceklee.html#a1629404e07ac61d2eb7c0d6e68b2fd17">computeMinDistToUncovered</a>(<span class="keyword">const</span> KInstruction *ki,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                     uint64_t minDistAtRA);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KLEE_STATSTRACKER_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a_call_path_manager_8h_html"><div class="ttname"><a href="_call_path_manager_8h.html">CallPathManager.h</a></div></div>
-<div class="ttc" id="a_time_8h_html"><div class="ttname"><a href="_time_8h.html">Time.h</a></div></div>
 <div class="ttc" id="aclassklee_1_1_call_path_manager_html"><div class="ttname"><a href="classklee_1_1_call_path_manager.html">klee::CallPathManager</a></div><div class="ttdef"><b>Definition:</b> CallPathManager.h:65</div></div>
 <div class="ttc" id="aclassklee_1_1_execution_state_html"><div class="ttname"><a href="classklee_1_1_execution_state.html">klee::ExecutionState</a></div><div class="ttdoc">ExecutionState representing a path under exploration.</div><div class="ttdef"><b>Definition:</b> ExecutionState.h:66</div></div>
 <div class="ttc" id="aclassklee_1_1_executor_html"><div class="ttname"><a href="classklee_1_1_executor.html">klee::Executor</a></div><div class="ttdef"><b>Definition:</b> Executor.h:105</div></div>
@@ -228,15 +227,10 @@ $(document).ready(function(){initNavTree('_stats_tracker_8h_source.html',''); in
 <div class="ttc" id="aclassklee_1_1_stats_tracker_html_ad881f39b242ef04c1751a55dde338a0b"><div class="ttname"><a href="classklee_1_1_stats_tracker.html#ad881f39b242ef04c1751a55dde338a0b">klee::StatsTracker::StatsTracker</a></div><div class="ttdeci">StatsTracker(Executor &amp;_executor, std::string _objectFilename, bool _updateMinDistToUncovered)</div><div class="ttdef"><b>Definition:</b> StatsTracker.cpp:158</div></div>
 <div class="ttc" id="aclassklee_1_1_stats_tracker_html_ae2a0d5a1f124c00473ed542a49b5e9b2"><div class="ttname"><a href="classklee_1_1_stats_tracker.html#ae2a0d5a1f124c00473ed542a49b5e9b2">klee::StatsTracker::StatsTracker</a></div><div class="ttdeci">StatsTracker(StatsTracker &amp;&amp;other) noexcept=delete</div></div>
 <div class="ttc" id="aclassklee_1_1_stats_tracker_html_ae852f668b605777549937025f0df158a"><div class="ttname"><a href="classklee_1_1_stats_tracker.html#ae852f668b605777549937025f0df158a">klee::StatsTracker::framePushed</a></div><div class="ttdeci">void framePushed(ExecutionState &amp;es, StackFrame *parentFrame)</div><div class="ttdef"><b>Definition:</b> StatsTracker.cpp:379</div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
 <div class="ttc" id="anamespaceklee_html_a1629404e07ac61d2eb7c0d6e68b2fd17"><div class="ttname"><a href="namespaceklee.html#a1629404e07ac61d2eb7c0d6e68b2fd17">klee::computeMinDistToUncovered</a></div><div class="ttdeci">uint64_t computeMinDistToUncovered(const KInstruction *ki, uint64_t minDistAtRA)</div><div class="ttdef"><b>Definition:</b> StatsTracker.cpp:748</div></div>
-<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> Ref.h:42</div></div>
-<div class="ttc" id="astructklee_1_1_k_instruction_html"><div class="ttname"><a href="structklee_1_1_k_instruction.html">klee::KInstruction</a></div><div class="ttdoc">KInstruction - Intermediate instruction representation used during execution.</div><div class="ttdef"><b>Definition:</b> KInstruction.h:33</div></div>
+<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> CallPathManager.h:19</div></div>
 <div class="ttc" id="astructklee_1_1_stack_frame_html"><div class="ttname"><a href="structklee_1_1_stack_frame.html">klee::StackFrame</a></div><div class="ttdef"><b>Definition:</b> ExecutionState.h:38</div></div>
-<div class="ttc" id="astructklee_1_1time_1_1_point_html"><div class="ttname"><a href="structklee_1_1time_1_1_point.html">klee::time::Point</a></div><div class="ttdef"><b>Definition:</b> Time.h:39</div></div>
-<div class="ttc" id="astructklee_1_1time_1_1_span_html"><div class="ttname"><a href="structklee_1_1time_1_1_span.html">klee::time::Span</a></div><div class="ttdef"><b>Definition:</b> Time.h:67</div></div>
-<div class="ttc" id="autils_8h_html_a435d1572bf3f880d55459d9805097f62"><div class="ttname"><a href="utils_8h.html#a435d1572bf3f880d55459d9805097f62">uint32_t</a></div><div class="ttdeci">unsigned int uint32_t</div><div class="ttdef"><b>Definition:</b> utils.h:3</div></div>
-<div class="ttc" id="autils_8h_html_aaa5d1cd013383c889537491c3cfd9aad"><div class="ttname"><a href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></div><div class="ttdeci">unsigned long long uint64_t</div><div class="ttdef"><b>Definition:</b> utils.h:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

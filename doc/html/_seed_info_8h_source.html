@@ -110,11 +110,11 @@ $(document).ready(function(){initNavTree('_seed_info_8h_source.html',''); initRe
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef KLEE_SEEDINFO_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define KLEE_SEEDINFO_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_assignment_8h.html">klee/Expr/Assignment.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;klee/Expr/Assignment.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_k_test.html">KTest</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_k_test_object.html">KTestObject</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">struct </span>KTest;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">struct </span>KTestObject;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceklee.html">klee</a> {</div>
@@ -124,18 +124,18 @@ $(document).ready(function(){initNavTree('_seed_info_8h_source.html',''); initRe
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html">   25</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_seed_info.html">SeedInfo</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">   27</a></span>&#160;    <a class="code" href="classklee_1_1_assignment.html">Assignment</a> <a class="code" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">assignment</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#a42923e5a77acf1b26260299b7341ea5a">   28</a></span>&#160;    <a class="code" href="struct_k_test.html">KTest</a> *<a class="code" href="classklee_1_1_seed_info.html#a42923e5a77acf1b26260299b7341ea5a">input</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">   27</a></span>&#160;    Assignment <a class="code" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">assignment</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#a42923e5a77acf1b26260299b7341ea5a">   28</a></span>&#160;    KTest *<a class="code" href="classklee_1_1_seed_info.html#a42923e5a77acf1b26260299b7341ea5a">input</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#aa2e3c6199c13f4fb664b0ca960f82965">   29</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="classklee_1_1_seed_info.html#aa2e3c6199c13f4fb664b0ca960f82965">inputPosition</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#a3226cfe1abb726b8a507410e6ec867bb">   30</a></span>&#160;    std::set&lt;struct KTestObject*&gt; <a class="code" href="classklee_1_1_seed_info.html#a3226cfe1abb726b8a507410e6ec867bb">used</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">explicit</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#ad4c2f8fc59229157497e2f8aea1010d0">   34</a></span>&#160;    <a class="code" href="classklee_1_1_seed_info.html#ad4c2f8fc59229157497e2f8aea1010d0">SeedInfo</a>(<a class="code" href="struct_k_test.html">KTest</a> *_input) : <a class="code" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">assignment</a>(true),</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classklee_1_1_seed_info.html#ad4c2f8fc59229157497e2f8aea1010d0">   34</a></span>&#160;    <a class="code" href="classklee_1_1_seed_info.html#ad4c2f8fc59229157497e2f8aea1010d0">SeedInfo</a>(KTest *_input) : <a class="code" href="classklee_1_1_seed_info.html#aae02080e15f22e782a1f334cf64dd801">assignment</a>(true),</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                             <a class="code" href="classklee_1_1_seed_info.html#a42923e5a77acf1b26260299b7341ea5a">input</a>(_input),</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                             <a class="code" href="classklee_1_1_seed_info.html#aa2e3c6199c13f4fb664b0ca960f82965">inputPosition</a>(0) {}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="struct_k_test_object.html">KTestObject</a> *<a class="code" href="classklee_1_1_seed_info.html#a5c8683eb5ee17e9a8c101161224b4a25">getNextInput</a>(<span class="keyword">const</span> <a class="code" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    KTestObject *<a class="code" href="classklee_1_1_seed_info.html#a5c8683eb5ee17e9a8c101161224b4a25">getNextInput</a>(<span class="keyword">const</span> <a class="code" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                             <span class="keywordtype">bool</span> byName);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classklee_1_1_seed_info.html#ad1f294bb8e671b522386a5624d7448b8">patchSeed</a>(<span class="keyword">const</span> <a class="code" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, </div>
@@ -145,8 +145,6 @@ $(document).ready(function(){initNavTree('_seed_info_8h_source.html',''); initRe
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KLEE_SEEDINFO_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_assignment_8h_html"><div class="ttname"><a href="_assignment_8h.html">Assignment.h</a></div></div>
-<div class="ttc" id="aclassklee_1_1_assignment_html"><div class="ttname"><a href="classklee_1_1_assignment.html">klee::Assignment</a></div><div class="ttdef"><b>Definition:</b> Assignment.h:20</div></div>
 <div class="ttc" id="aclassklee_1_1_execution_state_html"><div class="ttname"><a href="classklee_1_1_execution_state.html">klee::ExecutionState</a></div><div class="ttdoc">ExecutionState representing a path under exploration.</div><div class="ttdef"><b>Definition:</b> ExecutionState.h:66</div></div>
 <div class="ttc" id="aclassklee_1_1_memory_object_html"><div class="ttname"><a href="classklee_1_1_memory_object.html">klee::MemoryObject</a></div><div class="ttdef"><b>Definition:</b> Memory.h:34</div></div>
 <div class="ttc" id="aclassklee_1_1_seed_info_html"><div class="ttname"><a href="classklee_1_1_seed_info.html">klee::SeedInfo</a></div><div class="ttdef"><b>Definition:</b> SeedInfo.h:25</div></div>
@@ -159,9 +157,7 @@ $(document).ready(function(){initNavTree('_seed_info_8h_source.html',''); initRe
 <div class="ttc" id="aclassklee_1_1_seed_info_html_ad4c2f8fc59229157497e2f8aea1010d0"><div class="ttname"><a href="classklee_1_1_seed_info.html#ad4c2f8fc59229157497e2f8aea1010d0">klee::SeedInfo::SeedInfo</a></div><div class="ttdeci">SeedInfo(KTest *_input)</div><div class="ttdef"><b>Definition:</b> SeedInfo.h:34</div></div>
 <div class="ttc" id="aclassklee_1_1_timing_solver_html"><div class="ttname"><a href="classklee_1_1_timing_solver.html">klee::TimingSolver</a></div><div class="ttdoc">TimingSolver - A simple class which wraps a solver and handles tracking the statistics that we care a...</div><div class="ttdef"><b>Definition:</b> TimingSolver.h:25</div></div>
 <div class="ttc" id="aclassklee_1_1ref_html"><div class="ttname"><a href="classklee_1_1ref.html">klee::ref&lt; Expr &gt;</a></div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
-<div class="ttc" id="astruct_k_test_html"><div class="ttname"><a href="struct_k_test.html">KTest</a></div><div class="ttdef"><b>Definition:</b> KTest.h:25</div></div>
-<div class="ttc" id="astruct_k_test_object_html"><div class="ttname"><a href="struct_k_test_object.html">KTestObject</a></div><div class="ttdef"><b>Definition:</b> KTest.h:18</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

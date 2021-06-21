@@ -1,0 +1,53 @@
+SimpleAuction
+Object
+6
+beneficiary address 
+auctionEnd uint64 
+highestBidder address 
+highestBid uint64 
+pendingReturns std::map < address  , uint64  > 
+ended bool 
+0
+4
+SimpleAuction
+2
+_biddingTime uint64 
+_beneficiary address 
+NORETURN_TYPE
+0
+0
+0
+1
+0
+{  beneficiary = _beneficiary  ;  auctionEnd = blockTimestamp + _biddingTime   ;  } 
+( uint64  _biddingTime , address  _beneficiary   ) 
+bid
+0
+void
+0
+0
+1
+1
+0
+{  assert ( blockTimestamp <= auctionEnd  && "Auction already ended." )  ;  assert ( msgValue > highestBid  && "There already is a higher bid." )  ;  if ( highestBid != 0  ) {  pendingReturns [ highestBidder ]   += highestBid  ;  }  highestBidder = msgSender  ;  highestBid = msgValue  ;  HighestBidIncreased ( msgSender , msgValue  )  ;    } 
+(  ) 
+withdraw
+0
+bool 
+0
+0
+0
+1
+1
+{  uint64  amount = pendingReturns [ msgSender ]    ;  if ( amount > 0  ) {  pendingReturns [ msgSender ]   = 0  ;  if ( ! msgSender . send  ( amount )   ) {  pendingReturns [ msgSender ]   = amount  ;  return false ;  }    }  return true ;    } 
+(  ) 
+auctionEnd
+0
+void
+0
+0
+0
+1
+1
+{  assert ( blockTimestamp >= auctionEnd  && "Auction not yet ended." )  ;  assert ( ! ended  && "auctionEnd has already been called." )  ;  ended = true  ;  AuctionEnded ( highestBidder , highestBid  )  ;  beneficiary . transfer  ( highestBid )  ;  } 
+(  ) 

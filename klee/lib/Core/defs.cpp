@@ -1,4 +1,4 @@
-#include "/home/namrata/klee/include/klee/Core/defs.h"
+#include "../../include/klee/Core/defs.h"
 
 // ------------------------
 // variables
@@ -9,7 +9,6 @@ std::vector<std::string> contractNames;
 std::stringstream writefile;
 // std::stringstream writeState;
 std::stringstream writeDecl;
-
 
 std::map<node, std::string> membersQualifiers;    // todo: decide datatype
 std::vector<node> publicMembers;                  // todo: decide datatype
@@ -61,9 +60,24 @@ node* new_node(){
     node* temp = new node;
     return temp;
 }
+node* new_node(std::string content, int line_no){
+    node* temp = new node;
+    temp->data = content;
+    temp->line_no = line_no;
+    temp->hasData = true;
+    return temp;
+}
 node* new_node(std::string content){
     node* temp = new node;
     temp->data = content;
+    temp->hasData = true;
+    return temp;
+}
+node* new_node(const char* content, int line_no){
+    node* temp = new node;
+    std::string str(content);
+    temp->data = str;
+    temp->line_no = line_no;
     temp->hasData = true;
     return temp;
 }
@@ -1329,8 +1343,8 @@ void createContract(std::initializer_list<node*> args)
     // writefile << "#include <bits/stdc++.h>" << std::endl;
     writeDecl << "#include <cassert>" << std::endl;
     writeDecl << "#include <klee/klee.h>" << std::endl;
-    writeDecl << "#include \"/home/namrata/types.h\"" << std::endl;
-    writeDecl << "#include \"/home/namrata/functions.h\"" << std::endl;
+    writeDecl << "#include \"types.h\"" << std::endl;
+    writeDecl << "#include \"functions.h\"" << std::endl;
 
     //check if these needed
     writeDecl << "#include <algorithm>" << std::endl;
@@ -1351,12 +1365,15 @@ void addContractName(node* name){
 
 void writeAddrConstructor(std::string name)
 {
+    writefile << "// Address constructor.\n"; 
     writefile << name << "(const char addr[43]){};\n";
     writefile << name << "(address addr){}\n";
 }
 
 void writeConstructor(std::stringstream& writefile, std::string name)
 {
+    if (find(contractNames.begin(), contractNames.end(), name) != contractNames.end())
+    writefile << "// Contructor for Contract " << name << "\n";
     writefile << name << "(){};\n";
 }
 void writeConstructor(std::stringstream& writefile, std::string structName, std::string members)
@@ -1631,7 +1648,11 @@ bool checkOverlap(std::string& content){
             if(searchPattern(content, f)){
                 // std::cout << f << '\n';
                 rewriteSize(content, f);
-                std::string filename = "/home/namrata/klee/tools/klee/properties.txt";
+
+                // TODO: LOOK HERE IF ISSUE ARISES
+
+                //std::string filename = "/home/namrata/klee/tools/klee/properties.txt";
+                std::string filename = "properties.txt";
                 std::ofstream failProperty(filename, std::ios::out);
                 failProperty << "Memory Overlap\n";
                 failProperty.close();

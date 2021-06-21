@@ -110,13 +110,13 @@ $(document).ready(function(){initNavTree('_external_dispatcher_8h_source.html','
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef KLEE_EXTERNALDISPATCHER_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define KLEE_EXTERNALDISPATCHER_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_version_8h.html">klee/Config/Version.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;klee/Config/Version.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="types_8h.html">klee/Core/types.h</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;klee/Core/types.h&gt;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacellvm.html">llvm</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>Instruction;</div>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_external_dispatcher_8h_source.html','
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * into args[0].</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   */</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classklee_1_1_external_dispatcher.html#a46a72d8825a324c6f7bfeed3e3b058cd">executeCall</a>(llvm::Function *<span class="keyword">function</span>, llvm::Instruction *i,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                   <a class="code" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a> *args);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                   uint64_t *args);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> *<a class="code" href="classklee_1_1_external_dispatcher.html#a1f49d8d87854602dc40403c1b7f2e566">resolveSymbol</a>(<span class="keyword">const</span> std::string &amp;name);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classklee_1_1_external_dispatcher.html#ab8a0525fd407c7d9b2c5c626e76c38e1">getLastErrno</a>();</div>
@@ -148,7 +148,6 @@ $(document).ready(function(){initNavTree('_external_dispatcher_8h_source.html','
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KLEE_EXTERNALDISPATCHER_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_version_8h_html"><div class="ttname"><a href="_version_8h.html">Version.h</a></div></div>
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_html"><div class="ttname"><a href="classklee_1_1_external_dispatcher.html">klee::ExternalDispatcher</a></div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.h:29</div></div>
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_html_a1f49d8d87854602dc40403c1b7f2e566"><div class="ttname"><a href="classklee_1_1_external_dispatcher.html#a1f49d8d87854602dc40403c1b7f2e566">klee::ExternalDispatcher::resolveSymbol</a></div><div class="ttdeci">void * resolveSymbol(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.cpp:345</div></div>
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_html_a46a72d8825a324c6f7bfeed3e3b058cd"><div class="ttname"><a href="classklee_1_1_external_dispatcher.html#a46a72d8825a324c6f7bfeed3e3b058cd">klee::ExternalDispatcher::executeCall</a></div><div class="ttdeci">bool executeCall(llvm::Function *function, llvm::Instruction *i, uint64_t *args)</div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.cpp:340</div></div>
@@ -157,10 +156,8 @@ $(document).ready(function(){initNavTree('_external_dispatcher_8h_source.html','
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_html_ab8a0525fd407c7d9b2c5c626e76c38e1"><div class="ttname"><a href="classklee_1_1_external_dispatcher.html#ab8a0525fd407c7d9b2c5c626e76c38e1">klee::ExternalDispatcher::getLastErrno</a></div><div class="ttdeci">int getLastErrno()</div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.cpp:349</div></div>
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_html_acb179dfc0f0eb76b25167fb77872e29f"><div class="ttname"><a href="classklee_1_1_external_dispatcher.html#acb179dfc0f0eb76b25167fb77872e29f">klee::ExternalDispatcher::~ExternalDispatcher</a></div><div class="ttdeci">~ExternalDispatcher()</div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.cpp:338</div></div>
 <div class="ttc" id="aclassklee_1_1_external_dispatcher_impl_html"><div class="ttname"><a href="classklee_1_1_external_dispatcher_impl.html">klee::ExternalDispatcherImpl</a></div><div class="ttdef"><b>Definition:</b> ExternalDispatcher.cpp:45</div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
-<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> Ref.h:42</div></div>
-<div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="autils_8h_html_aaa5d1cd013383c889537491c3cfd9aad"><div class="ttname"><a href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">uint64_t</a></div><div class="ttdeci">unsigned long long uint64_t</div><div class="ttdef"><b>Definition:</b> utils.h:4</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
+<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> CallPathManager.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

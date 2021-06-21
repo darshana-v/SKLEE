@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef KLEE_SEARCHER_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define KLEE_SEARCHER_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_time_8h.html">klee/System/Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;klee/System/Time.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;llvm/Support/CommandLine.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;llvm/Support/raw_ostream.h&quot;</span></div>
@@ -128,9 +128,9 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceklee.html">klee</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span>DiscretePDF;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span>ExecutionState;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">class </span>Executor;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classklee_1_1_discrete_p_d_f.html">   31</a></span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code" href="classklee_1_1_discrete_p_d_f.html">DiscretePDF</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_execution_state.html">ExecutionState</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_executor.html">Executor</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classklee_1_1_searcher.html">   35</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_searcher.html">Searcher</a> {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">public</span>:</div>
@@ -341,16 +341,16 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
 <div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classklee_1_1_batching_searcher.html">  254</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_batching_searcher.html">BatchingSearcher</a> : <span class="keyword">public</span> <a class="code" href="classklee_1_1_searcher.html">Searcher</a> {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="classklee_1_1_searcher.html">Searcher</a> *baseSearcher;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="structklee_1_1time_1_1_span.html">time::Span</a> timeBudget;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    time::Span timeBudget;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">unsigned</span> instructionBudget;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="classklee_1_1_execution_state.html">ExecutionState</a> *lastState;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="structklee_1_1time_1_1_point.html">time::Point</a> lastStartTime;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    time::Point lastStartTime;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">unsigned</span> lastStartInstructions;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <a class="code" href="classklee_1_1_batching_searcher.html#ab0489bcb1c4c05b8b5483f49effe23ee">BatchingSearcher</a>(<a class="code" href="classklee_1_1_searcher.html">Searcher</a> *baseSearcher, </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                     <a class="code" href="structklee_1_1time_1_1_span.html">time::Span</a> _timeBudget,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                     time::Span _timeBudget,</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                     <span class="keywordtype">unsigned</span> _instructionBudget);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="classklee_1_1_batching_searcher.html#a8040954756183467e70b2b54fe2f0d73">~BatchingSearcher</a>();</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
@@ -370,8 +370,8 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="classklee_1_1_iterative_deepening_time_searcher.html">  283</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classklee_1_1_iterative_deepening_time_searcher.html">IterativeDeepeningTimeSearcher</a> : <span class="keyword">public</span> <a class="code" href="classklee_1_1_searcher.html">Searcher</a> {</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="classklee_1_1_searcher.html">Searcher</a> *baseSearcher;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="structklee_1_1time_1_1_point.html">time::Point</a> startTime;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <a class="code" href="structklee_1_1time_1_1_span.html">time::Span</a> time;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    time::Point startTime;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    time::Span time;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    std::set&lt;ExecutionState*&gt; pausedStates;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keyword">public</span>:</div>
@@ -416,7 +416,6 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* KLEE_SEARCHER_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="a_time_8h_html"><div class="ttname"><a href="_time_8h.html">Time.h</a></div></div>
 <div class="ttc" id="aclassklee_1_1_b_f_s_searcher_html"><div class="ttname"><a href="classklee_1_1_b_f_s_searcher.html">klee::BFSSearcher</a></div><div class="ttdef"><b>Definition:</b> Searcher.h:102</div></div>
 <div class="ttc" id="aclassklee_1_1_b_f_s_searcher_html_a71b440929b662eb6fb1eacd4fac01cb2"><div class="ttname"><a href="classklee_1_1_b_f_s_searcher.html#a71b440929b662eb6fb1eacd4fac01cb2">klee::BFSSearcher::selectState</a></div><div class="ttdeci">ExecutionState &amp; selectState()</div><div class="ttdef"><b>Definition:</b> Searcher.cpp:89</div></div>
 <div class="ttc" id="aclassklee_1_1_b_f_s_searcher_html_a735b7cb286823b791ef85fa63e3566fd"><div class="ttname"><a href="classklee_1_1_b_f_s_searcher.html#a735b7cb286823b791ef85fa63e3566fd">klee::BFSSearcher::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> Searcher.h:110</div></div>
@@ -434,7 +433,7 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="ttc" id="aclassklee_1_1_d_f_s_searcher_html_a1cefd5879b8c46f62e55db95e29dd43e"><div class="ttname"><a href="classklee_1_1_d_f_s_searcher.html#a1cefd5879b8c46f62e55db95e29dd43e">klee::DFSSearcher::selectState</a></div><div class="ttdeci">ExecutionState &amp; selectState()</div><div class="ttdef"><b>Definition:</b> Searcher.cpp:53</div></div>
 <div class="ttc" id="aclassklee_1_1_d_f_s_searcher_html_a3c80d81ffb9e68444a598aa1509e632d"><div class="ttname"><a href="classklee_1_1_d_f_s_searcher.html#a3c80d81ffb9e68444a598aa1509e632d">klee::DFSSearcher::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> Searcher.h:96</div></div>
 <div class="ttc" id="aclassklee_1_1_d_f_s_searcher_html_ae850d49a9bd9b48d48811cdb48b7bf79"><div class="ttname"><a href="classklee_1_1_d_f_s_searcher.html#ae850d49a9bd9b48d48811cdb48b7bf79">klee::DFSSearcher::update</a></div><div class="ttdeci">void update(ExecutionState *current, const std::vector&lt; ExecutionState * &gt; &amp;addedStates, const std::vector&lt; ExecutionState * &gt; &amp;removedStates)</div><div class="ttdef"><b>Definition:</b> Searcher.cpp:57</div></div>
-<div class="ttc" id="aclassklee_1_1_discrete_p_d_f_html"><div class="ttname"><a href="classklee_1_1_discrete_p_d_f.html">klee::DiscretePDF</a></div><div class="ttdef"><b>Definition:</b> DiscretePDF.h:15</div></div>
+<div class="ttc" id="aclassklee_1_1_discrete_p_d_f_html"><div class="ttname"><a href="classklee_1_1_discrete_p_d_f.html">klee::DiscretePDF</a></div><div class="ttdef"><b>Definition:</b> Searcher.h:31</div></div>
 <div class="ttc" id="aclassklee_1_1_execution_state_html"><div class="ttname"><a href="classklee_1_1_execution_state.html">klee::ExecutionState</a></div><div class="ttdoc">ExecutionState representing a path under exploration.</div><div class="ttdef"><b>Definition:</b> ExecutionState.h:66</div></div>
 <div class="ttc" id="aclassklee_1_1_executor_html"><div class="ttname"><a href="classklee_1_1_executor.html">klee::Executor</a></div><div class="ttdef"><b>Definition:</b> Executor.h:105</div></div>
 <div class="ttc" id="aclassklee_1_1_interleaved_searcher_html"><div class="ttname"><a href="classklee_1_1_interleaved_searcher.html">klee::InterleavedSearcher</a></div><div class="ttdef"><b>Definition:</b> Searcher.h:303</div></div>
@@ -512,11 +511,9 @@ $(document).ready(function(){initNavTree('_searcher_8h_source.html',''); initRes
 <div class="ttc" id="aclassklee_1_1_weighted_random_searcher_html_af37d02923e235c630721afc526f0eb26ac18831d9ae6ed4af047f68cda1e69340"><div class="ttname"><a href="classklee_1_1_weighted_random_searcher.html#af37d02923e235c630721afc526f0eb26ac18831d9ae6ed4af047f68cda1e69340">klee::WeightedRandomSearcher::CoveringNew</a></div><div class="ttdeci">@ CoveringNew</div><div class="ttdef"><b>Definition:</b> Searcher.h:139</div></div>
 <div class="ttc" id="aclassklee_1_1_weighted_random_searcher_html_af37d02923e235c630721afc526f0eb26ac57eeecf6be473316885170786dd16ef"><div class="ttname"><a href="classklee_1_1_weighted_random_searcher.html#af37d02923e235c630721afc526f0eb26ac57eeecf6be473316885170786dd16ef">klee::WeightedRandomSearcher::CPInstCount</a></div><div class="ttdeci">@ CPInstCount</div><div class="ttdef"><b>Definition:</b> Searcher.h:137</div></div>
 <div class="ttc" id="aclassklee_1_1_weighted_random_searcher_html_affdcd827b7684e57358302f64a4f3428"><div class="ttname"><a href="classklee_1_1_weighted_random_searcher.html#affdcd827b7684e57358302f64a4f3428">klee::WeightedRandomSearcher::empty</a></div><div class="ttdeci">bool empty()</div><div class="ttdef"><b>Definition:</b> Searcher.cpp:258</div></div>
-<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> BitArray.h:13</div></div>
+<div class="ttc" id="anamespaceklee_html"><div class="ttname"><a href="namespaceklee.html">klee</a></div><div class="ttdef"><b>Definition:</b> AddressSpace.h:19</div></div>
 <div class="ttc" id="anamespaceklee_html_ab74e4ea7a60ed83e91b7f06173172cef"><div class="ttname"><a href="namespaceklee.html#ab74e4ea7a60ed83e91b7f06173172cef">klee::UseIncompleteMerge</a></div><div class="ttdeci">llvm::cl::opt&lt; bool &gt; UseIncompleteMerge</div></div>
-<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> Ref.h:42</div></div>
-<div class="ttc" id="astructklee_1_1time_1_1_point_html"><div class="ttname"><a href="structklee_1_1time_1_1_point.html">klee::time::Point</a></div><div class="ttdef"><b>Definition:</b> Time.h:39</div></div>
-<div class="ttc" id="astructklee_1_1time_1_1_span_html"><div class="ttname"><a href="structklee_1_1time_1_1_span.html">klee::time::Span</a></div><div class="ttdef"><b>Definition:</b> Time.h:67</div></div>
+<div class="ttc" id="anamespacellvm_html"><div class="ttname"><a href="namespacellvm.html">llvm</a></div><div class="ttdef"><b>Definition:</b> CallPathManager.h:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

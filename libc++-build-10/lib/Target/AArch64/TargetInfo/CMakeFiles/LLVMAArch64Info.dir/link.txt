@@ -1,2 +1,0 @@
-/usr/bin/ar Dqc ../../../libLLVMAArch64Info.a  CMakeFiles/LLVMAArch64Info.dir/AArch64TargetInfo.cpp.o
-/usr/bin/ranlib -D ../../../libLLVMAArch64Info.a

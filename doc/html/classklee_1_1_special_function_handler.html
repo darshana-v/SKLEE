@@ -117,9 +117,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1446d7f107c2ca8e3ad8297b9f0c527f"><td class="memItemLeft" align="right" valign="top">typedef void(SpecialFunctionHandler::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>) (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, <a class="el" href="structklee_1_1_k_instruction.html">KInstruction</a> *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;arguments)</td></tr>
+<tr class="memitem:a1446d7f107c2ca8e3ad8297b9f0c527f"><td class="memItemLeft" align="right" valign="top">typedef void(SpecialFunctionHandler::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>) (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, KInstruction *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;arguments)</td></tr>
 <tr class="separator:a1446d7f107c2ca8e3ad8297b9f0c527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ae00445e5b22006f002c9e3b8cb152"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const llvm::Function *, std::pair&lt; <a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>, <a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ad5ae00445e5b22006f002c9e3b8cb152">handlers_ty</a></td></tr>
+<tr class="memitem:ad5ae00445e5b22006f002c9e3b8cb152"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const llvm::Function *, std::pair&lt; <a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>, bool &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ad5ae00445e5b22006f002c9e3b8cb152">handlers_ty</a></td></tr>
 <tr class="separator:ad5ae00445e5b22006f002c9e3b8cb152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -132,9 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a664d1fd9585f00a7854129ae477119ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#a664d1fd9585f00a7854129ae477119ed">bind</a> ()</td></tr>
 <tr class="memdesc:a664d1fd9585f00a7854129ae477119ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the internal handler map after the module has been prepared for execution.  <a href="classklee_1_1_special_function_handler.html#a664d1fd9585f00a7854129ae477119ed">More...</a><br /></td></tr>
 <tr class="separator:a664d1fd9585f00a7854129ae477119ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae315661e16e229c456e3ae7aa9f61b60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ae315661e16e229c456e3ae7aa9f61b60">handle</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, llvm::Function *<a class="el" href="_prg_name_8c.html#a68fec226f39b2cdf167ef336e84453e9">f</a>, <a class="el" href="structklee_1_1_k_instruction.html">KInstruction</a> *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;arguments)</td></tr>
+<tr class="memitem:ae315661e16e229c456e3ae7aa9f61b60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ae315661e16e229c456e3ae7aa9f61b60">handle</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, llvm::Function *f, KInstruction *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;arguments)</td></tr>
 <tr class="separator:ae315661e16e229c456e3ae7aa9f61b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac73f408f1a691436cdf8c781bcd300bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ac73f408f1a691436cdf8c781bcd300bd">readStringAtAddress</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; <a class="el" href="structaddress.html">address</a>)</td></tr>
+<tr class="memitem:ac73f408f1a691436cdf8c781bcd300bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#ac73f408f1a691436cdf8c781bcd300bd">readStringAtAddress</a> (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; address)</td></tr>
 <tr class="separator:ac73f408f1a691436cdf8c781bcd300bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a99ddf08573a59de24aa129686dcd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_special_function_handler.html#a24a99ddf08573a59de24aa129686dcd9">HANDLER</a> (handleAbort)</td></tr>
 <tr class="separator:a24a99ddf08573a59de24aa129686dcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,7 +249,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(SpecialFunctionHandler::* klee::SpecialFunctionHandler::Handler) (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, <a class="el" href="structklee_1_1_k_instruction.html">KInstruction</a> *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;arguments)</td>
+          <td class="memname">typedef void(SpecialFunctionHandler::* klee::SpecialFunctionHandler::Handler) (<a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state, KInstruction *target, std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;arguments)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -263,7 +263,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;const llvm::Function*, std::pair&lt;<a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>,<a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&gt; &gt; <a class="el" href="classklee_1_1_special_function_handler.html#ad5ae00445e5b22006f002c9e3b8cb152">klee::SpecialFunctionHandler::handlers_ty</a></td>
+          <td class="memname">typedef std::map&lt;const llvm::Function*, std::pair&lt;<a class="el" href="classklee_1_1_special_function_handler.html#a1446d7f107c2ca8e3ad8297b9f0c527f">Handler</a>,bool&gt; &gt; <a class="el" href="classklee_1_1_special_function_handler.html#ad5ae00445e5b22006f002c9e3b8cb152">klee::SpecialFunctionHandler::handlers_ty</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -366,7 +366,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> SpecialFunctionHandler::handle </td>
+          <td class="memname">bool SpecialFunctionHandler::handle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;&#160;</td>
           <td class="paramname"><em>state</em>, </td>
@@ -380,13 +380,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structklee_1_1_k_instruction.html">KInstruction</a> *&#160;</td>
+          <td class="paramtype">KInstruction *&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>arguments</em>&#160;</td>
         </tr>
         <tr>
@@ -1233,7 +1233,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt;&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>

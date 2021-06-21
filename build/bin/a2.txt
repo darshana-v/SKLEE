@@ -1,0 +1,10 @@
+ktest file : 'test000002.ktest'
+args       : ['/tmp/code/code.o']
+num objects: 1
+object 0: name: 'a'
+object 0: size: 4
+object 0: data: b'\x01\x01\x01\x01'
+object 0: hex : 0x01010101
+object 0: int : 16843009
+object 0: uint: 16843009
+object 0: text: ....

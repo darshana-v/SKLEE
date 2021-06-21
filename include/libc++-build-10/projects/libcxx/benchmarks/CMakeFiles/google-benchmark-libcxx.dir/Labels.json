@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/CMakeFiles/google-benchmark-libcxx"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/CMakeFiles/google-benchmark-libcxx.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/CMakeFiles/google-benchmark-libcxx-complete.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-install.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-mkdir.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-download.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-update.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-patch.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-configure.rule"
+		},
+		{
+			"file" : "/home/namrata/libc++-build-10/projects/libcxx/benchmarks/benchmark-libcxx/src/google-benchmark-libcxx-stamp/google-benchmark-libcxx-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"google-benchmark-libcxx"
+		],
+		"name" : "google-benchmark-libcxx"
+	}
+}

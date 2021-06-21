@@ -1,22 +1,13 @@
 var searchData=
 [
-  ['identifier_7852',['IDENTIFIER',['../grammar2_copy_8c.html#a45734d64ac1283048289925ad7b30dfe',1,'IDENTIFIER():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a45734d64ac1283048289925ad7b30dfe',1,'IDENTIFIER():&#160;grammar2Copy.h']]],
-  ['if_7853',['IF',['../grammar2_copy_8c.html#ac138c68a0709c57bc5f7567abc1558eb',1,'IF():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#ac138c68a0709c57bc5f7567abc1558eb',1,'IF():&#160;grammar2Copy.h']]],
-  ['implies_7854',['IMPLIES',['../grammar2_copy_8c.html#a1808f02db684c7a519229793dc893405',1,'IMPLIES():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a1808f02db684c7a519229793dc893405',1,'IMPLIES():&#160;grammar2Copy.h']]],
-  ['import_7855',['IMPORT',['../grammar2_copy_8c.html#a773175d74e73776d69c3e538f17de1ee',1,'IMPORT():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a773175d74e73776d69c3e538f17de1ee',1,'IMPORT():&#160;grammar2Copy.h']]],
-  ['indexed_7856',['INDEXED',['../grammar2_copy_8c.html#ae3d2e350b27d1f320bd01a528e795706',1,'INDEXED():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#ae3d2e350b27d1f320bd01a528e795706',1,'INDEXED():&#160;grammar2Copy.h']]],
-  ['initial_7857',['INITIAL',['../lexer_8c.html#aa3d063564f6ab16f6d408b8369d0e9ff',1,'lexer.c']]],
-  ['inside_5ffd_5f64_7858',['INSIDE_FD_64',['../fd__64_8c.html#ae3e56d35f882cb3d34e80985f2787ee9',1,'fd_64.c']]],
-  ['int_7859',['INT',['../grammar2_copy_8c.html#afeeffe52c8fd59db7c61cf8b02042dbf',1,'INT():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#afeeffe52c8fd59db7c61cf8b02042dbf',1,'INT():&#160;grammar2Copy.h']]],
-  ['int16_5fmax_7860',['INT16_MAX',['../lexer_8c.html#ac58f2c111cc9989c86db2a7dc4fd84ca',1,'lexer.c']]],
-  ['int16_5fmin_7861',['INT16_MIN',['../lexer_8c.html#ad4e9955955b27624963643eac448118a',1,'lexer.c']]],
-  ['int256_5ft_7862',['int256_t',['../types_8h.html#a2d88b88e11d87fae7c8c4f9849069244',1,'types.h']]],
-  ['int32_5fmax_7863',['INT32_MAX',['../lexer_8c.html#a181807730d4a375f848ba139813ce04f',1,'lexer.c']]],
-  ['int32_5fmin_7864',['INT32_MIN',['../lexer_8c.html#a688eb21a22db27c2b2bd5836943cdcbe',1,'lexer.c']]],
-  ['int8_5fmax_7865',['INT8_MAX',['../lexer_8c.html#aaf7f29f45f1a513b4748a4e5014ddf6a',1,'lexer.c']]],
-  ['int8_5fmin_7866',['INT8_MIN',['../lexer_8c.html#aadcf2a81af243df333b31efa6461ab8e',1,'lexer.c']]],
-  ['int_5f31_5fbits_7867',['INT_31_BITS',['../arithmetic-right-overshift-sym-conc_8c.html#a74875f2dbcd25f9f4ec034044fc2127f',1,'arithmetic-right-overshift-sym-conc.c']]],
-  ['interface_7868',['INTERFACE',['../grammar2_copy_8c.html#aefb2aa75be4323fe06eb3ec8394bdfc7',1,'INTERFACE():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#aefb2aa75be4323fe06eb3ec8394bdfc7',1,'INTERFACE():&#160;grammar2Copy.h']]],
-  ['internal_7869',['INTERNAL',['../grammar2_copy_8c.html#a02c5e2eafaed44878fd8e6c54c8dde4d',1,'INTERNAL():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#a02c5e2eafaed44878fd8e6c54c8dde4d',1,'INTERNAL():&#160;grammar2Copy.h']]],
-  ['is_7870',['IS',['../grammar2_copy_8c.html#ad28e1b10e158ae134bb6fa3bb2f34a06',1,'IS():&#160;grammar2Copy.c'],['../grammar2_copy_8h.html#ad28e1b10e158ae134bb6fa3bb2f34a06',1,'IS():&#160;grammar2Copy.h']]]
+  ['initial_7768',['INITIAL',['../lexer_8c.html#aa3d063564f6ab16f6d408b8369d0e9ff',1,'lexer.c']]],
+  ['inside_5ffd_5f64_7769',['INSIDE_FD_64',['../fd__64_8c.html#ae3e56d35f882cb3d34e80985f2787ee9',1,'fd_64.c']]],
+  ['int16_5fmax_7770',['INT16_MAX',['../lexer_8c.html#ac58f2c111cc9989c86db2a7dc4fd84ca',1,'lexer.c']]],
+  ['int16_5fmin_7771',['INT16_MIN',['../lexer_8c.html#ad4e9955955b27624963643eac448118a',1,'lexer.c']]],
+  ['int256_5ft_7772',['int256_t',['../types_8h.html#a2d88b88e11d87fae7c8c4f9849069244',1,'types.h']]],
+  ['int32_5fmax_7773',['INT32_MAX',['../lexer_8c.html#a181807730d4a375f848ba139813ce04f',1,'lexer.c']]],
+  ['int32_5fmin_7774',['INT32_MIN',['../lexer_8c.html#a688eb21a22db27c2b2bd5836943cdcbe',1,'lexer.c']]],
+  ['int8_5fmax_7775',['INT8_MAX',['../lexer_8c.html#aaf7f29f45f1a513b4748a4e5014ddf6a',1,'lexer.c']]],
+  ['int8_5fmin_7776',['INT8_MIN',['../lexer_8c.html#aadcf2a81af243df333b31efa6461ab8e',1,'lexer.c']]],
+  ['int_5f31_5fbits_7777',['INT_31_BITS',['../arithmetic-right-overshift-sym-conc_8c.html#a74875f2dbcd25f9f4ec034044fc2127f',1,'arithmetic-right-overshift-sym-conc.c']]]
 ];

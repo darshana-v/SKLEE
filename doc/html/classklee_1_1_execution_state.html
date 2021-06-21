@@ -116,9 +116,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c7fabd5836b2549a6e35591f9cf5452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a5c7fabd5836b2549a6e35591f9cf5452">ExecutionState</a> (<a class="el" href="structklee_1_1_k_function.html">KFunction</a> *kf)</td></tr>
+<tr class="memitem:a5c7fabd5836b2549a6e35591f9cf5452"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a5c7fabd5836b2549a6e35591f9cf5452">ExecutionState</a> (KFunction *kf)</td></tr>
 <tr class="separator:a5c7fabd5836b2549a6e35591f9cf5452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4813a26f6753583952f205d68ee78d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a2c4813a26f6753583952f205d68ee78d">ExecutionState</a> (const std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;assumptions)</td></tr>
+<tr class="memitem:a2c4813a26f6753583952f205d68ee78d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a2c4813a26f6753583952f205d68ee78d">ExecutionState</a> (const std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;assumptions)</td></tr>
 <tr class="separator:a2c4813a26f6753583952f205d68ee78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68c8ed26d7182b5c3ae0de407ca3539"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ac68c8ed26d7182b5c3ae0de407ca3539">ExecutionState</a> (const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;state)</td></tr>
 <tr class="separator:ac68c8ed26d7182b5c3ae0de407ca3539"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,25 +126,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a012324e9cc5f158ef426243310bf92e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeece71ea9ac650c14f8490f26682ddc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#adeece71ea9ac650c14f8490f26682ddc">branch</a> ()</td></tr>
 <tr class="separator:adeece71ea9ac650c14f8490f26682ddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ad6fdfca0ccf09bc593b99b0b3e2e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a0ad6fdfca0ccf09bc593b99b0b3e2e38">pushFrame</a> (<a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a> caller, <a class="el" href="structklee_1_1_k_function.html">KFunction</a> *kf)</td></tr>
+<tr class="memitem:a0ad6fdfca0ccf09bc593b99b0b3e2e38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a0ad6fdfca0ccf09bc593b99b0b3e2e38">pushFrame</a> (KInstIterator caller, KFunction *kf)</td></tr>
 <tr class="separator:a0ad6fdfca0ccf09bc593b99b0b3e2e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aa4133a2291209e03a7f5166816875d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a2aa4133a2291209e03a7f5166816875d">popFrame</a> ()</td></tr>
 <tr class="separator:a2aa4133a2291209e03a7f5166816875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2411c096a12e5f9c0017d54f4792b7ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a2411c096a12e5f9c0017d54f4792b7ce">addSymbolic</a> (const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo, const <a class="el" href="classklee_1_1_array.html">Array</a> *<a class="el" href="_logging_instructions_8c.html#a4be18bb048f0e01660d81150b8b1ffb4">array</a>)</td></tr>
+<tr class="memitem:a2411c096a12e5f9c0017d54f4792b7ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a2411c096a12e5f9c0017d54f4792b7ce">addSymbolic</a> (const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> *mo, const Array *array)</td></tr>
 <tr class="separator:a2411c096a12e5f9c0017d54f4792b7ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8a5365c20c6d8b520fe5123888d219b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ae8a5365c20c6d8b520fe5123888d219b">addConstraint</a> (<a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; e)</td></tr>
+<tr class="memitem:ae8a5365c20c6d8b520fe5123888d219b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ae8a5365c20c6d8b520fe5123888d219b">addConstraint</a> (<a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; e)</td></tr>
 <tr class="separator:ae8a5365c20c6d8b520fe5123888d219b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9547f980b348594bd86a36b227de024d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a9547f980b348594bd86a36b227de024d">merge</a> (const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;<a class="el" href="2020-04-27-stp-array-names_8c.html#a21ad0bd836b90d08f4cf640b4c298e7c">b</a>)</td></tr>
+<tr class="memitem:a9547f980b348594bd86a36b227de024d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a9547f980b348594bd86a36b227de024d">merge</a> (const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;b)</td></tr>
 <tr class="separator:a9547f980b348594bd86a36b227de024d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb6faca038db9fd9d758025d2df7820f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#abb6faca038db9fd9d758025d2df7820f">dumpStack</a> (llvm::raw_ostream &amp;out) const</td></tr>
 <tr class="separator:abb6faca038db9fd9d758025d2df7820f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af20943df11c37c510d4b3fbee2f8c50f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#af20943df11c37c510d4b3fbee2f8c50f">pc</a></td></tr>
+<tr class="memitem:af20943df11c37c510d4b3fbee2f8c50f"><td class="memItemLeft" align="right" valign="top">KInstIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#af20943df11c37c510d4b3fbee2f8c50f">pc</a></td></tr>
 <tr class="memdesc:af20943df11c37c510d4b3fbee2f8c50f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to instruction to be executed after the current instruction.  <a href="classklee_1_1_execution_state.html#af20943df11c37c510d4b3fbee2f8c50f">More...</a><br /></td></tr>
 <tr class="separator:af20943df11c37c510d4b3fbee2f8c50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20ed79de0294c79fcb202b2e6b018f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad20ed79de0294c79fcb202b2e6b018f1">prevPC</a></td></tr>
+<tr class="memitem:ad20ed79de0294c79fcb202b2e6b018f1"><td class="memItemLeft" align="right" valign="top">KInstIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad20ed79de0294c79fcb202b2e6b018f1">prevPC</a></td></tr>
 <tr class="memdesc:ad20ed79de0294c79fcb202b2e6b018f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to instruction which is currently executed.  <a href="classklee_1_1_execution_state.html#ad20ed79de0294c79fcb202b2e6b018f1">More...</a><br /></td></tr>
 <tr class="separator:ad20ed79de0294c79fcb202b2e6b018f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05be10b292d524f04a56b61ad6044c93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_execution_state.html#a4a6eea0a1875945223e833471dc56c49">stack_ty</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a05be10b292d524f04a56b61ad6044c93">stack</a></td></tr>
@@ -156,28 +156,28 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab0ffefd745b969a039f98d22d3e4fccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_address_space.html">AddressSpace</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ab0ffefd745b969a039f98d22d3e4fccc">addressSpace</a></td></tr>
 <tr class="memdesc:ab0ffefd745b969a039f98d22d3e4fccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address space used by this state (e.g. Global and Heap)  <a href="classklee_1_1_execution_state.html#ab0ffefd745b969a039f98d22d3e4fccc">More...</a><br /></td></tr>
 <tr class="separator:ab0ffefd745b969a039f98d22d3e4fccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a9008983b2ca69fb9edbb033f8bbc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_constraint_manager.html">ConstraintManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a82a9008983b2ca69fb9edbb033f8bbc5">constraints</a></td></tr>
+<tr class="memitem:a82a9008983b2ca69fb9edbb033f8bbc5"><td class="memItemLeft" align="right" valign="top">ConstraintManager&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a82a9008983b2ca69fb9edbb033f8bbc5">constraints</a></td></tr>
 <tr class="memdesc:a82a9008983b2ca69fb9edbb033f8bbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints collected so far.  <a href="classklee_1_1_execution_state.html#a82a9008983b2ca69fb9edbb033f8bbc5">More...</a><br /></td></tr>
 <tr class="separator:a82a9008983b2ca69fb9edbb033f8bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070c7876b9793d81c5071f0be8b6d5c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structklee_1_1time_1_1_span.html">time::Span</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a070c7876b9793d81c5071f0be8b6d5c3">queryCost</a></td></tr>
+<tr class="memitem:a070c7876b9793d81c5071f0be8b6d5c3"><td class="memItemLeft" align="right" valign="top">time::Span&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a070c7876b9793d81c5071f0be8b6d5c3">queryCost</a></td></tr>
 <tr class="memdesc:a070c7876b9793d81c5071f0be8b6d5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statistics and information.  <a href="classklee_1_1_execution_state.html#a070c7876b9793d81c5071f0be8b6d5c3">More...</a><br /></td></tr>
 <tr class="separator:a070c7876b9793d81c5071f0be8b6d5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4369f2d503be506de4ab580f0be311e2"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a4369f2d503be506de4ab580f0be311e2">depth</a></td></tr>
 <tr class="memdesc:a4369f2d503be506de4ab580f0be311e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exploration depth, i.e., number of times KLEE branched for this state.  <a href="classklee_1_1_execution_state.html#a4369f2d503be506de4ab580f0be311e2">More...</a><br /></td></tr>
 <tr class="separator:a4369f2d503be506de4ab580f0be311e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a953ee9d3d6cf5b5b9927b5358d399c30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_tree_o_stream.html">TreeOStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a953ee9d3d6cf5b5b9927b5358d399c30">pathOS</a></td></tr>
+<tr class="memitem:a953ee9d3d6cf5b5b9927b5358d399c30"><td class="memItemLeft" align="right" valign="top">TreeOStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a953ee9d3d6cf5b5b9927b5358d399c30">pathOS</a></td></tr>
 <tr class="memdesc:a953ee9d3d6cf5b5b9927b5358d399c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">History of complete path: represents branches taken to reach/create this state (both concrete and symbolic)  <a href="classklee_1_1_execution_state.html#a953ee9d3d6cf5b5b9927b5358d399c30">More...</a><br /></td></tr>
 <tr class="separator:a953ee9d3d6cf5b5b9927b5358d399c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5cb393ef42f679e31f3f5e075b93c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_tree_o_stream.html">TreeOStream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ac5cb393ef42f679e31f3f5e075b93c3c">symPathOS</a></td></tr>
+<tr class="memitem:ac5cb393ef42f679e31f3f5e075b93c3c"><td class="memItemLeft" align="right" valign="top">TreeOStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ac5cb393ef42f679e31f3f5e075b93c3c">symPathOS</a></td></tr>
 <tr class="memdesc:ac5cb393ef42f679e31f3f5e075b93c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">History of symbolic path: represents symbolic branches taken to reach/create this state.  <a href="classklee_1_1_execution_state.html#ac5cb393ef42f679e31f3f5e075b93c3c">More...</a><br /></td></tr>
 <tr class="separator:ac5cb393ef42f679e31f3f5e075b93c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f22a3d686e2d5757d35b0135c270c60"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a4f22a3d686e2d5757d35b0135c270c60">instsSinceCovNew</a></td></tr>
 <tr class="memdesc:a4f22a3d686e2d5757d35b0135c270c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts how many instructions were executed since the last new instruction was covered.  <a href="classklee_1_1_execution_state.html#a4f22a3d686e2d5757d35b0135c270c60">More...</a><br /></td></tr>
 <tr class="separator:a4f22a3d686e2d5757d35b0135c270c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36776980a26af0180574c9e6d776fca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad36776980a26af0180574c9e6d776fca">coveredNew</a></td></tr>
+<tr class="memitem:ad36776980a26af0180574c9e6d776fca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad36776980a26af0180574c9e6d776fca">coveredNew</a></td></tr>
 <tr class="memdesc:ad36776980a26af0180574c9e6d776fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a new instruction was covered in this state.  <a href="classklee_1_1_execution_state.html#ad36776980a26af0180574c9e6d776fca">More...</a><br /></td></tr>
 <tr class="separator:ad36776980a26af0180574c9e6d776fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1c87d5764ee6442a9e530d057e82bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a6c1c87d5764ee6442a9e530d057e82bb">forkDisabled</a></td></tr>
+<tr class="memitem:a6c1c87d5764ee6442a9e530d057e82bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a6c1c87d5764ee6442a9e530d057e82bb">forkDisabled</a></td></tr>
 <tr class="memdesc:a6c1c87d5764ee6442a9e530d057e82bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables forking for this state. Set by user code.  <a href="classklee_1_1_execution_state.html#a6c1c87d5764ee6442a9e530d057e82bb">More...</a><br /></td></tr>
 <tr class="separator:a6c1c87d5764ee6442a9e530d057e82bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c52d576f51898945da00f48ec85d8b0"><td class="memItemLeft" align="right" valign="top">std::map&lt; const std::string *, std::set&lt; unsigned &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a1c52d576f51898945da00f48ec85d8b0">coveredLines</a></td></tr>
@@ -186,7 +186,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a363f4d66d3073520e9c383ab54544377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classklee_1_1_p_tree_node.html">PTreeNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a363f4d66d3073520e9c383ab54544377">ptreeNode</a></td></tr>
 <tr class="memdesc:a363f4d66d3073520e9c383ab54544377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the process tree of the current state.  <a href="classklee_1_1_execution_state.html#a363f4d66d3073520e9c383ab54544377">More...</a><br /></td></tr>
 <tr class="separator:a363f4d66d3073520e9c383ab54544377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38984e0ecc2ec8d236b9a6e88f1a103"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> &gt;, const <a class="el" href="classklee_1_1_array.html">Array</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ab38984e0ecc2ec8d236b9a6e88f1a103">symbolics</a></td></tr>
+<tr class="memitem:ab38984e0ecc2ec8d236b9a6e88f1a103"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a> &gt;, const Array * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ab38984e0ecc2ec8d236b9a6e88f1a103">symbolics</a></td></tr>
 <tr class="memdesc:ab38984e0ecc2ec8d236b9a6e88f1a103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordered list of symbolics: used to generate test cases.  <a href="classklee_1_1_execution_state.html#ab38984e0ecc2ec8d236b9a6e88f1a103">More...</a><br /></td></tr>
 <tr class="separator:ab38984e0ecc2ec8d236b9a6e88f1a103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39b8f1063d0a6d3d9696cf8f81853b47"><td class="memItemLeft" align="right" valign="top">std::set&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a39b8f1063d0a6d3d9696cf8f81853b47">arrayNames</a></td></tr>
@@ -194,7 +194,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a39b8f1063d0a6d3d9696cf8f81853b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d236c931479d30e5720787db8f53f6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_merge_handler.html">MergeHandler</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#a92d236c931479d30e5720787db8f53f6">openMergeStack</a></td></tr>
 <tr class="separator:a92d236c931479d30e5720787db8f53f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad506da6e5f600c3425086a6ddab56b6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">std::uint64_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad506da6e5f600c3425086a6ddab56b6e">steppedInstructions</a></td></tr>
+<tr class="memitem:ad506da6e5f600c3425086a6ddab56b6e"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classklee_1_1_execution_state.html#ad506da6e5f600c3425086a6ddab56b6e">steppedInstructions</a></td></tr>
 <tr class="separator:ad506da6e5f600c3425086a6ddab56b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -224,7 +224,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">ExecutionState::ExecutionState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structklee_1_1_k_function.html">KFunction</a> *&#160;</td>
+          <td class="paramtype">KFunction *&#160;</td>
           <td class="paramname"><em>kf</em></td><td>)</td>
           <td></td>
         </tr>
@@ -242,7 +242,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">ExecutionState::ExecutionState </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt; &gt; &amp;&#160;</td>
           <td class="paramname"><em>assumptions</em></td><td>)</td>
           <td></td>
         </tr>
@@ -299,7 +299,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void klee::ExecutionState::addConstraint </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classklee_1_1ref.html">ref</a>&lt; <a class="el" href="classklee_1_1_expr.html">Expr</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classklee_1_1ref.html">ref</a>&lt; Expr &gt;&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
           <td></td>
         </tr>
@@ -328,7 +328,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classklee_1_1_array.html">Array</a> *&#160;</td>
+          <td class="paramtype">const Array *&#160;</td>
           <td class="paramname"><em>array</em>&#160;</td>
         </tr>
         <tr>
@@ -383,7 +383,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> ExecutionState::merge </td>
+          <td class="memname">bool ExecutionState::merge </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classklee_1_1_execution_state.html">ExecutionState</a> &amp;&#160;</td>
           <td class="paramname"><em>b</em></td><td>)</td>
@@ -420,13 +420,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ExecutionState::pushFrame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a>&#160;</td>
+          <td class="paramtype">KInstIterator&#160;</td>
           <td class="paramname"><em>caller</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structklee_1_1_k_function.html">KFunction</a> *&#160;</td>
+          <td class="paramtype">KFunction *&#160;</td>
           <td class="paramname"><em>kf</em>&#160;</td>
         </tr>
         <tr>
@@ -479,7 +479,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_constraint_manager.html">ConstraintManager</a> klee::ExecutionState::constraints</td>
+          <td class="memname">ConstraintManager klee::ExecutionState::constraints</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -511,7 +511,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> klee::ExecutionState::coveredNew</td>
+          <td class="memname">bool klee::ExecutionState::coveredNew</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -543,7 +543,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="pcregrep_8c.html#a97a80ca1602ebf2303258971a2c938e2">bool</a> klee::ExecutionState::forkDisabled</td>
+          <td class="memname">bool klee::ExecutionState::forkDisabled</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -606,7 +606,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_tree_o_stream.html">TreeOStream</a> klee::ExecutionState::pathOS</td>
+          <td class="memname">TreeOStream klee::ExecutionState::pathOS</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -622,7 +622,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a> klee::ExecutionState::pc</td>
+          <td class="memname">KInstIterator klee::ExecutionState::pc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -638,7 +638,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_k_inst_iterator.html">KInstIterator</a> klee::ExecutionState::prevPC</td>
+          <td class="memname">KInstIterator klee::ExecutionState::prevPC</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -673,7 +673,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structklee_1_1time_1_1_span.html">time::Span</a> klee::ExecutionState::queryCost</td>
+          <td class="memname">time::Span klee::ExecutionState::queryCost</td>
         </tr>
       </table>
   </td>
@@ -711,7 +711,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="utils_8h.html#aaa5d1cd013383c889537491c3cfd9aad">std::uint64_t</a> klee::ExecutionState::steppedInstructions</td>
+          <td class="memname">std::uint64_t klee::ExecutionState::steppedInstructions</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -725,7 +725,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::pair&lt;<a class="el" href="classklee_1_1ref.html">ref</a>&lt;const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a>&gt;, const <a class="el" href="classklee_1_1_array.html">Array</a> *&gt; &gt; klee::ExecutionState::symbolics</td>
+          <td class="memname">std::vector&lt;std::pair&lt;<a class="el" href="classklee_1_1ref.html">ref</a>&lt;const <a class="el" href="classklee_1_1_memory_object.html">MemoryObject</a>&gt;, const Array *&gt; &gt; klee::ExecutionState::symbolics</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -741,7 +741,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classklee_1_1_tree_o_stream.html">TreeOStream</a> klee::ExecutionState::symPathOS</td>
+          <td class="memname">TreeOStream klee::ExecutionState::symPathOS</td>
         </tr>
       </table>
 </div><div class="memdoc">
