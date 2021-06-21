@@ -8,6 +8,8 @@ kleeLibPath="$homeDir/klee/lib/Core"
 kleeIncludePath="$homeDir/klee/include/"
 cppLibPath="$homeDir/libc++-install-10/include/c++/v1/"
 
+# Translating test cases to human-readable format
+
 python3 $toolPath/run.py 2 $toolPath
 
 if [ $? -eq 0 ]; then

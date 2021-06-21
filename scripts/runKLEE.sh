@@ -33,7 +33,7 @@ echo "Executable genration finished"
 # If this does doesn't work, uncomment this 
 # chmod +x $toolPath/verify
 
-$toolPath/verify < $toolPath/$input >> logFile.txt
+$toolPath/verify < $outpath/$input >> logFile.txt
 
 printf "\n"
 if [ $? -eq 0 ]; then

@@ -98,6 +98,7 @@
         if(isset($_POST['content-target'])){
             if (($_FILES['input-file']['name']!="")){
                 $filename=$_FILES['input-file']['name'];
+                echo "$filename";
             }
             else {
                 echo "File not found";
@@ -106,7 +107,8 @@
 
             $contents = $_POST['content-target'];
             $old_path = getcwd();
-            chdir('/home/namrata/klee/tools/klee/');
+            //chdir('/home/namrata/klee/tools/klee/');
+            chdir("$old_path/../klee/tools/klee/");
             // $old = umask(0);
             // echo $old;
             // // echo getcwd();
@@ -133,7 +135,8 @@
             <br>
             <textarea readonly id="content-target" name="content-target" ><?php
                     $old_path = getcwd();
-                    chdir('/home/namrata/klee/tools/klee/');
+                    //chdir('/home/namrata/klee/tools/klee/');
+                    chdir("$old_path/../klee/tools/klee/");
                     echo file_get_contents($filename);
                     chdir($old_path);
             ?></textarea>
@@ -152,7 +155,11 @@
 
             <?php
                 $old_path = getcwd();
-                chdir('/home/namrata/klee/tools/klee/');
+                //chdir('/home/namrata/klee/tools/klee/');
+                //chdir("$old_path/../klee/tools/klee/");
+                chdir ("../");
+                chmod ("./runKLEE.sh", 0755);
+                chmod ("./getResult.sh", 0755);
                 $output1 = shell_exec("./runKLEE.sh '{$filename}' 2>&1");
                 $output2 = shell_exec("./getResult.sh 2>&1");
                 chdir($old_path);
@@ -165,7 +172,10 @@
 
             <textarea readonly id="content-target-cpp" name="content-target-cpp" ><?php
                     $old_path = getcwd();
-                    chdir('/home/namrata/klee/tools/klee/');
+                    //echo "$old_path";
+                    //chdir('/home/namrata/klee/tools/klee/');
+                    //chdir("$old_path/../klee/tools/klee/");
+                    chdir('../');
                     echo file_get_contents('convertedFile.cpp');
                     chdir($old_path);
             ?></textarea>

@@ -4,7 +4,7 @@ import sys
 
 def convertTestCase(directory):
 	for filename in os.listdir(directory):
-		homeDir = "/home/namrata/"
+		homeDir = "./"
 		toolPath = directory
 		if filename.endswith(".ktest") and filename.startswith("error"):
 # print(os.path.join(directory, filename))

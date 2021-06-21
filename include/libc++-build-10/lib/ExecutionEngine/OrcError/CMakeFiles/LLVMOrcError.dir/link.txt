@@ -1,0 +1,2 @@
+/usr/bin/ar Dqc ../../libLLVMOrcError.a  CMakeFiles/LLVMOrcError.dir/OrcError.cpp.o CMakeFiles/LLVMOrcError.dir/RPCError.cpp.o
+/usr/bin/ranlib -D ../../libLLVMOrcError.a

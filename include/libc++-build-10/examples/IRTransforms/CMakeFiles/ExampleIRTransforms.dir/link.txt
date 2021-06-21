@@ -1,0 +1,2 @@
+/usr/bin/ar Dqc ../../lib/libExampleIRTransforms.a  CMakeFiles/ExampleIRTransforms.dir/InitializePasses.cpp.o CMakeFiles/ExampleIRTransforms.dir/SimplifyCFG.cpp.o
+/usr/bin/ranlib -D ../../lib/libExampleIRTransforms.a

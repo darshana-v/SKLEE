@@ -22,10 +22,13 @@
 typedef struct node{
     std::string data;
     bool hasData = false;
+    int line_no = -1;
     std::vector<node*> children;
 }node;
 
 node* new_node();
+node* new_node(std::string data, int line_no);
+node* new_node(const char* data, int line_no);
 node* new_node(std::string data);
 node* new_node(const char* data);
 node* new_node(std::initializer_list<node*> args);

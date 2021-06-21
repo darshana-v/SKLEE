@@ -1,2 +1,0 @@
-/usr/bin/ar Dqc ../../../libLLVMMipsAsmParser.a  CMakeFiles/LLVMMipsAsmParser.dir/MipsAsmParser.cpp.o
-/usr/bin/ranlib -D ../../../libLLVMMipsAsmParser.a
