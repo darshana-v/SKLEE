@@ -45,6 +45,10 @@ flow:
 2. bash  runKLEE.sh filename
 3. bash getResult.sh
 
+workflow:
+
+1. The ktest-tool is a Python script that converts the contents of a .ktest file into human-readable form.
+
 ## Installation:
 
 --tbd
@@ -53,6 +57,8 @@ flow:
 sudo apt install bison
 sudo apt install lex
 sudo apt-get install libboost-all-dev
+sudo apt-get install llvm-10
+sudo apt install libtcmalloc-minimal4
 
 ```
 
@@ -67,13 +73,21 @@ use LF endings while editing else bash script will not run
   * [ ] Make scripts portable. Remove all hardcoded code
   * [ ] OnlineKLEE is poorly written. Modify it to create more generic implementation that can run without issues - use herokuapp
   * [ ] intermediate outputs are also hardcoded. Need to modify core functionality to change it
-* [ ] Modifying Grammer: [Max 1 week]
+  * [ ] Code Documentation
+  
+* [ ] Final script touch up
+  * [ ] Updated Directory paths 
+  * [ ] Re-building the klee tool
+  * [ ] --add-here--
 
+* [ ] Modifying Grammer: [Max 1 week]
   * [ ] Add mapping between line of c++ code generated and corresponding solidity code - create lookup and integrate with frontend
   * [ ] Add support for few missing structures - modify grammer
-  * [ ] --add-here--
 
 ## Issues:
 
 * [ ] Supports solidity version 0.6.10 only. Failed to compile on higher versions. Can be made generic or autodetect from pragma directive
 * [ ] Documentation is not available. start documenting on the go
+* [ ] ktest-tool supposed to generate test cases. Need to be regenerated - build
+* [ ] error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory
+
