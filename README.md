@@ -91,3 +91,5 @@ use LF endings while editing else bash script will not run
 * [ ] ktest-tool supposed to generate test cases. Need to be regenerated - build
 * [ ] error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory
 
+## Paths changed:
+* [ ] defs.cpp line 15 : 
