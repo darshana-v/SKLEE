@@ -11,12 +11,12 @@ bcInput="$convertedInput.bc"
 llInput="$convertedInput.ll"
 
 
-homeDir="./"
+homeDir="../"
 toolPath="../klee/tools/klee"
 kleeLibPath="../klee/lib/Core"
 kleeIncludePath="../klee/include/"
 cppLibPath="../include/libc++-install-10/include/c++/v1/"
-outpath = "../output/"
+outpath = "../output"
 
 # Lexer and Grammar compilation
 
@@ -33,7 +33,7 @@ echo "Executable genration finished"
 # If this does doesn't work, uncomment this 
 # chmod +x $toolPath/verify
 
-$toolPath/verify < $outpath/$input >> logFile.txt
+$toolPath/verify < $toolPath/$input >> logFile.txt
 
 printf "\n"
 if [ $? -eq 0 ]; then
