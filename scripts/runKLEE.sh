@@ -11,12 +11,17 @@ bcInput="$convertedInput.bc"
 llInput="$convertedInput.ll"
 
 
-homeDir="./"
+homeDir="../"
 toolPath="../klee/tools/klee"
 kleeLibPath="../klee/lib/Core"
 kleeIncludePath="../klee/include/"
 cppLibPath="../include/libc++-install-10/include/c++/v1/"
+<<<<<<< HEAD
 outpath="../output/"
+=======
+outpath="../output"
+cpp_path="../output/convertedFile.cpp"
+>>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 # Lexer and Grammar compilation
 
@@ -33,7 +38,11 @@ echo "Executable generation finished"
 # If this does doesn't work, uncomment this 
 # chmod +x $toolPath/verify
 
+<<<<<<< HEAD
 $toolPath/verify < $outpath/$input  #>> logFile.txt
+=======
+$toolPath/verify < $toolPath/$input >> logFile.txt
+>>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 printf "\n"
 if [ $? -eq 0 ]; then
@@ -46,9 +55,14 @@ else
 fi
 
 echo "LLVM BitCode Generation"
+
 # clang supposed to be in the path, if not then add in the corresponding path
 #/usr/local/opt/llvm/bin/clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $toolPath/$cppInput >> logFile.txt
+<<<<<<< HEAD
 clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $outpath/$cppInput #>> logFile.txt
+=======
+clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $cpp_path >> logFile.txt
+>>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 if [ $? -eq 0 ]; then
     echo "Conversion to LLVM Bitcode complete."
@@ -58,17 +72,21 @@ else
     echo "Process terminated."
     exit 1
 fi
+mv convertedFile.bc ../output/
 
-../include/llvm-10/bin/llvm-dis $outpath/$bcInput
+chmod +x ../include/llvm-10/bin/llvm-dis
 
-#/usr/local/opt/llvm/bin/llvm-dis $bcInput
+../include/llvm-10/bin/llvm-dis $outpath/$bcInput -o $outpath/$llInput
 
-chmod -R 777 $toolPath
+#/usr/local/opt/llvm/bin/llvm-dis $outpath/$bcInput -o $outpath/$llInput
 
-chmod -R 777 ../build/bin/klee
+#chmod -R 777 $toolPath
+
+chmod +x ../build/bin/klee
 
 # TODO: Klee needs to be rebuild: URGENT
 
+#/usr/local/opt/klee/bin/klee --libc=uclibc -libcxx -posix-runtime --max-instructions=2000000 --warnings-only-to-file $outpath/$llInput
 ../build/bin/klee --libc=uclibc -libcxx -posix-runtime --max-instructions=2000000 --warnings-only-to-file $outpath/$llInput
 
 
