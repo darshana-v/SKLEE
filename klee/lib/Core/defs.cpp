@@ -1343,8 +1343,8 @@ void createContract(std::initializer_list<node*> args)
     // writefile << "#include <bits/stdc++.h>" << std::endl;
     writeDecl << "#include <cassert>" << std::endl;
     writeDecl << "#include <klee/klee.h>" << std::endl;
-    writeDecl << "#include \"types.h\"" << std::endl;
-    writeDecl << "#include \"functions.h\"" << std::endl;
+    writeDecl << "#include \"../types.h\"" << std::endl;
+    writeDecl << "#include \"../functions.h\"" << std::endl;
 
     //check if these needed
     writeDecl << "#include <algorithm>" << std::endl;

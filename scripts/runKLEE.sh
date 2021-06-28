@@ -16,24 +16,24 @@ toolPath="../klee/tools/klee"
 kleeLibPath="../klee/lib/Core"
 kleeIncludePath="../klee/include/"
 cppLibPath="../include/libc++-install-10/include/c++/v1/"
-outpath = "../output/"
+outpath="../output/"
 
 # Lexer and Grammar compilation
 
-flex -o $toolPath/lexer.c -l $toolPath/lexer.l &>logFile.txt
+flex -o $toolPath/lexer.c -l $toolPath/lexer.l # &>logFile.txt
 echo "Lexer compilation finished."
-bison -vd -o $toolPath/grammar.c $toolPath/grammar.y >> logFile.txt
+bison -vd -o $toolPath/grammar.c $toolPath/grammar.y #>> logFile.txt
 echo "Grammar compilation finished."
 
 # Conversion of Solidity to C++.
 
 g++ -w -Wno-write-strings $kleeLibPath/defs.cpp $toolPath/lexer.c $toolPath/grammar.c -o $toolPath/verify -ll -std=c++11 #-ll &> logFile.txt
-echo "Executable genration finished"
+echo "Executable generation finished"
 
 # If this does doesn't work, uncomment this 
 # chmod +x $toolPath/verify
 
-$toolPath/verify < $outpath/$input >> logFile.txt
+$toolPath/verify < $outpath/$input  #>> logFile.txt
 
 printf "\n"
 if [ $? -eq 0 ]; then
@@ -48,7 +48,7 @@ fi
 echo "LLVM BitCode Generation"
 # clang supposed to be in the path, if not then add in the corresponding path
 #/usr/local/opt/llvm/bin/clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $toolPath/$cppInput >> logFile.txt
-clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $outpath/$cppInput >> logFile.txt
+clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $outpath/$cppInput #>> logFile.txt
 
 if [ $? -eq 0 ]; then
     echo "Conversion to LLVM Bitcode complete."

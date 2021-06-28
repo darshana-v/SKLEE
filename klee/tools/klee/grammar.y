@@ -588,7 +588,7 @@ int main(int argc, char* argv[])
     addMainFunction(file);
     file.close();
 
-    rewriteContent(filename);
+    // rewriteContent(filename);
 
     contract.writeContract();
     writeContractNames();
