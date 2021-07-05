@@ -8,7 +8,7 @@
 /* #undef ENABLE_METASMT */
 
 /* Using STP Solver backend */
-#define ENABLE_STP 1
+/* #undef ENABLE_STP */
 
 /* Using Z3 Solver backend */
 #define ENABLE_Z3 1
@@ -38,16 +38,16 @@
 #define HAVE_SYSSTATFS_H 1
 
 /* Define to 1 if you have the <selinux/selinux.h> header file. */
-/* #undef HAVE_SELINUX_SELINUX_H */
+#define HAVE_SELINUX_SELINUX_H 1
 
 /* Define to 1 if you have the <sys/acl.h> header file. */
 /* #undef HAVE_SYS_ACL_H */
 
 /* Define to 1 if you have the <sys/capability.h> header file. */
-#define HAVE_SYS_CAPABILITY_H 1
+/* #undef HAVE_SYS_CAPABILITY_H */
 
 /* Z3 needs a Z3_context passed to Z3_get_error_msg() */
-/* #undef HAVE_Z3_GET_ERROR_MSG_NEEDS_CONTEXT */
+#define HAVE_Z3_GET_ERROR_MSG_NEEDS_CONTEXT 1
 
 /* Define to 1 if you have the <zlib.h> header file. */
 #define HAVE_ZLIB_H 1
@@ -57,10 +57,10 @@
 
 /* Define to empty or 'const' depending on how SELinux qualifies its security
    context parameters. */
-/* #undef KLEE_SELINUX_CTX_CONST */
+#define KLEE_SELINUX_CTX_CONST const
 
 /* LLVM major version number */
-#define LLVM_VERSION_MAJOR 10
+#define LLVM_VERSION_MAJOR 11
 
 /* LLVM minor version number */
 /* #undef LLVM_VERSION_MINOR */
@@ -87,10 +87,10 @@
 /* #undef USE_WORKAROUND_LLVM_PR39177 */
 
 /* klee-uclibc is supported */
-#define SUPPORT_KLEE_UCLIBC 1
+/* #undef SUPPORT_KLEE_UCLIBC */
 
 /* libcxx is supported */
-#define SUPPORT_KLEE_LIBCXX 1
+/* #undef SUPPORT_KLEE_LIBCXX */
 
 /* Configuration type of KLEE's runtime libraries */
 #define RUNTIME_CONFIGURATION "Debug+Asserts"
@@ -99,7 +99,7 @@
 the runtime directory is in the build tree. Instead we should just define a
 macro for that. That would simplify the C++ code.  */
 /* Root of the KLEE binary build directory */
-#define KLEE_DIR "/home/namrata/build"
+#define KLEE_DIR "/mnt/e/blockchain/Subodh-Sharma-IITD-21/SKLEE/build"
 
 /* Install directory for KLEE binaries */
 #define KLEE_INSTALL_BIN_DIR "/usr/local/bin"

@@ -1,5 +1,0 @@
-/home/namrata/build/runtime/runtime_build_Debug+Asserts/POSIX/misc.bc: \
-  /home/namrata/klee/runtime/POSIX/misc.c \
-  /home/namrata/klee/include/klee/klee.h
-
-/home/namrata/klee/include/klee/klee.h:

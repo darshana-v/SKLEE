@@ -44,6 +44,7 @@ flow:
 1. upload file to klee/tools/klee/
 2. bash  runKLEE.sh filename
 3. bash getResult.sh
+4. docker build --pull --rm -f "klee\Dockerfile" -t sklee:latest "klee"
 
 workflow:
 
@@ -59,6 +60,7 @@ sudo apt install lex
 sudo apt-get install libboost-all-dev
 sudo apt-get install llvm-10
 sudo apt install libtcmalloc-minimal4
+pip install lit
 
 ```
 
@@ -74,13 +76,13 @@ use LF endings while editing else bash script will not run
   * [ ] OnlineKLEE is poorly written. Modify it to create more generic implementation that can run without issues - use herokuapp
   * [ ] intermediate outputs are also hardcoded. Need to modify core functionality to change it
   * [ ] Code Documentation
-  
 * [ ] Final script touch up
-  * [ ] Updated Directory paths 
+
+  * [ ] Updated Directory paths
   * [ ] Re-building the klee tool
   * [ ] --add-here--
-
 * [ ] Modifying Grammer: [Max 1 week]
+
   * [ ] Add mapping between line of c++ code generated and corresponding solidity code - create lookup and integrate with frontend
   * [ ] Add support for few missing structures - modify grammer
 
@@ -92,4 +94,5 @@ use LF endings while editing else bash script will not run
 * [ ] error while loading shared libraries: libtcmalloc.so.4: cannot open shared object file: No such file or directory
 
 ## Paths changed:
-* [ ] defs.cpp line 15 : 
+
+* [ ] defs.cpp line 15 :

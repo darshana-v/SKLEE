@@ -16,12 +16,8 @@ toolPath="../klee/tools/klee"
 kleeLibPath="../klee/lib/Core"
 kleeIncludePath="../klee/include/"
 cppLibPath="../include/libc++-install-10/include/c++/v1/"
-<<<<<<< HEAD
-outpath="../output/"
-=======
 outpath="../output"
 cpp_path="../output/convertedFile.cpp"
->>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 # Lexer and Grammar compilation
 
@@ -38,11 +34,7 @@ echo "Executable generation finished"
 # If this does doesn't work, uncomment this 
 # chmod +x $toolPath/verify
 
-<<<<<<< HEAD
 $toolPath/verify < $outpath/$input  #>> logFile.txt
-=======
-$toolPath/verify < $toolPath/$input >> logFile.txt
->>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 printf "\n"
 if [ $? -eq 0 ]; then
@@ -58,11 +50,7 @@ echo "LLVM BitCode Generation"
 
 # clang supposed to be in the path, if not then add in the corresponding path
 #/usr/local/opt/llvm/bin/clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $toolPath/$cppInput >> logFile.txt
-<<<<<<< HEAD
-clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $outpath/$cppInput #>> logFile.txt
-=======
 clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $cpp_path >> logFile.txt
->>>>>>> 63ac8af9add19666d28eecc2ac105ea066dbb97b
 
 if [ $? -eq 0 ]; then
     echo "Conversion to LLVM Bitcode complete."
@@ -76,9 +64,9 @@ mv convertedFile.bc ../output/
 
 chmod +x ../include/llvm-10/bin/llvm-dis
 
-../include/llvm-10/bin/llvm-dis $outpath/$bcInput -o $outpath/$llInput
+# ../include/llvm-10/bin/llvm-dis $outpath/$bcInput -o $outpath/$llInput
 
-#/usr/local/opt/llvm/bin/llvm-dis $outpath/$bcInput -o $outpath/$llInput
+llvm-dis $outpath/$bcInput -o $outpath/$llInput
 
 #chmod -R 777 $toolPath
 

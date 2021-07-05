@@ -9,7 +9,7 @@
 add_executable(klee
   main.cpp
   lexer.l
-  grammar2Copy.y
+  grammar.y
 )
 
 set(KLEE_LIBS

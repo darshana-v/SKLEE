@@ -81,6 +81,9 @@ endif()
 # Sanity check - Disallow building in source.
 # Otherwise we would overwrite the Makefiles of the old build system.
 ################################################################################
+set(CMAKE_BINARY_DIR "/mnt/e/blockchain/Subodh-Sharma-IITD-21/SKLEE/build")
+message(STATUS "cmake binary dir ${CMAKE_BINARY_DIR}")
+message(STATUS "cmake source dir ${CMAKE_SOURCE_DIR}")
 if ("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
   message(FATAL_ERROR "In source builds are not allowed. You should invoke "
           "CMake from a different directory.")

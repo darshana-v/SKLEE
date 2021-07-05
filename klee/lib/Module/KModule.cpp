@@ -57,57 +57,57 @@ using namespace klee;
 
 namespace klee {
 cl::OptionCategory
-    ModuleCat("Module-related options",
-              "These options affect the compile-time processing of the code.");
+ModuleCat("Module-related options",
+          "These options affect the compile-time processing of the code.");
 }
 
 namespace {
-  enum SwitchImplType {
-    eSwitchTypeSimple,
-    eSwitchTypeLLVM,
-    eSwitchTypeInternal
-  };
+enum SwitchImplType {
+  eSwitchTypeSimple,
+  eSwitchTypeLLVM,
+  eSwitchTypeInternal
+};
 
-  cl::opt<bool>
-  OutputSource("output-source",
-               cl::desc("Write the assembly for the final transformed source (default=true)"),
-               cl::init(true),
-	       cl::cat(ModuleCat));
+cl::opt<bool>
+OutputSource("output-source",
+             cl::desc("Write the assembly for the final transformed source (default=true)"),
+             cl::init(true),
+             cl::cat(ModuleCat));
 
-  cl::opt<bool>
-  OutputModule("output-module",
-               cl::desc("Write the bitcode for the final transformed module"),
-               cl::init(false),
-	       cl::cat(ModuleCat));
+cl::opt<bool>
+OutputModule("output-module",
+             cl::desc("Write the bitcode for the final transformed module"),
+             cl::init(false),
+             cl::cat(ModuleCat));
 
-  cl::opt<SwitchImplType>
-  SwitchType("switch-type", cl::desc("Select the implementation of switch (default=internal)"),
-             cl::values(clEnumValN(eSwitchTypeSimple, "simple",
-                                   "lower to ordered branches"),
-                        clEnumValN(eSwitchTypeLLVM, "llvm",
-                                   "lower using LLVM"),
-                        clEnumValN(eSwitchTypeInternal, "internal",
-                                   "execute switch internally")
-                        KLEE_LLVM_CL_VAL_END),
-             cl::init(eSwitchTypeInternal),
-	     cl::cat(ModuleCat));
+cl::opt<SwitchImplType>
+SwitchType("switch-type", cl::desc("Select the implementation of switch (default=internal)"),
+           cl::values(clEnumValN(eSwitchTypeSimple, "simple",
+                                 "lower to ordered branches"),
+                      clEnumValN(eSwitchTypeLLVM, "llvm",
+                                 "lower using LLVM"),
+                      clEnumValN(eSwitchTypeInternal, "internal",
+                                 "execute switch internally")
+                      KLEE_LLVM_CL_VAL_END),
+           cl::init(eSwitchTypeInternal),
+           cl::cat(ModuleCat));
 
-  cl::opt<bool>
-  DebugPrintEscapingFunctions("debug-print-escaping-functions",
-                              cl::desc("Print functions whose address is taken (default=false)"),
-			      cl::cat(ModuleCat));
+cl::opt<bool>
+DebugPrintEscapingFunctions("debug-print-escaping-functions",
+                            cl::desc("Print functions whose address is taken (default=false)"),
+                            cl::cat(ModuleCat));
 
-  // Don't run VerifierPass when checking module
-  cl::opt<bool>
-  DontVerify("disable-verify",
-             cl::desc("Do not verify the module integrity (default=false)"),
-             cl::init(false), cl::cat(klee::ModuleCat));
+// Don't run VerifierPass when checking module
+cl::opt<bool>
+DontVerify("disable-verify",
+           cl::desc("Do not verify the module integrity (default=false)"),
+           cl::init(false), cl::cat(klee::ModuleCat));
 
-  cl::opt<bool>
-  OptimiseKLEECall("klee-call-optimisation",
-                             cl::desc("Allow optimization of functions that "
-                                      "contain KLEE calls (default=true)"),
-                             cl::init(true), cl::cat(ModuleCat));
+cl::opt<bool>
+OptimiseKLEECall("klee-call-optimisation",
+                 cl::desc("Allow optimization of functions that "
+                          "contain KLEE calls (default=true)"),
+                 cl::init(true), cl::cat(ModuleCat));
 }
 
 /***/
@@ -118,27 +118,24 @@ extern void Optimize(Module *, llvm::ArrayRef<const char *> preservedFunctions);
 
 // what a hack
 static Function *getStubFunctionForCtorList(Module *m,
-                                            GlobalVariable *gv,
-                                            std::string name) {
+    GlobalVariable *gv,
+    std::string name) {
   assert(!gv->isDeclaration() && !gv->hasInternalLinkage() &&
          "do not support old LLVM style constructor/destructor lists");
-
   std::vector<Type *> nullary;
-
   Function *fn = Function::Create(FunctionType::get(Type::getVoidTy(m->getContext()),
-						    nullary, false),
-				  GlobalVariable::InternalLinkage,
-				  name,
-                              m);
+                                  nullary, false),
+                                  GlobalVariable::InternalLinkage,
+                                  name,
+                                  m);
   BasicBlock *bb = BasicBlock::Create(m->getContext(), "entry", fn);
   llvm::IRBuilder<> Builder(bb);
-
   // From lli:
   // Should be an array of '{ int, void ()* }' structs.  The first value is
   // the init priority, which we ignore.
   auto arr = dyn_cast<ConstantArray>(gv->getInitializer());
   if (arr) {
-    for (unsigned i=0; i<arr->getNumOperands(); i++) {
+    for (unsigned i = 0; i < arr->getNumOperands(); i++) {
       auto cs = cast<ConstantStruct>(arr->getOperand(i));
       // There is a third element in global_ctor elements (``i8 @data``).
 #if LLVM_VERSION_CODE >= LLVM_VERSION(9, 0)
@@ -152,8 +149,7 @@ static Function *getStubFunctionForCtorList(Module *m,
       auto fp = cs->getOperand(1);
       if (!fp->isNullValue()) {
         if (auto ce = dyn_cast<llvm::ConstantExpr>(fp))
-          fp = ce->getOperand(0);
-
+        { fp = ce->getOperand(0); }
         if (auto f = dyn_cast<Function>(fp)) {
           Builder.CreateCall(f);
         } else {
@@ -162,9 +158,7 @@ static Function *getStubFunctionForCtorList(Module *m,
       }
     }
   }
-
   Builder.CreateRetVoid();
-
   return fn;
 }
 
@@ -173,20 +167,16 @@ injectStaticConstructorsAndDestructors(Module *m,
                                        llvm::StringRef entryFunction) {
   GlobalVariable *ctors = m->getNamedGlobal("llvm.global_ctors");
   GlobalVariable *dtors = m->getNamedGlobal("llvm.global_dtors");
-
   if (!ctors && !dtors)
-    return;
-
+  { return; }
   Function *mainFn = m->getFunction(entryFunction);
   if (!mainFn)
     klee_error("Entry function '%s' not found in module.",
                entryFunction.str().c_str());
-
   if (ctors) {
     llvm::IRBuilder<> Builder(&*mainFn->begin()->begin());
     Builder.CreateCall(getStubFunctionForCtorList(m, ctors, "klee.ctor_stub"));
   }
-
   if (dtors) {
     Function *dtorStub = getStubFunctionForCtorList(m, dtors, "klee.dtor_stub");
     for (Function::iterator it = mainFn->begin(), ie = mainFn->end(); it != ie;
@@ -199,14 +189,14 @@ injectStaticConstructorsAndDestructors(Module *m,
   }
 }
 
-void KModule::addInternalFunction(const char* functionName){
+void KModule::addInternalFunction(const char* functionName) {
   Function* internalFunction = module->getFunction(functionName);
   if (!internalFunction) {
     KLEE_DEBUG(klee_warning(
-        "Failed to add internal function %s. Not found.", functionName));
+                 "Failed to add internal function %s. Not found.", functionName));
     return ;
   }
-  KLEE_DEBUG(klee_message("Added function %s.",functionName));
+  KLEE_DEBUG(klee_message("Added function %s.", functionName));
   internalFunctions.insert(internalFunction);
 }
 
@@ -217,21 +207,19 @@ bool KModule::link(std::vector<std::unique_ptr<llvm::Module>> &modules,
   modules.push_back(std::move(module));
   std::string error;
   module = std::unique_ptr<llvm::Module>(
-      klee::linkModules(modules, entryPoint, error));
+             klee::linkModules(modules, entryPoint, error));
   if (!module)
-    klee_error("Could not link KLEE files %s", error.c_str());
-
+  { klee_error("Could not link KLEE files %s", error.c_str()); }
   targetData = std::unique_ptr<llvm::DataLayout>(new DataLayout(module.get()));
-
   // Check if we linked anything
   return modules.size() != numRemainingModules;
 }
 //added----------------------------------------------------------------
 void KModule::changeBitWidth()
 {
-    legacy::PassManager pm;
-    pm.add(new SetBitWidth());
-    pm.run(*module);
+  legacy::PassManager pm;
+  pm.add(new SetBitWidth());
+  pm.run(*module);
 }
 //----------------------------------------------------------------------
 
@@ -243,7 +231,6 @@ void KModule::instrument(const Interpreter::ModuleOptions &opts) {
   legacy::PassManager pm;
   // pm.add(new SetBitWidth(*targetData));
   pm.add(new RaiseAsmPass());
-
   // This pass will scalarize as much code as possible so that the Executor
   // does not need to handle operands of vector type for most instructions
   // other than InsertElementInst and ExtractElementInst.
@@ -251,19 +238,17 @@ void KModule::instrument(const Interpreter::ModuleOptions &opts) {
   // NOTE: Must come before division/overshift checks because those passes
   // don't know how to handle vector instructions.
   pm.add(createScalarizerPass());
-
   // This pass will replace atomic instructions with non-atomic operations
   pm.add(createLowerAtomicPass());
-  if (opts.CheckDivZero) pm.add(new DivCheckPass());
-  if (opts.CheckOvershift) pm.add(new OvershiftCheckPass());
-
+  if (opts.CheckDivZero) { pm.add(new DivCheckPass()); }
+  if (opts.CheckOvershift) { pm.add(new OvershiftCheckPass()); }
   pm.add(new IntrinsicCleanerPass(*targetData));
   pm.run(*module);
 }
 
 void KModule::optimiseAndPrepare(
-    const Interpreter::ModuleOptions &opts,
-    llvm::ArrayRef<const char *> preservedFunctions) {
+  const Interpreter::ModuleOptions &opts,
+  llvm::ArrayRef<const char *> preservedFunctions) {
   // Preserve all functions containing klee-related function calls from being
   // optimised around
   if (!OptimiseKLEECall) {
@@ -271,21 +256,17 @@ void KModule::optimiseAndPrepare(
     pm.add(new OptNonePass());
     pm.run(*module);
   }
-
   if (opts.Optimize)
-    Optimize(module.get(), preservedFunctions);
-
+  { Optimize(module.get(), preservedFunctions); }
   // Add internal functions which are not used to check if instructions
   // have been already visited
   if (opts.CheckDivZero)
-    addInternalFunction("klee_div_zero_check");
+  { addInternalFunction("klee_div_zero_check"); }
   if (opts.CheckOvershift)
-    addInternalFunction("klee_overshift_check");
-
+  { addInternalFunction("klee_overshift_check"); }
   // Needs to happen after linking (since ctors/dtors can be modified)
   // and optimization (since global optimization can rewrite lists).
   injectStaticConstructorsAndDestructors(module.get(), opts.EntryPoint);
-
   // Finally, run the passes that maintain invariants we expect during
   // interpretation. We run the intrinsic cleaner just in case we
   // linked in something with intrinsics but any external calls are
@@ -293,11 +274,11 @@ void KModule::optimiseAndPrepare(
   // directly I think?
   legacy::PassManager pm3;
   // pm3.add(createCFGSimplificationPass());
-  switch(SwitchType) {
-      case eSwitchTypeInternal: break;
-      case eSwitchTypeSimple: pm3.add(new LowerSwitchPass()); break;
-      case eSwitchTypeLLVM:  pm3.add(createLowerSwitchPass()); break;
-      default: klee_error("invalid --switch-type");
+  switch (SwitchType) {
+  case eSwitchTypeInternal: break;
+  case eSwitchTypeSimple: pm3.add(new LowerSwitchPass()); break;
+  case eSwitchTypeLLVM:  pm3.add(createLowerSwitchPass()); break;
+  default: klee_error("invalid --switch-type");
   }
   pm3.add(new IntrinsicCleanerPass(*targetData));
   pm3.add(createScalarizerPass());
@@ -312,7 +293,6 @@ void KModule::manifest(InterpreterHandler *ih, bool forceSourceOutput) {
     assert(os && !os->has_error() && "unable to open source output");
     *os << *module;
   }
-
   if (OutputModule) {
     std::unique_ptr<llvm::raw_fd_ostream> f(ih->openOutputFile("final.bc"));
 #if LLVM_VERSION_CODE >= LLVM_VERSION(7, 0)
@@ -321,43 +301,32 @@ void KModule::manifest(InterpreterHandler *ih, bool forceSourceOutput) {
     WriteBitcodeToFile(module.get(), *f);
 #endif
   }
-
   /* Build shadow structures */
-
   infos = std::unique_ptr<InstructionInfoTable>(
-      new InstructionInfoTable(*module.get()));
-
+            new InstructionInfoTable(*module.get()));
   std::vector<Function *> declarations;
-
   for (auto &Function : *module) {
     if (Function.isDeclaration()) {
       declarations.push_back(&Function);
       continue;
     }
-
     auto kf = std::unique_ptr<KFunction>(new KFunction(&Function, this));
-
-    for (unsigned i=0; i<kf->numInstructions; ++i) {
+    for (unsigned i = 0; i < kf->numInstructions; ++i) {
       KInstruction *ki = kf->instructions[i];
       ki->info = &infos->getInfo(*ki->inst);
     }
-
     functionMap.insert(std::make_pair(&Function, kf.get()));
     functions.push_back(std::move(kf));
   }
-
   /* Compute various interesting properties */
-
   for (auto &kf : functions) {
     if (functionEscapes(kf->function))
-      escapingFunctions.insert(kf->function);
+    { escapingFunctions.insert(kf->function); }
   }
-
   for (auto &declaration : declarations) {
     if (functionEscapes(declaration))
-      escapingFunctions.insert(declaration);
+    { escapingFunctions.insert(declaration); }
   }
-
   if (DebugPrintEscapingFunctions && !escapingFunctions.empty()) {
     llvm::errs() << "KLEE: escaping functions: [";
     std::string delimiter = "";
@@ -371,14 +340,12 @@ void KModule::manifest(InterpreterHandler *ih, bool forceSourceOutput) {
 
 void KModule::checkModule() {
   InstructionOperandTypeCheckPass *operandTypeCheckPass =
-      new InstructionOperandTypeCheckPass();
-
+    new InstructionOperandTypeCheckPass();
   legacy::PassManager pm;
   if (!DontVerify)
-    pm.add(createVerifierPass());
+  { pm.add(createVerifierPass()); }
   pm.add(operandTypeCheckPass);
   pm.run(*module);
-
   // Enforce the operand type invariants that the Executor expects.  This
   // implicitly depends on the "Scalarizer" pass to be run in order to succeed
   // in the presence of vector instructions.
@@ -390,14 +357,13 @@ void KModule::checkModule() {
 KConstant* KModule::getKConstant(const Constant *c) {
   auto it = constantMap.find(c);
   if (it != constantMap.end())
-    return it->second.get();
+  { return it->second.get(); }
   return NULL;
 }
 
 unsigned KModule::getConstantID(Constant *c, KInstruction* ki) {
   if (KConstant *kc = getKConstant(c))
-    return kc->id;
-
+  { return kc->id; }
   unsigned id = constants.size();
   auto kc = std::unique_ptr<KConstant>(new KConstant(c, id, ki));
   constantMap.insert(std::make_pair(c, std::move(kc)));
@@ -444,29 +410,24 @@ KFunction::KFunction(llvm::Function *_function,
     basicBlockEntry[&BasicBlock] = numInstructions;
     numInstructions += BasicBlock.size();
   }
-
   instructions = new KInstruction*[numInstructions];
-
   std::map<Instruction*, unsigned> registerMap;
-
   // The first arg_size() registers are reserved for formals.
   unsigned rnum = numArgs;
   for (llvm::Function::iterator bbit = function->begin(),
-         bbie = function->end(); bbit != bbie; ++bbit) {
+       bbie = function->end(); bbit != bbie; ++bbit) {
     for (llvm::BasicBlock::iterator it = bbit->begin(), ie = bbit->end();
          it != ie; ++it)
-      registerMap[&*it] = rnum++;
+    { registerMap[&*it] = rnum++; }
   }
   numRegisters = rnum;
-
   unsigned i = 0;
   for (llvm::Function::iterator bbit = function->begin(),
-         bbie = function->end(); bbit != bbie; ++bbit) {
+       bbie = function->end(); bbit != bbie; ++bbit) {
     for (llvm::BasicBlock::iterator it = bbit->begin(), ie = bbit->end();
          it != ie; ++it) {
       KInstruction *ki;
-
-      switch(it->getOpcode()) {
+      switch (it->getOpcode()) {
       case Instruction::GetElementPtr:
       case Instruction::InsertValue:
       case Instruction::ExtractValue:
@@ -474,37 +435,34 @@ KFunction::KFunction(llvm::Function *_function,
       default:
         ki = new KInstruction(); break;
       }
-
       Instruction *inst = &*it;
       ki->inst = inst;
       ki->dest = registerMap[inst];
-
       if (isa<CallInst>(it) || isa<InvokeInst>(it)) {
         CallSite cs(inst);
         unsigned numArgs = cs.arg_size();
-        ki->operands = new int[numArgs+1];
+        ki->operands = new int[numArgs + 1];
         ki->operands[0] = getOperandNum(cs.getCalledValue(), registerMap, km,
                                         ki);
-        for (unsigned j=0; j<numArgs; j++) {
+        for (unsigned j = 0; j < numArgs; j++) {
           Value *v = cs.getArgument(j);
-          ki->operands[j+1] = getOperandNum(v, registerMap, km, ki);
+          ki->operands[j + 1] = getOperandNum(v, registerMap, km, ki);
         }
       } else {
         unsigned numOperands = it->getNumOperands();
         ki->operands = new int[numOperands];
-        for (unsigned j=0; j<numOperands; j++) {
+        for (unsigned j = 0; j < numOperands; j++) {
           Value *v = it->getOperand(j);
           ki->operands[j] = getOperandNum(v, registerMap, km, ki);
         }
       }
-
       instructions[i++] = ki;
     }
   }
 }
 
 KFunction::~KFunction() {
-  for (unsigned i=0; i<numInstructions; ++i)
-    delete instructions[i];
+  for (unsigned i = 0; i < numInstructions; ++i)
+  { delete instructions[i]; }
   delete[] instructions;
 }

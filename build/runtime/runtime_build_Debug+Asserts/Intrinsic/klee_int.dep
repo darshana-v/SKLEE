@@ -1,5 +1,0 @@
-/home/namrata/build/runtime/runtime_build_Debug+Asserts/Intrinsic/klee_int.bc: \
-  /home/namrata/klee/runtime/Intrinsic/klee_int.c \
-  /home/namrata/klee/include/klee/klee.h
-
-/home/namrata/klee/include/klee/klee.h:
