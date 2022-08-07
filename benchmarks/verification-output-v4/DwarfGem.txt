@@ -1,0 +1,22 @@
+Resuls Fetched
+Result:
+✅ Verified: Unchecked send
+✅ Verified: Prodigal
+✅ Verified: Greedy
+✅ Verified: Suicidal
+✅ Verified: Re-entrancy
+✅ Verified: Overflow
+✅ Verified: Address Typecast
+✅ Verified: Mapping read
+✅ Verified: Transaction Order Dependence
+✅ Verified: Transaction State Dependence
+✅ Verified: Block State Dependence
+✅ Verified: Memory Overlap
+✅ Verified: Payable but no fallback
+
+No results.
+
+TestCases:
+
+No Erroneous TestCase
+

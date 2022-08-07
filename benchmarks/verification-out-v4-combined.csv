@@ -1,0 +1,420 @@
+,No Run
+AAAABC,0
+AdvanceToken,Passed
+againstTokenRegister,Passed
+Aggregator,Passed
+AGT,Passed
+AICrypto,No Run
+AIGO,Passed
+Aigopay,Passed
+AirDrop,Passed
+AKTToken,No Run
+AladTTS,Passed
+ALS,No Run
+AmpleCoin,No Run
+AmpleforthWrapper,Passed
+AnxToken,No Run
+API,Passed
+ApolloGame,Passed
+APPCrowdsale,Passed
+APPLE,No Run
+AREToken,No Run
+Arilli,No Run
+AronCoin,Passed
+Artifaqt,Passed
+AssetGenerator,Passed
+AssetManagerEscrow,Passed
+AssetManagerFunds,Passed
+ASTOX,No Run
+ATestnetConsumer,Passed
+ATOmu,No Run
+ATOmuCOIN,No Run
+AuctionUtils,Passed
+AuthorizationDataSource,Passed
+AUX1769,No Run
+AUX715A,No Run
+AWGame,Passed
+AWMain,Passed
+AWToken,Passed
+BalanceChecker,Passed
+BANK,Passed
+BasicKYC,Passed
+BasicToken,Passed
+BCT,No Run
+BDC,No Run
+BermToken,1
+Berry,Passed
+BHNC,Passed
+BitQBBQQChain,Passed
+BitXCoin,9
+BlackJack,Passed
+BMToken,No Run
+BNXToken,Passed
+BOEING,No Run
+BoleToken,Passed
+BountyBoard,Passed
+BoyCoin,Passed
+BraveSoundToken,Passed
+BryCoin,Passed
+BSI,Passed
+BSS,Passed
+BubbleToken,Passed
+BYBToken,Passed
+CapitalCoin,Passed
+CapitalCoinExtended,Passed
+CAST,Passed
+CASTWEETTOKEN,Passed
+CHATS,Passed
+CHE,Passed
+CHEEUR,Passed
+CHEINDR,Passed
+CHEJPY,Passed
+CHEUSD,Passed
+CHEX,Passed
+CHF,No Run
+ChicagoEX,No Run
+ChronoBankAssetProxy,No Run
+ChronoBankPlatform,No Run
+ChronoBankPlatformRouter,Passed
+CLOG,No Run
+CMBCCoinERC20Token,No Run
+COCO,No Run
+CoinSmartToken,No Run
+CoinSpas157,Passed
+COMBO,Passed
+CommunityBankCoin,Passed
+CompanyTemplate,Passed
+Contracoin,Passed
+ContracoinSale,0
+ContracoinTokenTimelock,Passed
+ContractManager,Passed
+Contracts,Passed
+CouncilVesting,Passed
+CreatoryToken,No Run
+CrowdsaleERC20,Passed
+CrowdsaleETH,Passed
+CrowdsaleGeneratorERC20,Passed
+CrowdsaleGeneratorETH,Passed
+CrowdsaleReserve,Passed
+CryptoHearthStone,Passed
+CTetherUSD,Passed
+customIcoToken,Passed
+customToken,No Run
+Cykril,No Run
+DABANKING_SWAP,Passed
+DAC,No Run
+DaoPointsStorage,No Run
+DaoRewardsStorage,No Run
+Database,No Run
+DEAPCoin,Passed
+DecentralizedAirdropToken,No Run
+DecentralizedNewsletterChain,No Run
+DelegatedSending,Passed
+DEM,No Run
+DepositGame,No Run
+Deschain,Passed
+DictatorTemplate,Passed
+DigiArtWorld,Passed
+DigitalBitsToken,Passed
+DigitalStakeToken,Passed
+Digital_quiz,No Run
+DIR,No Run
+DISNEY,No Run
+DKHAN,Passed
+DOCBToken,0
+DouCoin,No Run
+DouCoinTT,No Run
+DPTToken,Passed
+DUContract,No Run
+DwarfGem,Passed
+ECM,Passed
+ECOINV,No Run
+EducationalTokenContract,Passed
+EightCoin,Passed
+EIP20,Passed
+EmalToken,Passed
+EMC,No Run
+EMCo,Passed
+EncryptedToken,Passed
+EN_GAME,No Run
+ERC20StandardToken,No Run
+ERC20Token,No Run
+ERC20Wrapper,Passed
+ERC_20_2,Passed
+ESCHToken,No Run
+EscrowReserve,Passed
+ESDA,Passed
+ESM,Passed
+ESME,Passed
+EthereumGasChain,No Run
+ETHToken,No Run
+EUR,No Run
+Events,Passed
+Exchange,No Run
+EXTOKEN,Passed
+EXU,0
+Fair7Token,Passed
+FairDice,Passed
+FASTPAYTOKEN,No Run
+FcsToken,Passed
+FEE,Passed
+FiatDex_protocol_v1,No Run
+FiatTokenProxy,Passed
+FiatTokenV1,Passed
+Flower,Passed
+FlowerP,Passed
+ForeignBridgeErcToNative,Passed
+ForeignBridgeFactory,Passed
+Fortune,No Run
+Fortune999,Passed
+FPX,No Run
+FreedomBonusPointToken,Passed
+Frinkcoin,No Run
+FromCarToken,No Run
+FtInvestToken,No Run
+FundingContest,Passed
+FUNNYTOKEN,No Run
+futuregoldtoken,No Run
+FZC,Passed
+GAC,3
+GapToken,Passed
+GAWToken,Passed
+GBC,No Run
+GBP,No Run
+GemToken,No Run
+GGCoin,Passed
+GGGToken,No Run
+GitFundContest,Passed
+GlotToken,Passed
+GLUT,Passed
+GL_ERC20,Passed
+GRAM,No Run
+GrcToken,Passed
+GtanToken,Passed
+HA,Passed
+HAMDAN,No Run
+HBIF,Passed
+HBToken,0
+HEARTBEAT,No Run
+HEBToken,Passed
+Hittretix,No Run
+HKD,No Run
+HKExCoin2,Passed
+HMUSD,No Run
+HongKongBlockChain,No Run
+HongKongBlockchainCurrency,No Run
+HOST,No Run
+HOSTOKEN,No Run
+HotToken,Passed
+HSIERC20Token,No Run
+HumanStandardToken,No Run
+HUMToken,Passed
+Hydrolic,No Run
+HypersonicNetwork,No Run
+IC,No Run
+IG,No Run
+ILLUSION,Passed
+InbestTokenBuybackProcessor,Passed
+Indorser,No Run
+InternationalMonetaryToken,Passed
+INTRINSICBIT,No Run
+IP,0
+ISK,Passed
+JalaToken,Passed
+JDQJ,No Run
+Jewelcoin,No Run
+JobsManager,No Run
+JORDAN,No Run
+JPY,No Run
+KAKITOKEN,Passed
+KAN_Token,Passed
+KDG,No Run
+KOLLockNode,Passed
+KRW,No Run
+KTM_Token_Exchange,Passed
+KumexToken,Passed
+LibraNetwork,Passed
+Life,Passed
+LightEnergyEcologicalChain,No Run
+Litecoin_SV,No Run
+LookeiToken,Passed
+LtconlineToken,No Run
+LTRConceptArtLoop,Passed
+LV,No Run
+LvchainToken,Passed
+LXXG,No Run
+LyakToken,Passed
+MainToken,Passed
+MAIUSD,Passed
+ManagerLock,0
+Margintradingtoken,No Run
+MarketDeposits,Passed
+MBA,Passed
+MBSK,Passed
+MEC,Passed
+MESSI,No Run
+microex,Passed
+MiniMeTokenFactory,Passed
+Minter,Passed
+MKExCoin,Passed
+MOJOCRYPTO,No Run
+MONETToken,Passed
+MOTC,Passed
+Moveer,No Run
+MoveerCoin,Passed
+MRDF,No Run
+MSDR,No Run
+MToken,Passed
+MULTIFOMO,Passed
+multifund,No Run
+MultiOwned,No Run
+MultipleArbitrableTokenTransaction,Passed
+MuneToken,No Run
+MyAdvancedToken,Passed
+Natretix,No Run
+NcovDeadPool,No Run
+newsToken,Passed
+NightlightToken,Passed
+NNXCoin,Passed
+NOL,Passed
+OBK,8
+OceandexExchange,No Run
+OeroToken,0
+Okextoken,Passed
+Okextokencoin,Passed
+OMAToken,Passed
+OpenAndWinEtherPotGame,No Run
+Operators,No Run
+Oracle,Passed
+OracleVerifier,Passed
+OrangeVenice,Passed
+OrangeVeniceP,Passed
+Ourbitrage,Passed
+Pausible,No Run
+PAYCASH,No Run
+PayPalToken,No Run
+PCX,Passed
+Pets,No Run
+Piggy_bank,No Run
+Platform,No Run
+play_IQuiz,No Run
+PmsToken,Passed
+PPToken,Passed
+PromTokenVault,Passed
+ProofOfExistence,No Run
+PROTtoken,Passed
+PROT_MN_reward,Passed
+Proxy,Passed
+PToken,No Run
+PublicBank,Passed
+RANATOKEN,No Run
+Rebalance,No Run
+Rebitcoin,No Run
+Register,Passed
+ReiToken,No Run
+Remichain,Passed
+RestrictedTransferAgent,Passed
+RicByte,Passed
+RIZIN,Passed
+RMBTT,No Run
+RNG,No Run
+RONALDO,No Run
+RTXGOLD,Passed
+SafeMathLibExt,Passed
+SaGaNToken,Passed
+SAMPLE,Passed
+SAMSUNG,No Run
+SANTOQ,Passed
+Scalecoin,Passed
+SCTB,Passed
+SEADigitalStableToken,No Run
+SEADigitalToken,No Run
+SecurityToken,Passed
+SFBcoin,No Run
+SFBToken,No Run
+SGAAuthorizationManager,Passed
+SGABuyWalletsTradingLimiter,Passed
+SGASellWalletsTradingLimiter,Passed
+SGATokenManager,Passed
+SGNAuthorizationManager,Passed
+SGNWalletsTradingLimiter,Passed
+ShekzCoin,Passed
+SimpleToken,No Run
+SJBcoin,No Run
+SJBToken,No Run
+SkeyerCoin,Passed
+SlrsToken,Passed
+SlrsTokenItoContract,Passed
+SMARTToken,Passed
+SnakesAndLadders,Passed
+SnowDCoin,No Run
+SNXLinkV1,Passed
+SolaToken,Passed
+SPADLAND,No Run
+Stablecoin,Passed
+StakeImperial,Passed
+StandardNFT,Passed
+StandardNFTFactory,Passed
+StandardToken,Passed
+StopSexism,Passed
+Storage,Passed
+TbkToken,Passed
+TetherToken,Passed
+THB,No Run
+Theo,No Run
+TimeLockedTokenStorage,Passed
+TknToken,No Run
+ToiletPaperToken,0
+Token,Passed
+TokenBasic,No Run
+TokenContract,Passed
+TokenERC20,Passed
+TokenFGE,Passed
+TokenVesting,Passed
+Trader,No Run
+TradingClasses,Passed
+Tratok,Passed
+TRT_Token,Passed
+TrueProfileLogic,No Run
+TRUSTGRID,Passed
+TSBAT,0
+TSTToken,Passed
+TWD,No Run
+UcolonCoin,No Run
+UFragmentsPolicy,Passed
+ukrpay,Passed
+UltrAlphaToken,Passed
+UniswapAdaptor,No Run
+UniswapTradeExample,No Run
+UNT,8
+UpToken,Passed
+USD,Passed
+UTRAToken,Passed
+VACCToken,No Run
+VEL,Passed
+VictorToken,Passed
+VINX,Passed
+VisionBitcoinCash,Passed
+VITA,No Run
+WalletsTradingDataSource,Passed
+WAN,No Run
+WanCoinSupplyToken,Passed
+WanCoinToken,Passed
+WerkContract,No Run
+WPT,Passed
+WrapperLock,Passed
+XGP,Passed
+XMDToken,No Run
+XPeerChain,Passed
+XTRLPAY,No Run
+YOUToken,Passed
+ZCoreToken,Passed
+ZeerooToken,5
+Zenith,No Run
+ZenithCoin,No Run
+ZJG,No Run
+ZJYB,No Run
+ZorroToken,Passed
+ZXL,Passed
+ZXLToken,Passed
+ZZZCOIN,No Run

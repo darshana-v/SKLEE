@@ -1,0 +1,34 @@
+Resuls Fetched
+Result:
+✅ Verified: Unchecked send
+✅ Verified: Prodigal
+✅ Verified: Greedy
+✅ Verified: Suicidal
+✅ Verified: Re-entrancy
+✅ Verified: Overflow
+✅ Verified: Address Typecast
+✅ Verified: Mapping read
+✅ Verified: Transaction Order Dependence
+✅ Verified: Transaction State Dependence
+✅ Verified: Block State Dependence
+✅ Verified: Memory Overlap
+✅ Verified: Payable but no fallback
+
+No results.
+
+TestCases:
+
+TestCase 1
+..//output/error-external.err000001.ktest.txt
+object 0: name: 'model_version'
+object 0: hex : 0x01000000
+object 0: int : 1
+object 1: name: 'decimals'
+object 1: hex : 0x00000000
+object 1: int : 0
+object 2: name: 'totalSupply'
+object 2: hex : 0x0000000000000000
+object 2: int : 0
+object 3: name: 'owner'
+object 3: hex : 0x000000000000000000000000000000000000000000000000
+

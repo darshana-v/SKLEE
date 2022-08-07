@@ -1,0 +1,32 @@
+Resuls Fetched
+Result:
+✅ Verified: Unchecked send
+✅ Verified: Prodigal
+✅ Verified: Greedy
+✅ Verified: Suicidal
+✅ Verified: Re-entrancy
+✅ Verified: Overflow
+✅ Verified: Address Typecast
+✅ Verified: Mapping read
+✅ Verified: Transaction Order Dependence
+✅ Verified: Transaction State Dependence
+✅ Verified: Block State Dependence
+✅ Verified: Memory Overlap
+✅ Verified: Payable but no fallback
+
+✖ KLEE: Contract Error: Multiplication Overflow:(678000000, 10) at [no debug info]
+
+TestCases:
+
+TestCase 1
+..//output/error-MultOverflow000001.ktest.txt
+object 0: name: 'model_version'
+object 0: hex : 0x01000000
+object 0: int : 1
+
+TestCase 2
+..//output/error-ptr.err000002.ktest.txt
+object 0: name: 'model_version'
+object 0: hex : 0x01000000
+object 0: int : 1
+
