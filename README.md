@@ -24,7 +24,7 @@ The following are the smart contract vulnerabilities which can be verified:
 ```
 Frontend: php script based to execute command in backend
 -OnlineKLEE (only deployed on local server for now)
-Libraries: cloned libraries for independent installation
+Libraries: libraries to be cloned for independent installation
 -libc++-10
 -libc++-build-10
 -libc++-install-10
@@ -35,6 +35,8 @@ Core Functionality
 -klee
 Benchmarks
 -SKLEE Benchmarks
+Scripts
+-scripts
 
 
 ```
@@ -46,6 +48,8 @@ Run the tool:
 3. bash getResult.sh
 
 ## Installation:
+
+All commands listed in requirements.txt under scripts directory.
 
 Instructions to install lib other than KLEE:
 ```
