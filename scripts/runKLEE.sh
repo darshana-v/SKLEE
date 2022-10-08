@@ -1,27 +1,40 @@
 #!/bin/bash
-#set -e
 set -u
 input=$1
-#convertedInput=${input::-4}
-convertedInput="convertedFile"
+
+#if [${input: -4} = ".sol"]; then
+#	convertedInput=${input::-4}
+#else
+#	convertedInput="convertedFile"
+#convertedInput="convertedFile"
+convertedInput=${input::-4}
+
+echo "converted input is "
+echo $convertedInput
 cppInput="$convertedInput.cpp"
 bcInput="$convertedInput.bc"
 llInput="$convertedInput.ll"
 # commands to run KLEE and validate
-homeDir="./"
-toolPath="./klee/tools/klee"
-kleeLibPath="./klee/lib/Core"
-kleeIncludePath="./klee/include/"
-cppLibPath="./libc++-install-10/include/c++/v1/"
-#cd ~/Desktop/project/verifTool/
+homeDir="../"
+toolPath="../klee/tools/klee"
+kleeLibPath="../klee/lib/Core"
+kleeIncludePath="../klee/include/"
+cppLibPath="../libc++-install-10/include/c++/v1/"
 echo "Converting Contract code to LLVM bitcode..."
 
 flex -o $toolPath/lexer.c -l $toolPath/lexer.l >>logFile.txt
-bison -vd -o $toolPath/grammar.c $toolPath/grammar2Copy.y >>logFile.txt
+bison -vd -o $toolPath/grammar.c $toolPath/grammar.y >>logFile.txt
 
-#echo $input
-#echo $convertedInput
-g++ -w -Wno-write-strings $kleeLibPath/defs.cpp $toolPath/lexer.c $toolPath/grammar.c -o $toolPath/verify -ll >>logFile.txt 
+
+echo "input is "
+echo $input
+echo $convertedInput
+g++ -w -Wno-write-strings $kleeLibPath/defs.cpp $toolPath/lexer.c $toolPath/
+echo "exe file generated"
+chmod -R 777 $kleeLibPath/defs.cpp
+echo "file access provided"
+grammar.c -o $toolPath/verify -ll >>logFile.txt 
+echo "verified using tool"
 
 $toolPath/verify < $toolPath/$input >>logFile.txt
 if [ $? -eq 0 ]; then
@@ -47,7 +60,7 @@ fi
 
 llvm-dis $bcInput
 
-#chmod -R 777 $toolPath
+chmod -R 777 $toolPath
 
 ./build/bin/klee --libc=uclibc -libcxx -posix-runtime --max-instructions=2000000 --warnings-only-to-file $llInput
 
@@ -61,7 +74,7 @@ else
     exit 1
 fi
 
-#chmod -R 777 $toolPath
+chmod -R 777 $toolPath
 
 #printf "\n"
 
