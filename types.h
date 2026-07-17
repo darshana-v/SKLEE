@@ -1,14 +1,28 @@
 #ifndef SOLIDITY_TYPES
 #define SOLIDITY_TYPES
 
-//#include <klee/klee.h>
-#include <klee/Support/ErrorHandling.h>
+#include <klee/klee.h>
 #include <string>
 #include <type_traits>
 #include <boost/multiprecision/cpp_int.hpp>
 #include <boost/cstdint.hpp>
 #include <cstdint>
 #include <climits>
+#include <cstdio>
+
+static int sklee_overflow_type = 0;
+
+static void sklee_report_overflow(unsigned type) {
+    const char* kind;
+    switch(type) {
+        case 1: kind = "Addition overflow"; break;
+        case 2: kind = "Subtraction underflow"; break;
+        case 3: kind = "Multiplication overflow"; break;
+        case 4: kind = "Division error"; break;
+        default: kind = "Arithmetic overflow"; break;
+    }
+    klee_report_error(__FILE__, __LINE__, kind, "overflow");
+}
 
 #define uint256_t boost::multiprecision::uint256_t
 #define int256_t boost::multiprecision::int256_t
@@ -157,7 +171,7 @@ public:
     X& operator= (const T& val){
         X object; 
         if(checkAdd<X, int>((int)val, 0)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (int)val;
         return object;
@@ -167,7 +181,7 @@ public:
     X operator+ (const T& val){
         X object; 
         if(checkAdd<X, int>((int)*this, (int)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (int)*this + (int)val;
         return object;
@@ -190,7 +204,7 @@ public:
     X operator- (const T& val){
         X object; 
         if(checkSub<X, int>((int)*this, (int)val)){
-            klee::setOverflow(2);
+            sklee_report_overflow(2);
         }
         data = (int)*this - (int)val;
         return object;
@@ -199,7 +213,7 @@ public:
     X operator* (T val){
         X object; 
         if(checkMult<X, int>((int)*this, (int)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (int)*this * (int)val;
         return object;
@@ -211,7 +225,7 @@ public:
         object = (int)*this/(int)val;
 
         // if(real != (int)temp)
-        //     klee::setOverflow(4);
+        //     sklee_report_overflow(4);
         return object;
     }
     template <typename T>
@@ -302,7 +316,7 @@ public:
     X& operator= (const T& val){
         X object; 
         if(checkAddU<X, unsigned>((unsigned)val, 0)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (unsigned)val;
         return object;
@@ -311,7 +325,7 @@ public:
     X& operator= (int val){
         X object; 
         if(checkAddU<X, unsigned>((unsigned)val, 0)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (unsigned)val;
         return object;
@@ -321,7 +335,7 @@ public:
     X operator+ (const T& val){
         X object; 
         if(checkAddU<X, unsigned>((unsigned)*this, (unsigned)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (unsigned)*this + (unsigned)val;
         return object;
@@ -343,7 +357,7 @@ public:
     X operator- (const T& val){
         X object; 
         if(checkSubU<X, unsigned>((unsigned)*this, (unsigned)val)){
-            klee::setOverflow(2);
+            sklee_report_overflow(2);
         }
         data = (unsigned)*this - (unsigned)val;
         return object;
@@ -352,7 +366,7 @@ public:
     X operator* (T val){
         X object; 
         if(checkMultU<X, unsigned>((unsigned)*this, (unsigned)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
         data = (unsigned)*this * (unsigned)val;
         return object;
@@ -364,7 +378,7 @@ public:
         object = (unsigned)*this/(unsigned)val;
 
         // if(real != (unsigned)temp)
-        //     klee::setOverflow(4);
+        //     sklee_report_overflow(4);
         return object;
     }
     template <typename T>
@@ -447,12 +461,12 @@ U operator+(U i, const T& val){
     U object;
     if(sizeof(U) > sizeof(T)){
         if(checkAdd<U, int>((int)i, (int)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
     }
     else{
         if(checkAdd<T, int>((int)i, (int)val)){
-            klee::setOverflow(1);
+            sklee_report_overflow(1);
         }
     }
     object =  (int)i + (int)val;
@@ -465,12 +479,12 @@ U operator-(U i, const T& val){
     U object;
     if(sizeof(U) > sizeof(T)){
         if(checkSub<U, int>((int)i, (int)val)){
-            klee::setOverflow(2);
+            sklee_report_overflow(2);
         }
     }
     else{
         if(checkSub<T, int>((int)i, (int)val)){
-            klee::setOverflow(2);
+            sklee_report_overflow(2);
         }
     }
     object =  (int)i - (int)val;
@@ -482,12 +496,12 @@ U operator*(U i, const T& val){
     U object;
     if(sizeof(U) > sizeof(T)){
         if(checkMult<U, int>((int)i, (int)val)){
-            klee::setOverflow(3);
+            sklee_report_overflow(3);
         }
     }
     else{
         if(checkMult<T, int>((int)i, (int)val)){
-            klee::setOverflow(3);
+            sklee_report_overflow(3);
         }
     }
     object =  (int)i * (int)val;

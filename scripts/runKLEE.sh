@@ -1,93 +1,48 @@
 #!/bin/bash
-set -u
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
 input=$1
-
-#if [${input: -4} = ".sol"]; then
-#	convertedInput=${input::-4}
-#else
-#	convertedInput="convertedFile"
-#convertedInput="convertedFile"
 convertedInput=${input::-4}
-
-echo "converted input is "
-echo $convertedInput
 cppInput="$convertedInput.cpp"
 bcInput="$convertedInput.bc"
 llInput="$convertedInput.ll"
-# commands to run KLEE and validate
-homeDir="../"
-toolPath="../klee/tools/klee"
-kleeLibPath="../klee/lib/Core"
-kleeIncludePath="../klee/include/"
-cppLibPath="../libc++-install-10/include/c++/v1/"
-echo "Converting Contract code to LLVM bitcode..."
 
-flex -o $toolPath/lexer.c -l $toolPath/lexer.l >>logFile.txt
-bison -vd -o $toolPath/grammar.c $toolPath/grammar.y >>logFile.txt
+toolPath="$ROOT_DIR/klee/tools/klee"
+kleeLibPath="$ROOT_DIR/klee/lib/Core"
+kleeIncludePath="$ROOT_DIR/klee/include"
+cppLibPath="$ROOT_DIR/libc++-install-10/include/c++/v1/"
 
+echo "[1/5] Building transpiler..."
+flex -o "$toolPath/lexer.c" -l "$toolPath/lexer.l" 2>>logFile.txt
+bison -vd -o "$toolPath/grammar.c" "$toolPath/grammar.y" 2>>logFile.txt
+g++ -w -Wno-write-strings "$kleeLibPath/defs.cpp" "$toolPath/lexer.c" "$toolPath/grammar.c" -o "$toolPath/verify" -ll >>logFile.txt 2>&1
 
-echo "input is "
-echo $input
-echo $convertedInput
-g++ -w -Wno-write-strings $kleeLibPath/defs.cpp $toolPath/lexer.c $toolPath/
-echo "exe file generated"
-chmod -R 777 $kleeLibPath/defs.cpp
-echo "file access provided"
-grammar.c -o $toolPath/verify -ll >>logFile.txt 
-echo "verified using tool"
+echo "[2/5] Transpiling Solidity to C++..."
+if ! "$toolPath/verify" < "$toolPath/$input" >>logFile.txt; then
+    echo "ERROR: Solidity syntax/version error: could not convert contract file."
+    exit 1
+fi
+echo "  -> $cppInput"
 
-$toolPath/verify < $toolPath/$input >>logFile.txt
-if [ $? -eq 0 ]; then
-    echo "Conversion to intermediate code complete."
-else
-    echo "Solidity syntax/version error: could not convert contract file."
-    printf "\n"
-    echo "Process terminated."
+echo "[3/5] Compiling to LLVM bitcode..."
+if ! clang++ -O0 -Wno-everything -std=c++11 -I "$cppLibPath" -nostdinc++ \
+    -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow \
+    -I "$kleeIncludePath" -emit-llvm -c -g "$toolPath/$cppInput" 2>logFile.txt; then
+    echo "ERROR: Bitcode compilation failed."
+    exit 1
+fi
+llvm-dis "$bcInput"
+echo "  -> $bcInput"
+
+echo "[4/5] Running KLEE symbolic execution..."
+if ! ./build/bin/klee --libc=uclibc -libcxx -posix-runtime \
+    --max-instructions=2000000 --warnings-only-to-file "$llInput"; then
+    echo "ERROR: KLEE execution failed (timeout or SIGSEGV)."
     exit 1
 fi
 
-
-clang++ -O0 -Wno-everything -std=c++11 -I $cppLibPath -nostdinc++ -fsanitize=signed-integer-overflow -fsanitize=unsigned-integer-overflow -I $kleeIncludePath -emit-llvm -c -g $toolPath/$cppInput &> logFile.txt
-
-if [ $? -eq 0 ]; then
-    echo "Conversion to LLVM Bitcode complete."
-else
-    echo "Error in bitcode file, needs refinement."
-    printf "\n"
-    echo "Process terminated."
-    exit 1
-fi
-
-llvm-dis $bcInput
-
-chmod -R 777 $toolPath
-
-./build/bin/klee --libc=uclibc -libcxx -posix-runtime --max-instructions=2000000 --warnings-only-to-file $llInput
-
-
-if [ $? -eq 0 ]; then
-    echo "KLEE run complete."
-else
-    echo "Error while running KLEE: timeout or SIGSEV."
-    printf "\n"
-    echo "Process terminated."
-    exit 1
-fi
-
-chmod -R 777 $toolPath
-
-#printf "\n"
-
-#echo "Properties violated in result.txt"
-#echo "Validating on private Ethereum Blockchain..."
-
-python3 $toolPath/run.py 1 $toolPath
-
-if [ $? -eq 0 ]; then
-    echo ""
-else
-    echo "Error while generating testcases."
-    printf "\n"
-    echo "Process terminated."
-    exit 1
-fi
+echo "[5/5] Extracting results..."
+python3 "$toolPath/run.py" 1 "$toolPath"
